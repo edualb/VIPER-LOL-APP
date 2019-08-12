@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED4931272301DAEB00E63481 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4931262301DAEB00E63481 /* AppDelegate.swift */; };
+		ED4931292301DAEB00E63481 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4931282301DAEB00E63481 /* ViewController.swift */; };
+		ED49312C2301DAEB00E63481 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED49312A2301DAEB00E63481 /* Main.storyboard */; };
+		ED49312E2301DAEC00E63481 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED49312D2301DAEC00E63481 /* Assets.xcassets */; };
+		ED4931312301DAEC00E63481 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED49312F2301DAEC00E63481 /* LaunchScreen.storyboard */; };
+		ED49313C2301DAED00E63481 /* VIPER_LOL_APPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED49313B2301DAED00E63481 /* VIPER_LOL_APPTests.swift */; };
+		ED4931472301DAED00E63481 /* VIPER_LOL_APPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4931462301DAED00E63481 /* VIPER_LOL_APPUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ED4931382301DAED00E63481 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED49311B2301DAEB00E63481 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED4931222301DAEB00E63481;
+			remoteInfo = "VIPER-LOL-APP";
+		};
+		ED4931432301DAED00E63481 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED49311B2301DAEB00E63481 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED4931222301DAEB00E63481;
+			remoteInfo = "VIPER-LOL-APP";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ED4931232301DAEB00E63481 /* VIPER-LOL-APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIPER-LOL-APP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED4931262301DAEB00E63481 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ED4931282301DAEB00E63481 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ED49312B2301DAEB00E63481 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ED49312D2301DAEC00E63481 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED4931302301DAEC00E63481 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ED4931322301DAEC00E63481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED4931372301DAED00E63481 /* VIPER-LOL-APPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VIPER-LOL-APPTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED49313B2301DAED00E63481 /* VIPER_LOL_APPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPER_LOL_APPTests.swift; sourceTree = "<group>"; };
+		ED49313D2301DAED00E63481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED4931422301DAED00E63481 /* VIPER-LOL-APPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VIPER-LOL-APPUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED4931462301DAED00E63481 /* VIPER_LOL_APPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPER_LOL_APPUITests.swift; sourceTree = "<group>"; };
+		ED4931482301DAED00E63481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED4931202301DAEB00E63481 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED4931342301DAED00E63481 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED49313F2301DAED00E63481 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ED49311A2301DAEB00E63481 = {
+			isa = PBXGroup;
+			children = (
+				ED4931252301DAEB00E63481 /* VIPER-LOL-APP */,
+				ED49313A2301DAED00E63481 /* VIPER-LOL-APPTests */,
+				ED4931452301DAED00E63481 /* VIPER-LOL-APPUITests */,
+				ED4931242301DAEB00E63481 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ED4931242301DAEB00E63481 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED4931232301DAEB00E63481 /* VIPER-LOL-APP.app */,
+				ED4931372301DAED00E63481 /* VIPER-LOL-APPTests.xctest */,
+				ED4931422301DAED00E63481 /* VIPER-LOL-APPUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED4931252301DAEB00E63481 /* VIPER-LOL-APP */ = {
+			isa = PBXGroup;
+			children = (
+				ED4931262301DAEB00E63481 /* AppDelegate.swift */,
+				ED4931282301DAEB00E63481 /* ViewController.swift */,
+				ED49312A2301DAEB00E63481 /* Main.storyboard */,
+				ED49312D2301DAEC00E63481 /* Assets.xcassets */,
+				ED49312F2301DAEC00E63481 /* LaunchScreen.storyboard */,
+				ED4931322301DAEC00E63481 /* Info.plist */,
+			);
+			path = "VIPER-LOL-APP";
+			sourceTree = "<group>";
+		};
+		ED49313A2301DAED00E63481 /* VIPER-LOL-APPTests */ = {
+			isa = PBXGroup;
+			children = (
+				ED49313B2301DAED00E63481 /* VIPER_LOL_APPTests.swift */,
+				ED49313D2301DAED00E63481 /* Info.plist */,
+			);
+			path = "VIPER-LOL-APPTests";
+			sourceTree = "<group>";
+		};
+		ED4931452301DAED00E63481 /* VIPER-LOL-APPUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ED4931462301DAED00E63481 /* VIPER_LOL_APPUITests.swift */,
+				ED4931482301DAED00E63481 /* Info.plist */,
+			);
+			path = "VIPER-LOL-APPUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED4931222301DAEB00E63481 /* VIPER-LOL-APP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED49314B2301DAED00E63481 /* Build configuration list for PBXNativeTarget "VIPER-LOL-APP" */;
+			buildPhases = (
+				ED49311F2301DAEB00E63481 /* Sources */,
+				ED4931202301DAEB00E63481 /* Frameworks */,
+				ED4931212301DAEB00E63481 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VIPER-LOL-APP";
+			productName = "VIPER-LOL-APP";
+			productReference = ED4931232301DAEB00E63481 /* VIPER-LOL-APP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ED4931362301DAED00E63481 /* VIPER-LOL-APPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED49314E2301DAED00E63481 /* Build configuration list for PBXNativeTarget "VIPER-LOL-APPTests" */;
+			buildPhases = (
+				ED4931332301DAED00E63481 /* Sources */,
+				ED4931342301DAED00E63481 /* Frameworks */,
+				ED4931352301DAED00E63481 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED4931392301DAED00E63481 /* PBXTargetDependency */,
+			);
+			name = "VIPER-LOL-APPTests";
+			productName = "VIPER-LOL-APPTests";
+			productReference = ED4931372301DAED00E63481 /* VIPER-LOL-APPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ED4931412301DAED00E63481 /* VIPER-LOL-APPUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED4931512301DAED00E63481 /* Build configuration list for PBXNativeTarget "VIPER-LOL-APPUITests" */;
+			buildPhases = (
+				ED49313E2301DAED00E63481 /* Sources */,
+				ED49313F2301DAED00E63481 /* Frameworks */,
+				ED4931402301DAED00E63481 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED4931442301DAED00E63481 /* PBXTargetDependency */,
+			);
+			name = "VIPER-LOL-APPUITests";
+			productName = "VIPER-LOL-APPUITests";
+			productReference = ED4931422301DAED00E63481 /* VIPER-LOL-APPUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED49311B2301DAEB00E63481 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = eduardo.silva;
+				TargetAttributes = {
+					ED4931222301DAEB00E63481 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					ED4931362301DAED00E63481 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = ED4931222301DAEB00E63481;
+					};
+					ED4931412301DAED00E63481 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = ED4931222301DAEB00E63481;
+					};
+				};
+			};
+			buildConfigurationList = ED49311E2301DAEB00E63481 /* Build configuration list for PBXProject "VIPER-LOL-APP" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED49311A2301DAEB00E63481;
+			productRefGroup = ED4931242301DAEB00E63481 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED4931222301DAEB00E63481 /* VIPER-LOL-APP */,
+				ED4931362301DAED00E63481 /* VIPER-LOL-APPTests */,
+				ED4931412301DAED00E63481 /* VIPER-LOL-APPUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED4931212301DAEB00E63481 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED4931312301DAEC00E63481 /* LaunchScreen.storyboard in Resources */,
+				ED49312E2301DAEC00E63481 /* Assets.xcassets in Resources */,
+				ED49312C2301DAEB00E63481 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED4931352301DAED00E63481 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED4931402301DAED00E63481 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED49311F2301DAEB00E63481 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED4931292301DAEB00E63481 /* ViewController.swift in Sources */,
+				ED4931272301DAEB00E63481 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED4931332301DAED00E63481 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED49313C2301DAED00E63481 /* VIPER_LOL_APPTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED49313E2301DAED00E63481 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED4931472301DAED00E63481 /* VIPER_LOL_APPUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ED4931392301DAED00E63481 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED4931222301DAEB00E63481 /* VIPER-LOL-APP */;
+			targetProxy = ED4931382301DAED00E63481 /* PBXContainerItemProxy */;
+		};
+		ED4931442301DAED00E63481 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED4931222301DAEB00E63481 /* VIPER-LOL-APP */;
+			targetProxy = ED4931432301DAED00E63481 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ED49312A2301DAEB00E63481 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED49312B2301DAEB00E63481 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ED49312F2301DAEC00E63481 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED4931302301DAEC00E63481 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ED4931492301DAED00E63481 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ED49314A2301DAED00E63481 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED49314C2301DAED00E63481 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "VIPER-LOL-APP/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.helloWorld.VIPER-LOL-APP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED49314D2301DAED00E63481 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "VIPER-LOL-APP/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.helloWorld.VIPER-LOL-APP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ED49314F2301DAED00E63481 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "VIPER-LOL-APPTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.helloWorld.VIPER-LOL-APPTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VIPER-LOL-APP.app/VIPER-LOL-APP";
+			};
+			name = Debug;
+		};
+		ED4931502301DAED00E63481 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "VIPER-LOL-APPTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.helloWorld.VIPER-LOL-APPTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VIPER-LOL-APP.app/VIPER-LOL-APP";
+			};
+			name = Release;
+		};
+		ED4931522301DAED00E63481 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "VIPER-LOL-APPUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.helloWorld.VIPER-LOL-APPUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "VIPER-LOL-APP";
+			};
+			name = Debug;
+		};
+		ED4931532301DAED00E63481 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "VIPER-LOL-APPUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.helloWorld.VIPER-LOL-APPUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "VIPER-LOL-APP";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED49311E2301DAEB00E63481 /* Build configuration list for PBXProject "VIPER-LOL-APP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED4931492301DAED00E63481 /* Debug */,
+				ED49314A2301DAED00E63481 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED49314B2301DAED00E63481 /* Build configuration list for PBXNativeTarget "VIPER-LOL-APP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED49314C2301DAED00E63481 /* Debug */,
+				ED49314D2301DAED00E63481 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED49314E2301DAED00E63481 /* Build configuration list for PBXNativeTarget "VIPER-LOL-APPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED49314F2301DAED00E63481 /* Debug */,
+				ED4931502301DAED00E63481 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED4931512301DAED00E63481 /* Build configuration list for PBXNativeTarget "VIPER-LOL-APPUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED4931522301DAED00E63481 /* Debug */,
+				ED4931532301DAED00E63481 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED49311B2301DAEB00E63481 /* Project object */;
+}
