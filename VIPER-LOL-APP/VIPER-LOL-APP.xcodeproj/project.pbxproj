@@ -11,12 +11,12 @@
 		232E5CE2068D9E1AD47E315B /* Pods_VIPER_LOL_APPUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D32CA7396B27F5EA92FD6A92 /* Pods_VIPER_LOL_APPUITests.framework */; };
 		C467F28A505F958650C9130D /* Pods_VIPER_LOL_APPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BB00FAAE10D837F62149D15 /* Pods_VIPER_LOL_APPTests.framework */; };
 		ED4931272301DAEB00E63481 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4931262301DAEB00E63481 /* AppDelegate.swift */; };
-		ED4931292301DAEB00E63481 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4931282301DAEB00E63481 /* ViewController.swift */; };
 		ED49312C2301DAEB00E63481 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED49312A2301DAEB00E63481 /* Main.storyboard */; };
 		ED49312E2301DAEC00E63481 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED49312D2301DAEC00E63481 /* Assets.xcassets */; };
 		ED4931312301DAEC00E63481 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED49312F2301DAEC00E63481 /* LaunchScreen.storyboard */; };
 		ED49313C2301DAED00E63481 /* VIPER_LOL_APPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED49313B2301DAED00E63481 /* VIPER_LOL_APPTests.swift */; };
 		ED4931472301DAED00E63481 /* VIPER_LOL_APPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4931462301DAED00E63481 /* VIPER_LOL_APPUITests.swift */; };
+		ED49315E2301E30B00E63481 /* ChampionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED49315D2301E30B00E63481 /* ChampionsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +48,6 @@
 		D32CA7396B27F5EA92FD6A92 /* Pods_VIPER_LOL_APPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPER_LOL_APPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED4931232301DAEB00E63481 /* VIPER-LOL-APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIPER-LOL-APP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED4931262301DAEB00E63481 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ED4931282301DAEB00E63481 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ED49312B2301DAEB00E63481 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED49312D2301DAEC00E63481 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED4931302301DAEC00E63481 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,6 +58,7 @@
 		ED4931422301DAED00E63481 /* VIPER-LOL-APPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VIPER-LOL-APPUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED4931462301DAED00E63481 /* VIPER_LOL_APPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPER_LOL_APPUITests.swift; sourceTree = "<group>"; };
 		ED4931482301DAED00E63481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED49315D2301E30B00E63481 /* ChampionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +139,6 @@
 			children = (
 				ED4931542301DFCD00E63481 /* Champions-module */,
 				ED4931262301DAEB00E63481 /* AppDelegate.swift */,
-				ED4931282301DAEB00E63481 /* ViewController.swift */,
 				ED49312A2301DAEB00E63481 /* Main.storyboard */,
 				ED49312D2301DAEC00E63481 /* Assets.xcassets */,
 				ED49312F2301DAEC00E63481 /* LaunchScreen.storyboard */,
@@ -217,6 +216,7 @@
 		ED49315A2301E04200E63481 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				ED49315D2301E30B00E63481 /* ChampionsView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -442,8 +442,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED4931292301DAEB00E63481 /* ViewController.swift in Sources */,
 				ED4931272301DAEB00E63481 /* AppDelegate.swift in Sources */,
+				ED49315E2301E30B00E63481 /* ChampionsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
