@@ -1,0 +1,1719 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03B89EDE7636AF6FA11CAB37787B0FF4 /* Rate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B0892B1C1ACC3FA609B5A4A17C89B7 /* Rate.swift */; };
+		046AFBE5AA68046792B1D9563224B692 /* QueueMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AF5C3BF47DC7372C591CBDA6226D5F /* QueueMode.swift */; };
+		068C3E5EAA4F296A373AECF8F34B9CE6 /* Platinum_Emblem.png in Resources */ = {isa = PBXBuildFile; fileRef = 07418B78BF194F12978C2F080D0BB8A4 /* Platinum_Emblem.png */; };
+		06A7429089C37415BB42C6AFD10EF882 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FD6DAC3C5093D17DE42B2568D7FDA4 /* Item.swift */; };
+		0796E98E2A4557AC953142920E1062D3 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD821874735328C15511AD37BF844AB1 /* Match.swift */; };
+		09F85CFF9C9EAB4C069FF6DE063CB3E2 /* Pods-VIPER-LOL-APP-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C2469C8820EB97A33B656B282BE68E /* Pods-VIPER-LOL-APP-dummy.m */; };
+		09FCF2D8E5FE42564289B87AE109F929 /* TournamentRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34C1D14A5E5849D5C50793E8D614A13 /* TournamentRegion.swift */; };
+		0AB1EFBD31FD7A0D395A576E0B88CA91 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F210AD41B137365A7F72EE56BC35D0BD /* Queue.swift */; };
+		0BF73F7A595CBC210B37A9FF63FB7B22 /* DDragonSummonerSpellsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C022F549AD3FF30EF05B89A64294525 /* DDragonSummonerSpellsFile.swift */; };
+		0C28E8D3398DD2816479FF63F396349F /* GameCustomObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51092DDD1241BB16131CA810B2637B /* GameCustomObject.swift */; };
+		0F11EE8C656749048C5F144F02600684 /* RankedEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EC4158121AC0A355238365A86A4263 /* RankedEntry.swift */; };
+		0F43E622126187F9B6C8A0355D7657FA /* ServicesUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6168DE96A05930736C0A0368D3D12C64 /* ServicesUrl.swift */; };
+		1059AC1694CFEB38AF942F83820B8F7A /* RateLimit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1FD81C7434FF57A9A7015C7B84C22B /* RateLimit.swift */; };
+		135FFD0A89163EA72FCABEB7E37D5756 /* SummonerSpellId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD1FC4D9504B6E6F491C025CBA11AF3 /* SummonerSpellId.swift */; };
+		142E59D494C0A38A03A55B57D5EEA377 /* ItemShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1CF889D4CB3606464133A3477E4E2 /* ItemShop.swift */; };
+		14A996E037D85AAEC3D533133ED12CDF /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43751504E2A7B108A3224A998AEC7562 /* ArrayExtension.swift */; };
+		1609F64FFA8820F5C509D581F00578BE /* Unranked_Emblem.png in Resources */ = {isa = PBXBuildFile; fileRef = FB1DF81FFACD3E8FAF7712D1A31A78DF /* Unranked_Emblem.png */; };
+		1AE6B88239681E920C36B04001EC249B /* GameInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84A023B26436D33C335CCA8DD4BC095 /* GameInfo.swift */; };
+		1E23336EA0239421236F40E9CB567E95 /* MatchTimeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A41123592D6A2B1815DCD8D2A6127A7 /* MatchTimeline.swift */; };
+		202F7902AD42BCC0919F90629B8C1C46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		20A414156F76E71368195BC3C33B875F /* ChampionAdditionalDetailsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6817A6A983F44FF76788D200FFD54C /* ChampionAdditionalDetailsData.swift */; };
+		20A7A5B29A9946F70481B1D313F1F292 /* SummonerPuuid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AB0DC5594F77E0C3F07BFF0B40FF45 /* SummonerPuuid.swift */; };
+		23055451F0AADE013735C7D4FF944C8A /* Skin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672674FC7F78501BE7D49782561D68DB /* Skin.swift */; };
+		2307B0182322634A9EA983A4450E6084 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		23CC8BAEB93EBAAB0B76CA0FC7328C5E /* LeagueAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE451DE6C5D1EEF9AC31763886B0795 /* LeagueAPI.swift */; };
+		241C68193C2A551672E445A1F9A3DCD8 /* DDragonItemsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E520B52E9485C571EE3005EC2CD0383 /* DDragonItemsFile.swift */; };
+		269BBFC0E7EB24AA20C6294D9FADFD9D /* ChampionPassiveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC4C51B690ACF2BDD30C56563493AC3 /* ChampionPassiveData.swift */; };
+		28A7390E9C29C5112090DFF678AD0247 /* RankedTierBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96ED1D3F826086D5594599386396A15 /* RankedTierBusiness.swift */; };
+		29DC1EA8054E316C4547C1F0DA9AC341 /* DataRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F66BEA637463DF945F4A3E97291E9F /* DataRequester.swift */; };
+		2A065F6A9C627F5E8BE868D0A3A3308F /* ChampionPassive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1923E8B35820D93A851F17E78B31D05B /* ChampionPassive.swift */; };
+		2A44D6928B3B56A3BB137805214E9959 /* Bronze_Emblem.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F8CABC5079819FB7B3A0526E80153F /* Bronze_Emblem.png */; };
+		2DA506F239D38B16A67D5B5114FEB190 /* ServiceProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40707094859D0A01E6086AFD9ADD2672 /* ServiceProxy.swift */; };
+		2E8AFE542D8445079925085FF1C1BD10 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F85F5BA2F524E8CE01505E6CC05204A /* IntExtension.swift */; };
+		3249D10ED7FC9C27330D5E2AF738203C /* Silver_Emblem.png in Resources */ = {isa = PBXBuildFile; fileRef = EC97100D6B3EEEC1816621788122A5D2 /* Silver_Emblem.png */; };
+		344E59D371EDF69534A868BF2751701D /* MatchParticipantTimeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D235C22FC7372B5E4668B5DDFA51D2 /* MatchParticipantTimeline.swift */; };
+		360CEDD3E8C5D4C3A24A9DF3CDA125D4 /* GameMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3BB8656C1E8BBC6091667EE35549B6 /* GameMode.swift */; };
+		367ACE3AE0F2EFECDA9CB65C287213EA /* PrimitiveType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E2A88FB5F7593E70E142A4DA1B60C /* PrimitiveType.swift */; };
+		36A620BC69AD35E19CC9F935F942309C /* Challenger_Emblem.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B5EB5E6AF86BFD59BFF3CBBE26E4F40 /* Challenger_Emblem.png */; };
+		3843AF3A38EE8BB3F14ADC15C3021DDD /* FeaturedGames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07579604D2102FFE49C357AF8DF6D843 /* FeaturedGames.swift */; };
+		388040F6512C27C72925B26E1827051A /* DataDragonRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E23CBE100BEE2EBB7AFDB4133EF3649 /* DataDragonRequester.swift */; };
+		3997E46CBC21079A0BF32ADC5BF14F5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		3C2ABE0701A5437C571938ACB453796A /* GameRole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C6DAE347A51E88E13979D0D6ADC215 /* GameRole.swift */; };
+		3CC912338C272A8C90FADAE6F2FBE052 /* Pods-VIPER-LOL-APP-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 191A288D711C44FC45D712A213B99078 /* Pods-VIPER-LOL-APP-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4063165BA1333200E80CE64668D7C8DE /* MatchReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97600A96A8A4D9ED0AA796CB9233C88 /* MatchReference.swift */; };
+		418B71F9C6F1E0733A8D28D45D42C8BC /* SummonerSpellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3344FF7AE9010DD862B8F94E09EB7A58 /* SummonerSpellData.swift */; };
+		41CF6C383F222DC9E47F773D6A74046E /* TournamentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69FCCEB3B66F93EE64960861423A2FF /* TournamentProvider.swift */; };
+		424A20B61DBBFAC50C255AE15F81E015 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA96463B0113CC33D05232633D016B0F /* Endpoint.swift */; };
+		42BAC165BE8646007ED00C7CE87CD2EB /* PickType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4042E4D7EBFAEEE8BCDA018151312C6D /* PickType.swift */; };
+		4331061A161054F7AB4AAEE5BBAD3D1B /* ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664F4CA273ED098BB68122875A047E26 /* ObjectMapper.swift */; };
+		44BCDDF63C345A810186AE81E348C410 /* MatchFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B318FE5B2424A03F80B5E288F4886D7 /* MatchFrame.swift */; };
+		44FAB1586D6AB0F14680A433A7CDE1B6 /* Pods-VIPER-LOL-APPUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB3D414DB364ED98945E589BB1F8204 /* Pods-VIPER-LOL-APPUITests-dummy.m */; };
+		454236150789C6EE3A92DE8A7EF2670C /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DB62E090A857064917A397ED44BDAE /* Platform.swift */; };
+		463B4451C83EFE5FC2334833D8AD8DBE /* ChampionDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101B2C4A43A5D5E60AF0B68F7ACC8045 /* ChampionDetails.swift */; };
+		46B14B8D74B3BD4EAF36D3909704E6D8 /* LeagueRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755C5749C63990FF1297AB8C2B03A5D6 /* LeagueRequester.swift */; };
+		4756D823809C7D458C8686036CBA7315 /* Gold_Emblem.png in Resources */ = {isa = PBXBuildFile; fileRef = 724685E35A77EB6F4A2C10AF1C5E9EAD /* Gold_Emblem.png */; };
+		4893126E6CF13C80C6543922DDC96ECF /* DataDragonChampionBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A896237EF4DFB36AF17D653BBE26B42 /* DataDragonChampionBusiness.swift */; };
+		495DF15A28193A41F72CC1697E576784 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C52C28D53B790C2DD1FC8456C7ED469 /* APIClient.swift */; };
+		4A058558430FA4D6535231FC555DA58F /* SpectatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935FC82A6CE79135E84ED3393408BB90 /* SpectatorType.swift */; };
+		4AE54676138769576A1B83DF0A486C18 /* SpectatorBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8939E6434B0A08859152C848736EDDCD /* SpectatorBusiness.swift */; };
+		4D370D4A73324A751C7BE49031FB1B5A /* DurationDelayedRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4F846A8BD24E544B3C28E03EF4673C /* DurationDelayedRequest.swift */; };
+		4E1E38C60284F8EE02C1EEA08409B7FB /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AE0CFF84595AEE0C47B7E645756E2E /* ErrorMessage.swift */; };
+		4EBD3E7DCDFDCC4AA3923AF8E484F35C /* RessourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC5EE2EDD658FFF6E9F5B6CB5178B62 /* RessourceType.swift */; };
+		4F94BEEB7B8A2A4B9EAC580347C2E6CE /* Pods-VIPER-LOL-APPTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 053519FE433BC1C858FBBA776761625D /* Pods-VIPER-LOL-APPTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		51191435836C6C730FF62BAE609E4F3E /* MatchBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B69D5AF3C3BD41FACF82BF382AF913 /* MatchBusiness.swift */; };
+		5131AA59B99C3C3F5F116FCB629593C9 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870EB68062DCF4E9380B2EB173DE3AAF /* Identifier.swift */; };
+		51B1D97315362F38530AA435E41291CD /* ChampionDifficulties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370F98C1860FE57FE7179A095C307A1F /* ChampionDifficulties.swift */; };
+		522C6E81F95820B15F808BE1E6D35C2A /* ChampionRotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D72BABCC9F504E4E05337DE35DEB1FA /* ChampionRotations.swift */; };
+		52532DC10D835C9839C982AEBF50EAB5 /* TournamentEventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E495EFDBACC35EDD26E4D6D3B61123C8 /* TournamentEventList.swift */; };
+		534E10EB527A147AC8FDAB68F31BFAC7 /* GameType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298A027E86853BA6686F1D9D0B178025 /* GameType.swift */; };
+		53BDF9AA2F657EF060B24FD17A2280B9 /* LocalAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDB0F47AB8351F8A197EB06CF5580F7 /* LocalAssets.swift */; };
+		565EB8E9411FE3854C8FF1022B6F4819 /* DataDragonProfileIconBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = F514C16984FCDCCCEB9606988C78C1CF /* DataDragonProfileIconBusiness.swift */; };
+		5AAC97C3FDE19C57F1953AA4E98F61AD /* RankedMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D394334833006B3508C6D167353B5C6 /* RankedMethod.swift */; };
+		5B459868178A18793821E259948BFD4E /* ThirdPartyCodeMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E892AC80B73BCD371FC6B356BC5D0C7 /* ThirdPartyCodeMethod.swift */; };
+		5C04EF90A021A4E6224D47A19856A22E /* TournamentEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1210C598F7CE82B2B1566974BDA2E1 /* TournamentEvent.swift */; };
+		5C21A7AC203AF455D6904F093B912585 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4348B5A9272C62AD068CFFFD92DD63 /* Service.swift */; };
+		5DBDA92707FC2D21508775AFA60A3A7C /* LegacyMastery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC74EE5AF6041F675582C92D6F8E255 /* LegacyMastery.swift */; };
+		5DD530224A6C9CA82C4EC80475E41A60 /* ExploringRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DF13E738E59B361D34986072A03D7F /* ExploringRequest.swift */; };
+		5FE28E00FF7FFBF87C50C90ECEAB1524 /* ItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11857768C7BE6E28271DC2192EEEA9D /* ItemData.swift */; };
+		6091F3FD30685F4E343DA605EB9B2DC6 /* GameId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7486D1BF6080FE2A52CC8C085D33A476 /* GameId.swift */; };
+		646DDDDCF32DC186885F8DD4F7C5FB60 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F77B4B1328AEEA61F7E1CEA4575B57 /* Region.swift */; };
+		65A3E48AE8F0F611E70ABC8D305CA7F0 /* MatchParticipant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2CB9894BF87F5F6DAD578E7B64AA42 /* MatchParticipant.swift */; };
+		67F266705F85BAF55F8C2E1F1965957A /* RunePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6286E452F3D27373ED9B1F27515A5C6C /* RunePage.swift */; };
+		67F803CF8F12677B5A3C4E5313EABABB /* APIBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = E330D94A42BAC10C03F8926C14F4D29F /* APIBusiness.swift */; };
+		6B7B05DC7224514389457AF82E77A1B0 /* ProfileIconId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060DD48687581E665299597D0CAEF7F9 /* ProfileIconId.swift */; };
+		6B91FFEE3840A8A9B61E674058FCDFE6 /* MatchPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57012C2835A9AFD5A1C56412671B96C /* MatchPlayer.swift */; };
+		6C78F3AA55E7309E0B6B9ACBEBA5EDAF /* SpectatorMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = D967549E775CC4FB386E7DC6975747EB /* SpectatorMethod.swift */; };
+		6C831BE856A00B5C592CCEDB181A428D /* ChampionBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2714CF23AEA240FB373A3F6F1478E2 /* ChampionBusiness.swift */; };
+		6CEAA2D06C14A9995CBCC7E359213F5D /* ChampionMastery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B1CFABD46B516C7154297DB77A6FD4 /* ChampionMastery.swift */; };
+		6E005C53F963856D75E290524F352516 /* Participant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21E7D1D2792D2EF1B80D2EF7130C163 /* Participant.swift */; };
+		6EC2D46321D72F54262BA837FAAE35CF /* DataDragonItemBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CE8085605280363B916BCD511DE741 /* DataDragonItemBusiness.swift */; };
+		6EC330D32BC1DC7DAC7393475A7509D6 /* LeagueAPI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FFCF46586EB29A1B2B396B9936BC592A /* LeagueAPI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71742A0A1A492F8A7B5E2A2EADCD6106 /* JsonRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC2C49E0535DB237B981F78AA5AE30F /* JsonRequester.swift */; };
+		731D97DFC32F3C742196FEBA7F126436 /* RankedTier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7B2C2CB7580B0BEC80942B4B68A1D7 /* RankedTier.swift */; };
+		743940919BE7A8DB3F2940AF8ECC25FA /* ProviderId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379641828D5880C45D5ED34C885DD10C /* ProviderId.swift */; };
+		761D6D1B788C3A039F8255C7F6554FD8 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521F15A7769DBFE6BE9040A9CFA939C3 /* Map.swift */; };
+		76B42D8ACB350293E7F5F8175AA1ADB9 /* Iron_Emblem.png in Resources */ = {isa = PBXBuildFile; fileRef = 228E155CECD77AA5A00E8FAD01AC3D0B /* Iron_Emblem.png */; };
+		77111B504008F74D07434C2B1E15AB26 /* MatchList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066A70C2EB56ED839E6835C0A799FA30 /* MatchList.swift */; };
+		780631C4DBE06A9D4CD9E9A907E5C85A /* BuildInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC67CECDBB313F8EB39AA8CBFA163ED /* BuildInfo.swift */; };
+		78DF28421CBA26BE50D39CDDE787C377 /* DDragonChampionsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F17DAA4AFB59E0E6E62E78C9CB438B1 /* DDragonChampionsFile.swift */; };
+		7ABA987BE3529FACB0A9392DC8F5E039 /* ProfileIconData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE6AD4C6A04B55A65EDE5A7D6A4BFBF /* ProfileIconData.swift */; };
+		7B7053AA2CBE2FE76A51835785DD8121 /* MatchMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC8768BC304E1CFE83B8DFDFBEDDFF /* MatchMethod.swift */; };
+		7D3C2C44B9940CBD7140C991F82B9F6E /* Rune.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07C2BC791BD60CA2CA74C1DD52F4DD /* Rune.swift */; };
+		7E6F90641A8E3CFFA7662514FE9B055E /* MapType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED21092372B5567C06778E46F6F79F10 /* MapType.swift */; };
+		7F09F2172B0479D1E50D6C192BC0C2A0 /* SkinId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9E40F93946AD2E50A668BA2DBC772 /* SkinId.swift */; };
+		7FC81BA965845210EBC602AAFCA15A65 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA6CCB0A12964D38BB5457A565DA087 /* Message.swift */; };
+		7FD2F47BB0B8D935500255796FFD5643 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E125A618A4C661872F317DD2FE3C4C /* Season.swift */; };
+		80F83E2EE80AA2C222A1FA59F1B2190E /* TournamentInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9878723CEACE693BD56C819F9A5AAB /* TournamentInfo.swift */; };
+		82481F3BA00904CD310401740553D1B7 /* ErrorStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F637F2DC133FF46A08B215AFADB39CE4 /* ErrorStatus.swift */; };
+		834A7A987175E82CB5539DFB213D09D9 /* TournamentStubMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FBF3539276FA12E4DA1873F62269F0 /* TournamentStubMethod.swift */; };
+		837A353A3AE66BAF0A47A89F80A0D158 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE54CAC290FB2A8C71AFDED952348792 /* Place.swift */; };
+		838D08F76C1486CAEB2F85ADEFFB565E /* SummonerMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21DA670ABBD236116DFC21EB5A6BF30 /* SummonerMethod.swift */; };
+		8954E0CDA129CB4D0381EBAE6747B74B /* TournamentId.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C72AA471D19846F020579154D3982E /* TournamentId.swift */; };
+		89CFA130C6B4D1C32A01E6C21D1A33DB /* DelayedRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C57CF4732B6D9B64EE2B1AAC377F103 /* DelayedRequest.swift */; };
+		8B31AE309E09C2DC81D44660077BAF91 /* Master_Emblem.png in Resources */ = {isa = PBXBuildFile; fileRef = 81A47E399F4B12B61A5AEC6D7DC0A589 /* Master_Emblem.png */; };
+		8B74CC75D370C03F8A92E3D6A1C21A6A /* RankedDivision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6919EBB6C303FFCA75F17DD31A96D271 /* RankedDivision.swift */; };
+		8C1B64B0C22FE73CDA4F48E49274889C /* ThirdPartyCodeBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3614455293F70FD296FE4D64FB862F01 /* ThirdPartyCodeBusiness.swift */; };
+		8DBCB5883EF03DDABC8E4338A0A8BDB5 /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B48028FEE3F03005F482F629A092BB /* Translation.swift */; };
+		8E9991677CF67C8329CE89AB8DC0DDE5 /* Pods-VIPER-LOL-APPTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C216A4B35C8712031A5A0E6130E07D72 /* Pods-VIPER-LOL-APPTests-dummy.m */; };
+		8F56D35ED1BB1816C4F63D08FACD4EBC /* DateToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B41613D7E50A1134B6FE198FDA9A2B0 /* DateToken.swift */; };
+		90F6A7AB7B17D365A63D6AC918F3EF8B /* RuneId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7492ADBB030B6FE7444C69D67646F5 /* RuneId.swift */; };
+		927DAC3D6E0202102B18854F153F26AC /* Summoner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D497B0B8CE6CC1C977C52A2C0E8DC1E /* Summoner.swift */; };
+		92CC9A499C010B4BFFCC6A6C209CE982 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00F608D2ABD95806B4C476839288CA5 /* Logger.swift */; };
+		95AAA30D3D4536F9F50B1E83DECA4EC2 /* ChampionRole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F053F368A6452E36F576B62EEF86E11 /* ChampionRole.swift */; };
+		9629D6004135CBCCFC54974F7CBC0250 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36609D393E0B1E9DFE9D1A4A248F65FC /* Observer.swift */; };
+		97EF342787A09F25DA41E4E0E06E5B73 /* ServiceStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A073738DC794894260AF5147AA5DFF3 /* ServiceStatus.swift */; };
+		981722C3EC77035910431B791FEC97C5 /* StatusBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19396DF6AC4C5B7FC4307539654D7391 /* StatusBusiness.swift */; };
+		98577E625D12AAD9FE9B2F9C39AF7786 /* ChampionMasteryMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA77BF88D8E52C56DF37431DD943C86 /* ChampionMasteryMethod.swift */; };
+		98726BA725D77C85C4081BB64D975B1E /* SummonerId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9D737D9B917611502CB628667A2473 /* SummonerId.swift */; };
+		98EB7976902F75C0133D94B3A966F766 /* AccountId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B674F793CFC5E73370631C7AB8E928 /* AccountId.swift */; };
+		99B06F9EC20D4878C88A8B7E88253E5F /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A22E87B552C1EE179E3C56DE94BA233 /* League.swift */; };
+		9A607CBD1D6E26EECD88979AE3C401E0 /* LeagueInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7581251106C1F364373CDF37849595 /* LeagueInfo.swift */; };
+		9E77DA1980EA0401243C9193E9036CBB /* ChampionMasteryBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799860880804CA29AA3626861B63EE65 /* ChampionMasteryBusiness.swift */; };
+		9F333C5703B1270DA385546F02A5B1A1 /* ItemId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5284649540AEE0B3E7BABC99003C958A /* ItemId.swift */; };
+		A02BCC438EAC350FCE68EC3BD726BD39 /* DataDragonSummonerSpellBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F9C319CB26503AC951B238EDD42CB4 /* DataDragonSummonerSpellBusiness.swift */; };
+		A14738F40BCB2785358555E86F946B3C /* MatchParticipantStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0C0AC51DA6A5DBF35634260B0BAA94 /* MatchParticipantStats.swift */; };
+		A3441FB7212374CEAF050D8A28E39CEA /* TeamBan.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5C97D1DCB72F342BC6706A16FF2C94 /* TeamBan.swift */; };
+		A432DB347FFD2BBCD8C813E252F8066C /* Pods-VIPER-LOL-APPUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 58B63A8C350DB828DBEB1EE6BA7DCC02 /* Pods-VIPER-LOL-APPUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A527C059ED5FBF15DC0ED6AD992A7C1F /* MatchPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4674BA35067A693EF02D8FC61B79B2 /* MatchPosition.swift */; };
+		A566DD3C18581D816A827F16E557D9B5 /* TournamentStubBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED3F572BA4088B6E83EB503FAFD7190 /* TournamentStubBusiness.swift */; };
+		A5F2D18AC1F81F37B1E4A6AEA663590F /* TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8ABE80AF05668ABBCAB98C6257A218D /* TypeAlias.swift */; };
+		A6AA84B2D06B011745043BB0956545CF /* LeagueAPI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE730A2F592B74DB8342E7F00841DAA /* LeagueAPI-dummy.m */; };
+		A70C43F321CF8877C14B6C6818B00872 /* TournamentUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E7B063EE0E7DCCDC41E10AB9F4D2FA /* TournamentUpdate.swift */; };
+		A8C2DB0BE0BA0AF28C5BE4B2B20676D9 /* ExploringLeagueRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EEF42F1C6A5C7DE7691C58716364F6 /* ExploringLeagueRequest.swift */; };
+		A8CE6D17445C568613D397F9D9FACFF3 /* SkinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29A13DCA24E6E8DCBE04FAF8A4DFADA /* SkinData.swift */; };
+		A9A10C3C82920A8441294CEB51F8B41E /* DelayedTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE72E7C6C519E28C7EB337370C25283C /* DelayedTask.swift */; };
+		AA65CBB8BD35DD672C6EA0AF120AC93E /* SummonerSpell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD71D77B3E80B97B4EC84DF2104B8C8 /* SummonerSpell.swift */; };
+		ABC6091841AE1E177F68AA0F8E2C732B /* Grandmaster_Emblem.png in Resources */ = {isa = PBXBuildFile; fileRef = BF06D6F5CD38173B8BD36F9CAF229072 /* Grandmaster_Emblem.png */; };
+		B007B63D2E2C8AACE8FF94FF59298E1F /* ProfileIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2BDED370A0A53734D90D8F0FFBF7CE /* ProfileIcon.swift */; };
+		B06E9D7281D6F9D9EACA30824C993973 /* ChampionStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB4A82B4BA92215B19BE33D9D9B60F8 /* ChampionStats.swift */; };
+		B0B52C52436011E2A377437D2BFD616A /* MatchParticipantIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34492225A2721D5F4B75650EF81C0B4 /* MatchParticipantIdentity.swift */; };
+		B0EC12955BAE21A121824532214822BB /* EmptyReply.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6549DBB82BA5F24702939DD0E298337 /* EmptyReply.swift */; };
+		B0FF22F5EA009811CDCC690A28F80D11 /* ChampionSpell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61046AABA9EE051E78DD33F37063B43 /* ChampionSpell.swift */; };
+		B16B426D93C9812D05A513DE1DCCC14C /* SummonerBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B27D49A1C6393B0D46C57527233CFCF /* SummonerBusiness.swift */; };
+		B19805213A8180BC2FB8B913057B937A /* LeagueMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562BC2E41BC617287BCA2C63030DD90A /* LeagueMethod.swift */; };
+		B25414CE6B334ACE0236901314203620 /* RunePathId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62273FE0030A5B873BA588E827EB55CB /* RunePathId.swift */; };
+		B4C307F4847960D6BA59D0A1D72E8530 /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB8750D185AC2FFFA62C0332906F44E /* Duration.swift */; };
+		B622FDCD4F44C1C34F3263A46534F0D8 /* ChampionAdditionalDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505D8334AF4049A87CAD4C969BF58E6C /* ChampionAdditionalDetails.swift */; };
+		B764D65222853D4ED1D25B9E4A203166 /* TeamStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFF0D1D693B3B2E56F1F194F855D5C9 /* TeamStats.swift */; };
+		BB1BFE34D7B8ED0560D1CA15DA86B12F /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B97C595FF987EEE2A2F1F016983558 /* StringExtension.swift */; };
+		BB2C38E72B8E3C3F0841311D72A8784A /* RiotAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6185752AC4365CB1CAE58EF8C1CEB9 /* RiotAPI.swift */; };
+		BC7A3DB2410898F159123AA5035CBDA3 /* ChampionSpellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23659D464BDD790AD56B59CA3EC43F6 /* ChampionSpellData.swift */; };
+		BC97C9C52119E8D40BA62E0CED353523 /* BannedChampion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FE6CB84CF06EC8983224E598140D35 /* BannedChampion.swift */; };
+		BCC31474D8BEDD7878E70D863C727E93 /* SkinImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F3E7000F42E6989D38CEF8551637F /* SkinImages.swift */; };
+		BCFAD99E762C9296A3EAFEE61E4CE552 /* MethodPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051E0502480853E634F7149D898267FE /* MethodPaths.swift */; };
+		BE380E67EF48C97C7AB0FC48B1FF432D /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1335631AB44E6347B2F7C7987A88D5 /* Version.swift */; };
+		BF6CD2C919A1923F68BED280E1A225FB /* RuneStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB848F3E8C04D1664E5485B4D8609B2F /* RuneStage.swift */; };
+		BF6E165A77C22CF8C9D008FF6A0A50CD /* DDragonVersions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CF6A076B19C29D8A2449FA10ED53A0 /* DDragonVersions.swift */; };
+		C17DA4117E78C629BE35BEB3E85D2EC5 /* RunePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4074EA2F5763E9DEBC5408C6DCFCD9B /* RunePath.swift */; };
+		C51F55701B28CB6F3940248CE60C9D4D /* RESTRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0972B8E93D9B2A46E51303D0B7C9EE7 /* RESTRequester.swift */; };
+		C5D6DFBD6A78521B414A2945E8E98AFA /* Incident.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F0797E6743A257792DA73B242ECC8F /* Incident.swift */; };
+		C6055E0F011626EACD5F7A47A776BC97 /* MacOSTypealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82750CE9BE838E6899A0B1D804864C28 /* MacOSTypealias.swift */; };
+		C84AB62C6B9615AD09AF09836A23000C /* RateLimitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A14E790877B020D5311D39E8B88425 /* RateLimitManager.swift */; };
+		CA2EC8D16B1C9C1A36D10AF617C10EB1 /* TournamentDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530C7AAE1BFCE64EA9AE614E50EEBE36 /* TournamentDetails.swift */; };
+		CBB7CBDFE3E034AC19B5772800615947 /* LeagueId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066F8A47E04341A342BEA59431FC67D1 /* LeagueId.swift */; };
+		CC8CE62673B1F1AFF7117FF10CCE5BE1 /* TournamentCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F140E3531ED6172438444CEEE2D12D1E /* TournamentCode.swift */; };
+		CD8C3BA47CE324070ECA6EEAF70FE5E9 /* StatusMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B521419DF062320C483482A44D5C7B /* StatusMethod.swift */; };
+		CE9319688A1022BFA41D4BD5FFBEE85E /* RawRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6E5D5BAD31AE153A5461DA92A486B1 /* RawRequester.swift */; };
+		D31EDD3CC1340E04A10C2C6C45905407 /* MatchParticipantFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65996A62F105B521154374222D528F59 /* MatchParticipantFrame.swift */; };
+		D3C89308ACD42371F3DB8ACCA95CBE52 /* DataDragonVersionBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A3C62C2A402B3F3F33C56192D4D451 /* DataDragonVersionBusiness.swift */; };
+		D76EFBF85580E39AC9206A0EE6CAB37A /* RiotAPIRESTRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506FA47776CE3B60A34CBC0FBC369F6D /* RiotAPIRESTRequester.swift */; };
+		D795FD19FB6F3D89346EE91657A0F0AE /* RankedBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A3840C11078E4890762C48B4E3970A /* RankedBusiness.swift */; };
+		DBA506F856DFFD8009A57523C9C66EEE /* DDragonProfileIconsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF8127EB810E6E3C6CCD18C1158130A /* DDragonProfileIconsFile.swift */; };
+		DCAFE1AF1A4343E8D021ECE2345B6CA8 /* HttpResponseCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FD0D6712632A42A92B63B2A0D080EF /* HttpResponseCode.swift */; };
+		DCF2700B0ED6751FA00BBA37CA110545 /* DataDragonRuneBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = E733F9834DFBA31852A6CBC4A562AEDE /* DataDragonRuneBusiness.swift */; };
+		DE5236C9EFFF40391D6F307C1A7027DD /* Series.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC977727C14175E76A8365366A5F353B /* Series.swift */; };
+		DF5BD8C96E97BB7939CC19F61113603A /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28090E30CB2B1DA94238692B8372B351 /* APIKey.swift */; };
+		E0913BE897CBF78F267FFB7BE0509BF7 /* ChampionId.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB01285F551188CE5DB0F9562DBF095C /* ChampionId.swift */; };
+		E278CD4C8169F2FF42EE19A89EBFB698 /* ImageWithUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6760DED4ED2DF670011863A74CADB891 /* ImageWithUrl.swift */; };
+		E281E3E245AAD573FA9A96D417038B7B /* TournamentMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC3CCABCF861A5CEEE7308565A4BD95 /* TournamentMethod.swift */; };
+		E2FA30B125BAA1242F086B6AC2C7F9B5 /* ChampionMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6F6FB852DABF04883A52B874BF3FDF /* ChampionMethod.swift */; };
+		E31CF4791B06E15C67DF08C4DB542D5F /* Diamond_Emblem.png in Resources */ = {isa = PBXBuildFile; fileRef = B2D035654C530AB5D11D7DD259307D6A /* Diamond_Emblem.png */; };
+		E54E3595849498F88D61D631DE7FE51A /* ChampionsDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = D285D9A9D5904FA448BB807B7B64DCCA /* ChampionsDetails.swift */; };
+		EED6B46716426B41B5C0B848B864A12C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		F12462803573819BBDEB11B9DF74D459 /* DatetimeEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA08BDA909F64F5AC891B8EAAF7C5A1 /* DatetimeEnums.swift */; };
+		F163FD0B9D0EDD9D95ACCFBE6D55468C /* TournamentInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBBC636F72447897448D7B539358B79 /* TournamentInitializer.swift */; };
+		F27B673992BB27B8D0B9C891487B6EDE /* MatchEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE43BD8E6CE4C93D9C219D06CE6C2D /* MatchEvent.swift */; };
+		F7407F3355B1D7B60D48E4BEFE60670B /* DDragonChampionFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5819695F102AC4604B121FC1E5C44AAC /* DDragonChampionFile.swift */; };
+		F8FB72B54C7BEE74BF3424B7EA1659E1 /* TournamentBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77207239E77586C9021FB62EE537374A /* TournamentBusiness.swift */; };
+		F920600FF696C16E7DBCB4C691D729CE /* LegacyRune.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5923CABB1334745BCD2C24E12E674E2 /* LegacyRune.swift */; };
+		FCB94E061D58BEA5CAEA60B33CDAE681 /* Datetime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431C48C9D02B358F8D28F7E12981B8F8 /* Datetime.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B054558F9A8C8CE78F9C6EE2F88DCC2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3AC6239B6F043A6C9950389888684F4D;
+			remoteInfo = "Pods-VIPER-LOL-APP";
+		};
+		C6BBE20EBA6026EF3E2E44DF065C0F22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3AC6239B6F043A6C9950389888684F4D;
+			remoteInfo = "Pods-VIPER-LOL-APP";
+		};
+		E5140855631943B9FE4CDC764B2007E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EA801139C99E0F1F8E3768D4864F813;
+			remoteInfo = LeagueAPI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		051E0502480853E634F7149D898267FE /* MethodPaths.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MethodPaths.swift; path = LeagueAPI/LeagueAPI/Models/FrameworkModels/Methods/MethodPaths.swift; sourceTree = "<group>"; };
+		053519FE433BC1C858FBBA776761625D /* Pods-VIPER-LOL-APPTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VIPER-LOL-APPTests-umbrella.h"; sourceTree = "<group>"; };
+		060DD48687581E665299597D0CAEF7F9 /* ProfileIconId.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProfileIconId.swift; path = LeagueAPI/LeagueAPI/Types/ProfileIconId.swift; sourceTree = "<group>"; };
+		066A70C2EB56ED839E6835C0A799FA30 /* MatchList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatchList.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/MatchList.swift; sourceTree = "<group>"; };
+		066F8A47E04341A342BEA59431FC67D1 /* LeagueId.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LeagueId.swift; path = LeagueAPI/LeagueAPI/Types/LeagueId.swift; sourceTree = "<group>"; };
+		067A43ADEE806A448739025D43C3A52E /* Pods_VIPER_LOL_APPTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VIPER_LOL_APPTests.framework; path = "Pods-VIPER-LOL-APPTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07418B78BF194F12978C2F080D0BB8A4 /* Platinum_Emblem.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Platinum_Emblem.png; path = LeagueAPI/LeagueAPI/Assets/Platinum_Emblem.png; sourceTree = "<group>"; };
+		07579604D2102FFE49C357AF8DF6D843 /* FeaturedGames.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FeaturedGames.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/FeaturedGames.swift; sourceTree = "<group>"; };
+		0AF9E40F93946AD2E50A668BA2DBC772 /* SkinId.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkinId.swift; path = LeagueAPI/LeagueAPI/Types/SkinId.swift; sourceTree = "<group>"; };
+		0B318FE5B2424A03F80B5E288F4886D7 /* MatchFrame.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatchFrame.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/MatchFrame.swift; sourceTree = "<group>"; };
+		0C9D737D9B917611502CB628667A2473 /* SummonerId.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SummonerId.swift; path = LeagueAPI/LeagueAPI/Types/SummonerId.swift; sourceTree = "<group>"; };
+		0D394334833006B3508C6D167353B5C6 /* RankedMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RankedMethod.swift; path = LeagueAPI/LeagueAPI/Models/FrameworkModels/Methods/RankedMethod.swift; sourceTree = "<group>"; };
+		0D72BABCC9F504E4E05337DE35DEB1FA /* ChampionRotations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChampionRotations.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/ChampionRotations.swift; sourceTree = "<group>"; };
+		0F053F368A6452E36F576B62EEF86E11 /* ChampionRole.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChampionRole.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/RiotEnums/ChampionRole.swift; sourceTree = "<group>"; };
+		0FE6AD4C6A04B55A65EDE5A7D6A4BFBF /* ProfileIconData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProfileIconData.swift; path = LeagueAPI/LeagueAPI/Models/DataDragonModels/ProfileIconData.swift; sourceTree = "<group>"; };
+		101B2C4A43A5D5E60AF0B68F7ACC8045 /* ChampionDetails.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChampionDetails.swift; path = LeagueAPI/LeagueAPI/Models/DataDragonModels/ChampionDetails.swift; sourceTree = "<group>"; };
+		1081E369D406C2FDF7C8B3B896C83B63 /* Pods-VIPER-LOL-APP-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VIPER-LOL-APP-frameworks.sh"; sourceTree = "<group>"; };
+		12FE6CB84CF06EC8983224E598140D35 /* BannedChampion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BannedChampion.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/BannedChampion.swift; sourceTree = "<group>"; };
+		13B0892B1C1ACC3FA609B5A4A17C89B7 /* Rate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Rate.swift; path = LeagueAPI/LeagueAPI/Models/FrameworkModels/Rate.swift; sourceTree = "<group>"; };
+		13B48028FEE3F03005F482F629A092BB /* Translation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Translation.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/Translation.swift; sourceTree = "<group>"; };
+		16F8CABC5079819FB7B3A0526E80153F /* Bronze_Emblem.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Bronze_Emblem.png; path = LeagueAPI/LeagueAPI/Assets/Bronze_Emblem.png; sourceTree = "<group>"; };
+		191A288D711C44FC45D712A213B99078 /* Pods-VIPER-LOL-APP-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VIPER-LOL-APP-umbrella.h"; sourceTree = "<group>"; };
+		1923E8B35820D93A851F17E78B31D05B /* ChampionPassive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChampionPassive.swift; path = LeagueAPI/LeagueAPI/Models/DataDragonModels/ChampionPassive.swift; sourceTree = "<group>"; };
+		19396DF6AC4C5B7FC4307539654D7391 /* StatusBusiness.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StatusBusiness.swift; path = LeagueAPI/LeagueAPI/Business/RiotAPIBusiness/StatusBusiness.swift; sourceTree = "<group>"; };
+		1A073738DC794894260AF5147AA5DFF3 /* ServiceStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServiceStatus.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/ServiceStatus.swift; sourceTree = "<group>"; };
+		1A2E1995869BEBD6EEDEA712543A8A10 /* Pods-VIPER-LOL-APP-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VIPER-LOL-APP-Info.plist"; sourceTree = "<group>"; };
+		1B5EB5E6AF86BFD59BFF3CBBE26E4F40 /* Challenger_Emblem.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Challenger_Emblem.png; path = LeagueAPI/LeagueAPI/Assets/Challenger_Emblem.png; sourceTree = "<group>"; };
+		1DC2C49E0535DB237B981F78AA5AE30F /* JsonRequester.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JsonRequester.swift; path = LeagueAPI/LeagueAPI/DataAccess/JsonRequester.swift; sourceTree = "<group>"; };
+		1DC74EE5AF6041F675582C92D6F8E255 /* LegacyMastery.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LegacyMastery.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/LegacyMastery.swift; sourceTree = "<group>"; };
+		1F6817A6A983F44FF76788D200FFD54C /* ChampionAdditionalDetailsData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChampionAdditionalDetailsData.swift; path = LeagueAPI/LeagueAPI/Models/DataDragonModels/ChampionAdditionalDetailsData.swift; sourceTree = "<group>"; };
+		228E155CECD77AA5A00E8FAD01AC3D0B /* Iron_Emblem.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Iron_Emblem.png; path = LeagueAPI/LeagueAPI/Assets/Iron_Emblem.png; sourceTree = "<group>"; };
+		24AE0CFF84595AEE0C47B7E645756E2E /* ErrorMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ErrorMessage.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/ErrorMessage.swift; sourceTree = "<group>"; };
+		25D9C2AD5465B2ED04E6349921472329 /* Pods-VIPER-LOL-APPUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VIPER-LOL-APPUITests.modulemap"; sourceTree = "<group>"; };
+		27F77B4B1328AEEA61F7E1CEA4575B57 /* Region.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Region.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/RiotEnums/Region.swift; sourceTree = "<group>"; };
+		28090E30CB2B1DA94238692B8372B351 /* APIKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIKey.swift; path = LeagueAPI/LeagueAPI/Models/FrameworkModels/APIKey.swift; sourceTree = "<group>"; };
+		298A027E86853BA6686F1D9D0B178025 /* GameType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GameType.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/RiotEnums/GameType.swift; sourceTree = "<group>"; };
+		2C57CF4732B6D9B64EE2B1AAC377F103 /* DelayedRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DelayedRequest.swift; path = LeagueAPI/LeagueAPI/Models/FrameworkModels/RequestModels/DelayedRequest.swift; sourceTree = "<group>"; };
+		2E2CB9894BF87F5F6DAD578E7B64AA42 /* MatchParticipant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatchParticipant.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/MatchParticipant.swift; sourceTree = "<group>"; };
+		2FD71D77B3E80B97B4EC84DF2104B8C8 /* SummonerSpell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SummonerSpell.swift; path = LeagueAPI/LeagueAPI/Models/DataDragonModels/SummonerSpell.swift; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3344FF7AE9010DD862B8F94E09EB7A58 /* SummonerSpellData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SummonerSpellData.swift; path = LeagueAPI/LeagueAPI/Models/DataDragonModels/SummonerSpellData.swift; sourceTree = "<group>"; };
+		33E7B063EE0E7DCCDC41E10AB9F4D2FA /* TournamentUpdate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TournamentUpdate.swift; path = LeagueAPI/LeagueAPI/Models/FrameworkModels/BodyRequestModels/TournamentUpdate.swift; sourceTree = "<group>"; };
+		33FD0D6712632A42A92B63B2A0D080EF /* HttpResponseCode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpResponseCode.swift; path = LeagueAPI/LeagueAPI/Utils/HttpResponseCode.swift; sourceTree = "<group>"; };
+		3479710CC97E681829FCFA087DDDD1A6 /* Pods-VIPER-LOL-APPTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VIPER-LOL-APPTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		35A3C62C2A402B3F3F33C56192D4D451 /* DataDragonVersionBusiness.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataDragonVersionBusiness.swift; path = LeagueAPI/LeagueAPI/Business/DataDragonBusiness/DataDragonVersionBusiness.swift; sourceTree = "<group>"; };
+		3614455293F70FD296FE4D64FB862F01 /* ThirdPartyCodeBusiness.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThirdPartyCodeBusiness.swift; path = LeagueAPI/LeagueAPI/Business/RiotAPIBusiness/ThirdPartyCodeBusiness.swift; sourceTree = "<group>"; };
+		36609D393E0B1E9DFE9D1A4A248F65FC /* Observer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Observer.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/Observer.swift; sourceTree = "<group>"; };
+		36D0BD501867BEED142188D730B8382F /* LeagueAPI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LeagueAPI-Info.plist"; sourceTree = "<group>"; };
+		370F98C1860FE57FE7179A095C307A1F /* ChampionDifficulties.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChampionDifficulties.swift; path = LeagueAPI/LeagueAPI/Models/DataDragonModels/ChampionDifficulties.swift; sourceTree = "<group>"; };
+		379641828D5880C45D5ED34C885DD10C /* ProviderId.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProviderId.swift; path = LeagueAPI/LeagueAPI/Types/ProviderId.swift; sourceTree = "<group>"; };
+		3C2714CF23AEA240FB373A3F6F1478E2 /* ChampionBusiness.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChampionBusiness.swift; path = LeagueAPI/LeagueAPI/Business/RiotAPIBusiness/ChampionBusiness.swift; sourceTree = "<group>"; };
+		3C2E6A60CC2C8B5445EF5E4E1F12E8F5 /* Pods-VIPER-LOL-APPUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VIPER-LOL-APPUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3E520B52E9485C571EE3005EC2CD0383 /* DDragonItemsFile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDragonItemsFile.swift; path = LeagueAPI/LeagueAPI/Models/DataDragonModels/DDragonItemsFile.swift; sourceTree = "<group>"; };
+		3ED3F572BA4088B6E83EB503FAFD7190 /* TournamentStubBusiness.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TournamentStubBusiness.swift; path = LeagueAPI/LeagueAPI/Business/RiotAPIBusiness/TournamentStubBusiness.swift; sourceTree = "<group>"; };
+		4042E4D7EBFAEEE8BCDA018151312C6D /* PickType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PickType.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/RiotEnums/PickType.swift; sourceTree = "<group>"; };
+		40707094859D0A01E6086AFD9ADD2672 /* ServiceProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServiceProxy.swift; path = LeagueAPI/LeagueAPI/Models/FrameworkModels/ServiceProxy.swift; sourceTree = "<group>"; };
+		409E947EB1DD405A11408707D92BF5CE /* Pods-VIPER-LOL-APPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VIPER-LOL-APPTests.release.xcconfig"; sourceTree = "<group>"; };
+		431C48C9D02B358F8D28F7E12981B8F8 /* Datetime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Datetime.swift; path = LeagueAPI/LeagueAPI/Utils/Datetime/Datetime.swift; sourceTree = "<group>"; };
+		43751504E2A7B108A3224A998AEC7562 /* ArrayExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrayExtension.swift; path = LeagueAPI/LeagueAPI/Utils/ArrayExtension.swift; sourceTree = "<group>"; };
+		44D235C22FC7372B5E4668B5DDFA51D2 /* MatchParticipantTimeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatchParticipantTimeline.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/MatchParticipantTimeline.swift; sourceTree = "<group>"; };
+		47B674F793CFC5E73370631C7AB8E928 /* AccountId.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AccountId.swift; path = LeagueAPI/LeagueAPI/Types/AccountId.swift; sourceTree = "<group>"; };
+		4B27D49A1C6393B0D46C57527233CFCF /* SummonerBusiness.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SummonerBusiness.swift; path = LeagueAPI/LeagueAPI/Business/RiotAPIBusiness/SummonerBusiness.swift; sourceTree = "<group>"; };
+		4C022F549AD3FF30EF05B89A64294525 /* DDragonSummonerSpellsFile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDragonSummonerSpellsFile.swift; path = LeagueAPI/LeagueAPI/Models/DataDragonModels/DDragonSummonerSpellsFile.swift; sourceTree = "<group>"; };
+		4C4E3BBBCF59321EB51DA445CAA9F66F /* LeagueAPI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LeagueAPI-prefix.pch"; sourceTree = "<group>"; };
+		4D6F6FB852DABF04883A52B874BF3FDF /* ChampionMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChampionMethod.swift; path = LeagueAPI/LeagueAPI/Models/FrameworkModels/Methods/ChampionMethod.swift; sourceTree = "<group>"; };
+		4DC67CECDBB313F8EB39AA8CBFA163ED /* BuildInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BuildInfo.swift; path = LeagueAPI/LeagueAPI/Utils/BuildInfo.swift; sourceTree = "<group>"; };
+		4EB8750D185AC2FFFA62C0332906F44E /* Duration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Duration.swift; path = LeagueAPI/LeagueAPI/Utils/Duration.swift; sourceTree = "<group>"; };
+		4F1FD81C7434FF57A9A7015C7B84C22B /* RateLimit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RateLimit.swift; path = LeagueAPI/LeagueAPI/Models/FrameworkModels/RateLimit.swift; sourceTree = "<group>"; };
+		505D8334AF4049A87CAD4C969BF58E6C /* ChampionAdditionalDetails.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChampionAdditionalDetails.swift; path = LeagueAPI/LeagueAPI/Models/DataDragonModels/ChampionAdditionalDetails.swift; sourceTree = "<group>"; };
+		506FA47776CE3B60A34CBC0FBC369F6D /* RiotAPIRESTRequester.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RiotAPIRESTRequester.swift; path = LeagueAPI/LeagueAPI/DataAccess/RiotAPIRESTRequester.swift; sourceTree = "<group>"; };
+		521F15A7769DBFE6BE9040A9CFA939C3 /* Map.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Map.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/RiotEnums/Map.swift; sourceTree = "<group>"; };
+		522D17A13378248B3D4D93BC3721AA3B /* Pods-VIPER-LOL-APPUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VIPER-LOL-APPUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5284649540AEE0B3E7BABC99003C958A /* ItemId.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ItemId.swift; path = LeagueAPI/LeagueAPI/Types/ItemId.swift; sourceTree = "<group>"; };
+		530C7AAE1BFCE64EA9AE614E50EEBE36 /* TournamentDetails.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TournamentDetails.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/TournamentDetails.swift; sourceTree = "<group>"; };
+		54B69D5AF3C3BD41FACF82BF382AF913 /* MatchBusiness.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatchBusiness.swift; path = LeagueAPI/LeagueAPI/Business/RiotAPIBusiness/MatchBusiness.swift; sourceTree = "<group>"; };
+		562BC2E41BC617287BCA2C63030DD90A /* LeagueMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LeagueMethod.swift; path = LeagueAPI/LeagueAPI/Models/FrameworkModels/Methods/LeagueMethod.swift; sourceTree = "<group>"; };
+		56EEF42F1C6A5C7DE7691C58716364F6 /* ExploringLeagueRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExploringLeagueRequest.swift; path = LeagueAPI/LeagueAPI/Models/FrameworkModels/RequestModels/ExploringLeagueRequest.swift; sourceTree = "<group>"; };
+		57ED670B936AA068E38F70982A4B5CD1 /* Pods_VIPER_LOL_APPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VIPER_LOL_APPUITests.framework; path = "Pods-VIPER-LOL-APPUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5819695F102AC4604B121FC1E5C44AAC /* DDragonChampionFile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDragonChampionFile.swift; path = LeagueAPI/LeagueAPI/Models/DataDragonModels/DDragonChampionFile.swift; sourceTree = "<group>"; };
+		58B63A8C350DB828DBEB1EE6BA7DCC02 /* Pods-VIPER-LOL-APPUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VIPER-LOL-APPUITests-umbrella.h"; sourceTree = "<group>"; };
+		59B97C595FF987EEE2A2F1F016983558 /* StringExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = LeagueAPI/LeagueAPI/Utils/StringExtension.swift; sourceTree = "<group>"; };
+		59C6DAE347A51E88E13979D0D6ADC215 /* GameRole.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GameRole.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/RiotEnums/GameRole.swift; sourceTree = "<group>"; };
+		5A19ACB2A86B5B3ADAE223B37C2A967A /* Pods-VIPER-LOL-APPTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VIPER-LOL-APPTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5A41123592D6A2B1815DCD8D2A6127A7 /* MatchTimeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatchTimeline.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/MatchTimeline.swift; sourceTree = "<group>"; };
+		5AFF0D1D693B3B2E56F1F194F855D5C9 /* TeamStats.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TeamStats.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/TeamStats.swift; sourceTree = "<group>"; };
+		5E23CBE100BEE2EBB7AFDB4133EF3649 /* DataDragonRequester.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataDragonRequester.swift; path = LeagueAPI/LeagueAPI/DataAccess/DataDragonRequester.swift; sourceTree = "<group>"; };
+		5F17DAA4AFB59E0E6E62E78C9CB438B1 /* DDragonChampionsFile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDragonChampionsFile.swift; path = LeagueAPI/LeagueAPI/Models/DataDragonModels/DDragonChampionsFile.swift; sourceTree = "<group>"; };
+		5F9878723CEACE693BD56C819F9A5AAB /* TournamentInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TournamentInfo.swift; path = LeagueAPI/LeagueAPI/Models/FrameworkModels/BodyRequestModels/TournamentInfo.swift; sourceTree = "<group>"; };
+		6168DE96A05930736C0A0368D3D12C64 /* ServicesUrl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServicesUrl.swift; path = LeagueAPI/LeagueAPI/Constants/ServicesUrl.swift; sourceTree = "<group>"; };
+		62273FE0030A5B873BA588E827EB55CB /* RunePathId.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RunePathId.swift; path = LeagueAPI/LeagueAPI/Types/RunePathId.swift; sourceTree = "<group>"; };
+		6286E452F3D27373ED9B1F27515A5C6C /* RunePage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RunePage.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/RunePage.swift; sourceTree = "<group>"; };
+		63E125A618A4C661872F317DD2FE3C4C /* Season.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Season.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/RiotEnums/Season.swift; sourceTree = "<group>"; };
+		65996A62F105B521154374222D528F59 /* MatchParticipantFrame.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatchParticipantFrame.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/MatchParticipantFrame.swift; sourceTree = "<group>"; };
+		65997C61819CE276F8D6F798C8973C5B /* Pods_VIPER_LOL_APP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VIPER_LOL_APP.framework; path = "Pods-VIPER-LOL-APP.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		664F4CA273ED098BB68122875A047E26 /* ObjectMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjectMapper.swift; path = LeagueAPI/LeagueAPI/Utils/ObjectMapper.swift; sourceTree = "<group>"; };
+		66B521419DF062320C483482A44D5C7B /* StatusMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StatusMethod.swift; path = LeagueAPI/LeagueAPI/Models/FrameworkModels/Methods/StatusMethod.swift; sourceTree = "<group>"; };
+		672674FC7F78501BE7D49782561D68DB /* Skin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Skin.swift; path = LeagueAPI/LeagueAPI/Models/DataDragonModels/Skin.swift; sourceTree = "<group>"; };
+		6760DED4ED2DF670011863A74CADB891 /* ImageWithUrl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageWithUrl.swift; path = LeagueAPI/LeagueAPI/Utils/ImageWithUrl.swift; sourceTree = "<group>"; };
+		6919EBB6C303FFCA75F17DD31A96D271 /* RankedDivision.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RankedDivision.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/RankedDivision.swift; sourceTree = "<group>"; };
+		6BEE43BD8E6CE4C93D9C219D06CE6C2D /* MatchEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatchEvent.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/MatchEvent.swift; sourceTree = "<group>"; };
+		6BF5213D7B69D8F9BB43B807C0B14C12 /* Pods-VIPER-LOL-APPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VIPER-LOL-APPTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6DA77BF88D8E52C56DF37431DD943C86 /* ChampionMasteryMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChampionMasteryMethod.swift; path = LeagueAPI/LeagueAPI/Models/FrameworkModels/Methods/ChampionMasteryMethod.swift; sourceTree = "<group>"; };
+		71AD51C0C00FE4C421770836AA218BB6 /* Pods-VIPER-LOL-APP-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VIPER-LOL-APP-acknowledgements.plist"; sourceTree = "<group>"; };
+		724685E35A77EB6F4A2C10AF1C5E9EAD /* Gold_Emblem.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Gold_Emblem.png; path = LeagueAPI/LeagueAPI/Assets/Gold_Emblem.png; sourceTree = "<group>"; };
+		7486D1BF6080FE2A52CC8C085D33A476 /* GameId.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GameId.swift; path = LeagueAPI/LeagueAPI/Types/GameId.swift; sourceTree = "<group>"; };
+		755C5749C63990FF1297AB8C2B03A5D6 /* LeagueRequester.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LeagueRequester.swift; path = LeagueAPI/LeagueAPI/DataAccess/LeagueRequester.swift; sourceTree = "<group>"; };
+		77207239E77586C9021FB62EE537374A /* TournamentBusiness.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TournamentBusiness.swift; path = LeagueAPI/LeagueAPI/Business/RiotAPIBusiness/TournamentBusiness.swift; sourceTree = "<group>"; };
+		77DF13E738E59B361D34986072A03D7F /* ExploringRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExploringRequest.swift; path = LeagueAPI/LeagueAPI/Models/FrameworkModels/RequestModels/ExploringRequest.swift; sourceTree = "<group>"; };
+		78F66BEA637463DF945F4A3E97291E9F /* DataRequester.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataRequester.swift; path = LeagueAPI/LeagueAPI/DataAccess/DataRequester.swift; sourceTree = "<group>"; };
+		799860880804CA29AA3626861B63EE65 /* ChampionMasteryBusiness.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChampionMasteryBusiness.swift; path = LeagueAPI/LeagueAPI/Business/RiotAPIBusiness/ChampionMasteryBusiness.swift; sourceTree = "<group>"; };
+		7A7492ADBB030B6FE7444C69D67646F5 /* RuneId.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuneId.swift; path = LeagueAPI/LeagueAPI/Types/RuneId.swift; sourceTree = "<group>"; };
+		7AB4A82B4BA92215B19BE33D9D9B60F8 /* ChampionStats.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChampionStats.swift; path = LeagueAPI/LeagueAPI/Models/DataDragonModels/ChampionStats.swift; sourceTree = "<group>"; };
+		7BD1FC4D9504B6E6F491C025CBA11AF3 /* SummonerSpellId.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SummonerSpellId.swift; path = LeagueAPI/LeagueAPI/Types/SummonerSpellId.swift; sourceTree = "<group>"; };
+		81A47E399F4B12B61A5AEC6D7DC0A589 /* Master_Emblem.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Master_Emblem.png; path = LeagueAPI/LeagueAPI/Assets/Master_Emblem.png; sourceTree = "<group>"; };
+		82750CE9BE838E6899A0B1D804864C28 /* MacOSTypealias.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MacOSTypealias.swift; path = LeagueAPI/LeagueAPI/Utils/CrossPlatform/MacOSTypealias.swift; sourceTree = "<group>"; };
+		83B1CFABD46B516C7154297DB77A6FD4 /* ChampionMastery.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChampionMastery.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/ChampionMastery.swift; sourceTree = "<group>"; };
+		870EB68062DCF4E9380B2EB173DE3AAF /* Identifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Identifier.swift; path = LeagueAPI/LeagueAPI/Types/Identifier.swift; sourceTree = "<group>"; };
+		8939E6434B0A08859152C848736EDDCD /* SpectatorBusiness.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpectatorBusiness.swift; path = LeagueAPI/LeagueAPI/Business/RiotAPIBusiness/SpectatorBusiness.swift; sourceTree = "<group>"; };
+		8B41613D7E50A1134B6FE198FDA9A2B0 /* DateToken.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateToken.swift; path = LeagueAPI/LeagueAPI/Utils/Datetime/DateToken.swift; sourceTree = "<group>"; };
+		8BBC8768BC304E1CFE83B8DFDFBEDDFF /* MatchMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatchMethod.swift; path = LeagueAPI/LeagueAPI/Models/FrameworkModels/Methods/MatchMethod.swift; sourceTree = "<group>"; };
+		8C52C28D53B790C2DD1FC8456C7ED469 /* APIClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIClient.swift; path = LeagueAPI/LeagueAPI/FrameworkAPI/APIClient.swift; sourceTree = "<group>"; };
+		90B68B923AFA411FC9B81D419E2D8359 /* Pods-VIPER-LOL-APP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VIPER-LOL-APP.release.xcconfig"; sourceTree = "<group>"; };
+		90F9C319CB26503AC951B238EDD42CB4 /* DataDragonSummonerSpellBusiness.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataDragonSummonerSpellBusiness.swift; path = LeagueAPI/LeagueAPI/Business/DataDragonBusiness/DataDragonSummonerSpellBusiness.swift; sourceTree = "<group>"; };
+		935FC82A6CE79135E84ED3393408BB90 /* SpectatorType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpectatorType.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/RiotEnums/SpectatorType.swift; sourceTree = "<group>"; };
+		99D3725759325D411D0238D1A1F98AE5 /* Pods-VIPER-LOL-APPUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VIPER-LOL-APPUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9A22E87B552C1EE179E3C56DE94BA233 /* League.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = League.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/League.swift; sourceTree = "<group>"; };
+		9A896237EF4DFB36AF17D653BBE26B42 /* DataDragonChampionBusiness.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataDragonChampionBusiness.swift; path = LeagueAPI/LeagueAPI/Business/DataDragonBusiness/DataDragonChampionBusiness.swift; sourceTree = "<group>"; };
+		9D0E2A88FB5F7593E70E142A4DA1B60C /* PrimitiveType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PrimitiveType.swift; path = LeagueAPI/LeagueAPI/Utils/PrimitiveType.swift; sourceTree = "<group>"; };
+		9D497B0B8CE6CC1C977C52A2C0E8DC1E /* Summoner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Summoner.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/Summoner.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E892AC80B73BCD371FC6B356BC5D0C7 /* ThirdPartyCodeMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThirdPartyCodeMethod.swift; path = LeagueAPI/LeagueAPI/Models/FrameworkModels/Methods/ThirdPartyCodeMethod.swift; sourceTree = "<group>"; };
+		9F85F5BA2F524E8CE01505E6CC05204A /* IntExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IntExtension.swift; path = LeagueAPI/LeagueAPI/Utils/IntExtension.swift; sourceTree = "<group>"; };
+		A0A1DD07959BE717428BDE8F78FFFCCF /* LeagueAPI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LeagueAPI.modulemap; sourceTree = "<group>"; };
+		A11857768C7BE6E28271DC2192EEEA9D /* ItemData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ItemData.swift; path = LeagueAPI/LeagueAPI/Models/DataDragonModels/ItemData.swift; sourceTree = "<group>"; };
+		A3CF6A076B19C29D8A2449FA10ED53A0 /* DDragonVersions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDragonVersions.swift; path = LeagueAPI/LeagueAPI/Models/DataDragonModels/DDragonVersions.swift; sourceTree = "<group>"; };
+		A6B980AD962157E845E2F143C54D6948 /* Pods-VIPER-LOL-APPTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VIPER-LOL-APPTests.modulemap"; sourceTree = "<group>"; };
+		AAC4C51B690ACF2BDD30C56563493AC3 /* ChampionPassiveData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChampionPassiveData.swift; path = LeagueAPI/LeagueAPI/Models/DataDragonModels/ChampionPassiveData.swift; sourceTree = "<group>"; };
+		ABE451DE6C5D1EEF9AC31763886B0795 /* LeagueAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LeagueAPI.swift; path = LeagueAPI/LeagueAPI/FrameworkAPI/LeagueAPI.swift; sourceTree = "<group>"; };
+		AD6E5D5BAD31AE153A5461DA92A486B1 /* RawRequester.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RawRequester.swift; path = LeagueAPI/LeagueAPI/DataAccess/RawRequester.swift; sourceTree = "<group>"; };
+		AE636ACF867BE65EACC122DADF1DE066 /* Pods-VIPER-LOL-APP-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VIPER-LOL-APP-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AFF8127EB810E6E3C6CCD18C1158130A /* DDragonProfileIconsFile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDragonProfileIconsFile.swift; path = LeagueAPI/LeagueAPI/Models/DataDragonModels/DDragonProfileIconsFile.swift; sourceTree = "<group>"; };
+		B21E7D1D2792D2EF1B80D2EF7130C163 /* Participant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Participant.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/Participant.swift; sourceTree = "<group>"; };
+		B2D035654C530AB5D11D7DD259307D6A /* Diamond_Emblem.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Diamond_Emblem.png; path = LeagueAPI/LeagueAPI/Assets/Diamond_Emblem.png; sourceTree = "<group>"; };
+		B4C2469C8820EB97A33B656B282BE68E /* Pods-VIPER-LOL-APP-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VIPER-LOL-APP-dummy.m"; sourceTree = "<group>"; };
+		B5FD6DAC3C5093D17DE42B2568D7FDA4 /* Item.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Item.swift; path = LeagueAPI/LeagueAPI/Models/DataDragonModels/Item.swift; sourceTree = "<group>"; };
+		B6549DBB82BA5F24702939DD0E298337 /* EmptyReply.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmptyReply.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/EmptyReply.swift; sourceTree = "<group>"; };
+		B7AF5C3BF47DC7372C591CBDA6226D5F /* QueueMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QueueMode.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/RiotEnums/QueueMode.swift; sourceTree = "<group>"; };
+		B8AB0DC5594F77E0C3F07BFF0B40FF45 /* SummonerPuuid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SummonerPuuid.swift; path = LeagueAPI/LeagueAPI/Types/SummonerPuuid.swift; sourceTree = "<group>"; };
+		B8F0797E6743A257792DA73B242ECC8F /* Incident.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Incident.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/Incident.swift; sourceTree = "<group>"; };
+		BA3BB8656C1E8BBC6091667EE35549B6 /* GameMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GameMode.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/RiotEnums/GameMode.swift; sourceTree = "<group>"; };
+		BA4674BA35067A693EF02D8FC61B79B2 /* MatchPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatchPosition.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/MatchPosition.swift; sourceTree = "<group>"; };
+		BA4F846A8BD24E544B3C28E03EF4673C /* DurationDelayedRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DurationDelayedRequest.swift; path = LeagueAPI/LeagueAPI/Models/FrameworkModels/RequestModels/DurationDelayedRequest.swift; sourceTree = "<group>"; };
+		BB203921E1AF0614F337307AD6BD2012 /* LeagueAPI.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LeagueAPI.xcconfig; sourceTree = "<group>"; };
+		BC40D5EFFEC7C191E8A1169DA6ECED6B /* Pods-VIPER-LOL-APPUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VIPER-LOL-APPUITests-Info.plist"; sourceTree = "<group>"; };
+		BF06D6F5CD38173B8BD36F9CAF229072 /* Grandmaster_Emblem.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Grandmaster_Emblem.png; path = LeagueAPI/LeagueAPI/Assets/Grandmaster_Emblem.png; sourceTree = "<group>"; };
+		C1FBF3539276FA12E4DA1873F62269F0 /* TournamentStubMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TournamentStubMethod.swift; path = LeagueAPI/LeagueAPI/Models/FrameworkModels/Methods/TournamentStubMethod.swift; sourceTree = "<group>"; };
+		C216A4B35C8712031A5A0E6130E07D72 /* Pods-VIPER-LOL-APPTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VIPER-LOL-APPTests-dummy.m"; sourceTree = "<group>"; };
+		C23659D464BDD790AD56B59CA3EC43F6 /* ChampionSpellData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChampionSpellData.swift; path = LeagueAPI/LeagueAPI/Models/DataDragonModels/ChampionSpellData.swift; sourceTree = "<group>"; };
+		C4074EA2F5763E9DEBC5408C6DCFCD9B /* RunePath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RunePath.swift; path = LeagueAPI/LeagueAPI/Models/DataDragonModels/RunePath.swift; sourceTree = "<group>"; };
+		C5CE8085605280363B916BCD511DE741 /* DataDragonItemBusiness.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataDragonItemBusiness.swift; path = LeagueAPI/LeagueAPI/Business/DataDragonBusiness/DataDragonItemBusiness.swift; sourceTree = "<group>"; };
+		CA96463B0113CC33D05232633D016B0F /* Endpoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Endpoint.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/RiotEnums/Endpoint.swift; sourceTree = "<group>"; };
+		CBDB0F47AB8351F8A197EB06CF5580F7 /* LocalAssets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocalAssets.swift; path = LeagueAPI/LeagueAPI/DataAccess/LocalAssets.swift; sourceTree = "<group>"; };
+		CC1B05ADCC46FF4508A561553A4BA411 /* Pods-VIPER-LOL-APPUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VIPER-LOL-APPUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CCA6CCB0A12964D38BB5457A565DA087 /* Message.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Message.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/Message.swift; sourceTree = "<group>"; };
+		CCE730A2F592B74DB8342E7F00841DAA /* LeagueAPI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LeagueAPI-dummy.m"; sourceTree = "<group>"; };
+		CD7B2C2CB7580B0BEC80942B4B68A1D7 /* RankedTier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RankedTier.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/RiotEnums/RankedTier.swift; sourceTree = "<group>"; };
+		CD821874735328C15511AD37BF844AB1 /* Match.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Match.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/Match.swift; sourceTree = "<group>"; };
+		CE54CAC290FB2A8C71AFDED952348792 /* Place.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Place.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/RiotEnums/Place.swift; sourceTree = "<group>"; };
+		CF1335631AB44E6347B2F7C7987A88D5 /* Version.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Version.swift; path = LeagueAPI/LeagueAPI/Constants/Version.swift; sourceTree = "<group>"; };
+		D00F608D2ABD95806B4C476839288CA5 /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = LeagueAPI/LeagueAPI/Utils/Logger.swift; sourceTree = "<group>"; };
+		D03A9CA7568F8644191875DD5FE1953F /* Pods-VIPER-LOL-APPTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VIPER-LOL-APPTests-Info.plist"; sourceTree = "<group>"; };
+		D03F3E7000F42E6989D38CEF8551637F /* SkinImages.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkinImages.swift; path = LeagueAPI/LeagueAPI/Models/DataDragonModels/SkinImages.swift; sourceTree = "<group>"; };
+		D21DA670ABBD236116DFC21EB5A6BF30 /* SummonerMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SummonerMethod.swift; path = LeagueAPI/LeagueAPI/Models/FrameworkModels/Methods/SummonerMethod.swift; sourceTree = "<group>"; };
+		D285D9A9D5904FA448BB807B7B64DCCA /* ChampionsDetails.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChampionsDetails.swift; path = LeagueAPI/LeagueAPI/Models/DataDragonModels/ChampionsDetails.swift; sourceTree = "<group>"; };
+		D29A13DCA24E6E8DCBE04FAF8A4DFADA /* SkinData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkinData.swift; path = LeagueAPI/LeagueAPI/Models/DataDragonModels/SkinData.swift; sourceTree = "<group>"; };
+		D5E47B7E07DC47CD359F781157A44AD9 /* LeagueAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LeagueAPI.framework; path = LeagueAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7EC4158121AC0A355238365A86A4263 /* RankedEntry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RankedEntry.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/RankedEntry.swift; sourceTree = "<group>"; };
+		D8A3840C11078E4890762C48B4E3970A /* RankedBusiness.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RankedBusiness.swift; path = LeagueAPI/LeagueAPI/Business/RiotAPIBusiness/RankedBusiness.swift; sourceTree = "<group>"; };
+		D967549E775CC4FB386E7DC6975747EB /* SpectatorMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpectatorMethod.swift; path = LeagueAPI/LeagueAPI/Models/FrameworkModels/Methods/SpectatorMethod.swift; sourceTree = "<group>"; };
+		D96ED1D3F826086D5594599386396A15 /* RankedTierBusiness.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RankedTierBusiness.swift; path = LeagueAPI/LeagueAPI/Business/LeagueAPIBusiness/RankedTierBusiness.swift; sourceTree = "<group>"; };
+		D97600A96A8A4D9ED0AA796CB9233C88 /* MatchReference.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatchReference.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/MatchReference.swift; sourceTree = "<group>"; };
+		DA5C97D1DCB72F342BC6706A16FF2C94 /* TeamBan.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TeamBan.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/TeamBan.swift; sourceTree = "<group>"; };
+		DB01285F551188CE5DB0F9562DBF095C /* ChampionId.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChampionId.swift; path = LeagueAPI/LeagueAPI/Types/ChampionId.swift; sourceTree = "<group>"; };
+		DC6185752AC4365CB1CAE58EF8C1CEB9 /* RiotAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RiotAPI.swift; path = LeagueAPI/LeagueAPI/FrameworkAPI/RiotAPI.swift; sourceTree = "<group>"; };
+		DC977727C14175E76A8365366A5F353B /* Series.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Series.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/Series.swift; sourceTree = "<group>"; };
+		DD07C2BC791BD60CA2CA74C1DD52F4DD /* Rune.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Rune.swift; path = LeagueAPI/LeagueAPI/Models/DataDragonModels/Rune.swift; sourceTree = "<group>"; };
+		E0972B8E93D9B2A46E51303D0B7C9EE7 /* RESTRequester.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RESTRequester.swift; path = LeagueAPI/LeagueAPI/Utils/RESTRequester.swift; sourceTree = "<group>"; };
+		E2A14E790877B020D5311D39E8B88425 /* RateLimitManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RateLimitManager.swift; path = LeagueAPI/LeagueAPI/Models/FrameworkModels/RateLimitManager.swift; sourceTree = "<group>"; };
+		E330D94A42BAC10C03F8926C14F4D29F /* APIBusiness.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIBusiness.swift; path = LeagueAPI/LeagueAPI/Business/RiotAPIBusiness/APIBusiness.swift; sourceTree = "<group>"; };
+		E34492225A2721D5F4B75650EF81C0B4 /* MatchParticipantIdentity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatchParticipantIdentity.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/MatchParticipantIdentity.swift; sourceTree = "<group>"; };
+		E34C1D14A5E5849D5C50793E8D614A13 /* TournamentRegion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TournamentRegion.swift; path = LeagueAPI/LeagueAPI/Models/FrameworkModels/BodyRequestModels/TournamentRegion.swift; sourceTree = "<group>"; };
+		E495EFDBACC35EDD26E4D6D3B61123C8 /* TournamentEventList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TournamentEventList.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/TournamentEventList.swift; sourceTree = "<group>"; };
+		E57012C2835A9AFD5A1C56412671B96C /* MatchPlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatchPlayer.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/MatchPlayer.swift; sourceTree = "<group>"; };
+		E5B172504061B0D882F47219CBF8E6C1 /* Pods-VIPER-LOL-APP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VIPER-LOL-APP.debug.xcconfig"; sourceTree = "<group>"; };
+		E69FCCEB3B66F93EE64960861423A2FF /* TournamentProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TournamentProvider.swift; path = LeagueAPI/LeagueAPI/Models/FrameworkModels/BodyRequestModels/TournamentProvider.swift; sourceTree = "<group>"; };
+		E733F9834DFBA31852A6CBC4A562AEDE /* DataDragonRuneBusiness.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataDragonRuneBusiness.swift; path = LeagueAPI/LeagueAPI/Business/DataDragonBusiness/DataDragonRuneBusiness.swift; sourceTree = "<group>"; };
+		E84A023B26436D33C335CCA8DD4BC095 /* GameInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GameInfo.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/GameInfo.swift; sourceTree = "<group>"; };
+		E8ABE80AF05668ABBCAB98C6257A218D /* TypeAlias.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TypeAlias.swift; path = LeagueAPI/LeagueAPI/Types/TypeAlias.swift; sourceTree = "<group>"; };
+		E8DB62E090A857064917A397ED44BDAE /* Platform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Platform.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/RiotEnums/Platform.swift; sourceTree = "<group>"; };
+		EBB3D414DB364ED98945E589BB1F8204 /* Pods-VIPER-LOL-APPUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VIPER-LOL-APPUITests-dummy.m"; sourceTree = "<group>"; };
+		EC97100D6B3EEEC1816621788122A5D2 /* Silver_Emblem.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Silver_Emblem.png; path = LeagueAPI/LeagueAPI/Assets/Silver_Emblem.png; sourceTree = "<group>"; };
+		ED21092372B5567C06778E46F6F79F10 /* MapType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MapType.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/RiotEnums/MapType.swift; sourceTree = "<group>"; };
+		EE2BDED370A0A53734D90D8F0FFBF7CE /* ProfileIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProfileIcon.swift; path = LeagueAPI/LeagueAPI/Models/DataDragonModels/ProfileIcon.swift; sourceTree = "<group>"; };
+		EE72E7C6C519E28C7EB337370C25283C /* DelayedTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DelayedTask.swift; path = LeagueAPI/LeagueAPI/Utils/DelayedTask.swift; sourceTree = "<group>"; };
+		EF1210C598F7CE82B2B1566974BDA2E1 /* TournamentEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TournamentEvent.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/TournamentEvent.swift; sourceTree = "<group>"; };
+		EFA08BDA909F64F5AC891B8EAAF7C5A1 /* DatetimeEnums.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatetimeEnums.swift; path = LeagueAPI/LeagueAPI/Utils/Datetime/DatetimeEnums.swift; sourceTree = "<group>"; };
+		EFC5EE2EDD658FFF6E9F5B6CB5178B62 /* RessourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RessourceType.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/RiotEnums/RessourceType.swift; sourceTree = "<group>"; };
+		F140E3531ED6172438444CEEE2D12D1E /* TournamentCode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TournamentCode.swift; path = LeagueAPI/LeagueAPI/Types/TournamentCode.swift; sourceTree = "<group>"; };
+		F207E0EBB0088E6CAD61817052D05A77 /* Pods-VIPER-LOL-APP.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VIPER-LOL-APP.modulemap"; sourceTree = "<group>"; };
+		F210AD41B137365A7F72EE56BC35D0BD /* Queue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Queue.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/RiotEnums/Queue.swift; sourceTree = "<group>"; };
+		F3C72AA471D19846F020579154D3982E /* TournamentId.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TournamentId.swift; path = LeagueAPI/LeagueAPI/Types/TournamentId.swift; sourceTree = "<group>"; };
+		F514C16984FCDCCCEB9606988C78C1CF /* DataDragonProfileIconBusiness.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataDragonProfileIconBusiness.swift; path = LeagueAPI/LeagueAPI/Business/DataDragonBusiness/DataDragonProfileIconBusiness.swift; sourceTree = "<group>"; };
+		F5923CABB1334745BCD2C24E12E674E2 /* LegacyRune.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LegacyRune.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/LegacyRune.swift; sourceTree = "<group>"; };
+		F61046AABA9EE051E78DD33F37063B43 /* ChampionSpell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChampionSpell.swift; path = LeagueAPI/LeagueAPI/Models/DataDragonModels/ChampionSpell.swift; sourceTree = "<group>"; };
+		F637F2DC133FF46A08B215AFADB39CE4 /* ErrorStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ErrorStatus.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/ErrorStatus.swift; sourceTree = "<group>"; };
+		FA4348B5A9272C62AD068CFFFD92DD63 /* Service.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Service.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/Service.swift; sourceTree = "<group>"; };
+		FA51092DDD1241BB16131CA810B2637B /* GameCustomObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GameCustomObject.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/GameCustomObject.swift; sourceTree = "<group>"; };
+		FAD1CF889D4CB3606464133A3477E4E2 /* ItemShop.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ItemShop.swift; path = LeagueAPI/LeagueAPI/Models/DataDragonModels/ItemShop.swift; sourceTree = "<group>"; };
+		FB1DF81FFACD3E8FAF7712D1A31A78DF /* Unranked_Emblem.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Unranked_Emblem.png; path = LeagueAPI/LeagueAPI/Assets/Unranked_Emblem.png; sourceTree = "<group>"; };
+		FB848F3E8C04D1664E5485B4D8609B2F /* RuneStage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuneStage.swift; path = LeagueAPI/LeagueAPI/Models/DataDragonModels/RuneStage.swift; sourceTree = "<group>"; };
+		FCBBC636F72447897448D7B539358B79 /* TournamentInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TournamentInitializer.swift; path = LeagueAPI/LeagueAPI/Models/FrameworkModels/BodyRequestModels/TournamentInitializer.swift; sourceTree = "<group>"; };
+		FDC3CCABCF861A5CEEE7308565A4BD95 /* TournamentMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TournamentMethod.swift; path = LeagueAPI/LeagueAPI/Models/FrameworkModels/Methods/TournamentMethod.swift; sourceTree = "<group>"; };
+		FE7581251106C1F364373CDF37849595 /* LeagueInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LeagueInfo.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/LeagueInfo.swift; sourceTree = "<group>"; };
+		FF0C0AC51DA6A5DBF35634260B0BAA94 /* MatchParticipantStats.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatchParticipantStats.swift; path = LeagueAPI/LeagueAPI/Models/RiotModels/MatchParticipantStats.swift; sourceTree = "<group>"; };
+		FFCF46586EB29A1B2B396B9936BC592A /* LeagueAPI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LeagueAPI-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00A07D624A7357CDC07CC1B7FEAB0684 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2307B0182322634A9EA983A4450E6084 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38EC3DBDE88E25C572047CC7E83314EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				202F7902AD42BCC0919F90629B8C1C46 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A80B04AC2B71CF1653A3A2D93B56EA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EED6B46716426B41B5C0B848B864A12C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABC3E019CD4D99E40E5FD8AD6F2D5959 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3997E46CBC21079A0BF32ADC5BF14F5C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1157C49CC54360524BBC7DAAB3AB220F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A0A1DD07959BE717428BDE8F78FFFCCF /* LeagueAPI.modulemap */,
+				BB203921E1AF0614F337307AD6BD2012 /* LeagueAPI.xcconfig */,
+				CCE730A2F592B74DB8342E7F00841DAA /* LeagueAPI-dummy.m */,
+				36D0BD501867BEED142188D730B8382F /* LeagueAPI-Info.plist */,
+				4C4E3BBBCF59321EB51DA445CAA9F66F /* LeagueAPI-prefix.pch */,
+				FFCF46586EB29A1B2B396B9936BC592A /* LeagueAPI-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LeagueAPI";
+			sourceTree = "<group>";
+		};
+		236774F85598A7E382BA4C6DA432B7C6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				16F8CABC5079819FB7B3A0526E80153F /* Bronze_Emblem.png */,
+				1B5EB5E6AF86BFD59BFF3CBBE26E4F40 /* Challenger_Emblem.png */,
+				B2D035654C530AB5D11D7DD259307D6A /* Diamond_Emblem.png */,
+				724685E35A77EB6F4A2C10AF1C5E9EAD /* Gold_Emblem.png */,
+				BF06D6F5CD38173B8BD36F9CAF229072 /* Grandmaster_Emblem.png */,
+				228E155CECD77AA5A00E8FAD01AC3D0B /* Iron_Emblem.png */,
+				81A47E399F4B12B61A5AEC6D7DC0A589 /* Master_Emblem.png */,
+				07418B78BF194F12978C2F080D0BB8A4 /* Platinum_Emblem.png */,
+				EC97100D6B3EEEC1816621788122A5D2 /* Silver_Emblem.png */,
+				FB1DF81FFACD3E8FAF7712D1A31A78DF /* Unranked_Emblem.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		23F1F1E6E011ADE2C7D7BB6E36918414 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B72185BC2860A9E6FD7F3A083D6C11FA /* Pods-VIPER-LOL-APP */,
+				6D1FD76D0C2EAD805097B121FA500DA2 /* Pods-VIPER-LOL-APPTests */,
+				7845F69632A9404A390F4E0C246496E2 /* Pods-VIPER-LOL-APPUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		29E910C54B674A6999D305B67514C77E /* LeagueAPI */ = {
+			isa = PBXGroup;
+			children = (
+				47B674F793CFC5E73370631C7AB8E928 /* AccountId.swift */,
+				E330D94A42BAC10C03F8926C14F4D29F /* APIBusiness.swift */,
+				8C52C28D53B790C2DD1FC8456C7ED469 /* APIClient.swift */,
+				28090E30CB2B1DA94238692B8372B351 /* APIKey.swift */,
+				43751504E2A7B108A3224A998AEC7562 /* ArrayExtension.swift */,
+				12FE6CB84CF06EC8983224E598140D35 /* BannedChampion.swift */,
+				4DC67CECDBB313F8EB39AA8CBFA163ED /* BuildInfo.swift */,
+				505D8334AF4049A87CAD4C969BF58E6C /* ChampionAdditionalDetails.swift */,
+				1F6817A6A983F44FF76788D200FFD54C /* ChampionAdditionalDetailsData.swift */,
+				3C2714CF23AEA240FB373A3F6F1478E2 /* ChampionBusiness.swift */,
+				101B2C4A43A5D5E60AF0B68F7ACC8045 /* ChampionDetails.swift */,
+				370F98C1860FE57FE7179A095C307A1F /* ChampionDifficulties.swift */,
+				DB01285F551188CE5DB0F9562DBF095C /* ChampionId.swift */,
+				83B1CFABD46B516C7154297DB77A6FD4 /* ChampionMastery.swift */,
+				799860880804CA29AA3626861B63EE65 /* ChampionMasteryBusiness.swift */,
+				6DA77BF88D8E52C56DF37431DD943C86 /* ChampionMasteryMethod.swift */,
+				4D6F6FB852DABF04883A52B874BF3FDF /* ChampionMethod.swift */,
+				1923E8B35820D93A851F17E78B31D05B /* ChampionPassive.swift */,
+				AAC4C51B690ACF2BDD30C56563493AC3 /* ChampionPassiveData.swift */,
+				0F053F368A6452E36F576B62EEF86E11 /* ChampionRole.swift */,
+				0D72BABCC9F504E4E05337DE35DEB1FA /* ChampionRotations.swift */,
+				D285D9A9D5904FA448BB807B7B64DCCA /* ChampionsDetails.swift */,
+				F61046AABA9EE051E78DD33F37063B43 /* ChampionSpell.swift */,
+				C23659D464BDD790AD56B59CA3EC43F6 /* ChampionSpellData.swift */,
+				7AB4A82B4BA92215B19BE33D9D9B60F8 /* ChampionStats.swift */,
+				9A896237EF4DFB36AF17D653BBE26B42 /* DataDragonChampionBusiness.swift */,
+				C5CE8085605280363B916BCD511DE741 /* DataDragonItemBusiness.swift */,
+				F514C16984FCDCCCEB9606988C78C1CF /* DataDragonProfileIconBusiness.swift */,
+				5E23CBE100BEE2EBB7AFDB4133EF3649 /* DataDragonRequester.swift */,
+				E733F9834DFBA31852A6CBC4A562AEDE /* DataDragonRuneBusiness.swift */,
+				90F9C319CB26503AC951B238EDD42CB4 /* DataDragonSummonerSpellBusiness.swift */,
+				35A3C62C2A402B3F3F33C56192D4D451 /* DataDragonVersionBusiness.swift */,
+				78F66BEA637463DF945F4A3E97291E9F /* DataRequester.swift */,
+				431C48C9D02B358F8D28F7E12981B8F8 /* Datetime.swift */,
+				EFA08BDA909F64F5AC891B8EAAF7C5A1 /* DatetimeEnums.swift */,
+				8B41613D7E50A1134B6FE198FDA9A2B0 /* DateToken.swift */,
+				5819695F102AC4604B121FC1E5C44AAC /* DDragonChampionFile.swift */,
+				5F17DAA4AFB59E0E6E62E78C9CB438B1 /* DDragonChampionsFile.swift */,
+				3E520B52E9485C571EE3005EC2CD0383 /* DDragonItemsFile.swift */,
+				AFF8127EB810E6E3C6CCD18C1158130A /* DDragonProfileIconsFile.swift */,
+				4C022F549AD3FF30EF05B89A64294525 /* DDragonSummonerSpellsFile.swift */,
+				A3CF6A076B19C29D8A2449FA10ED53A0 /* DDragonVersions.swift */,
+				2C57CF4732B6D9B64EE2B1AAC377F103 /* DelayedRequest.swift */,
+				EE72E7C6C519E28C7EB337370C25283C /* DelayedTask.swift */,
+				4EB8750D185AC2FFFA62C0332906F44E /* Duration.swift */,
+				BA4F846A8BD24E544B3C28E03EF4673C /* DurationDelayedRequest.swift */,
+				B6549DBB82BA5F24702939DD0E298337 /* EmptyReply.swift */,
+				CA96463B0113CC33D05232633D016B0F /* Endpoint.swift */,
+				24AE0CFF84595AEE0C47B7E645756E2E /* ErrorMessage.swift */,
+				F637F2DC133FF46A08B215AFADB39CE4 /* ErrorStatus.swift */,
+				56EEF42F1C6A5C7DE7691C58716364F6 /* ExploringLeagueRequest.swift */,
+				77DF13E738E59B361D34986072A03D7F /* ExploringRequest.swift */,
+				07579604D2102FFE49C357AF8DF6D843 /* FeaturedGames.swift */,
+				FA51092DDD1241BB16131CA810B2637B /* GameCustomObject.swift */,
+				7486D1BF6080FE2A52CC8C085D33A476 /* GameId.swift */,
+				E84A023B26436D33C335CCA8DD4BC095 /* GameInfo.swift */,
+				BA3BB8656C1E8BBC6091667EE35549B6 /* GameMode.swift */,
+				59C6DAE347A51E88E13979D0D6ADC215 /* GameRole.swift */,
+				298A027E86853BA6686F1D9D0B178025 /* GameType.swift */,
+				33FD0D6712632A42A92B63B2A0D080EF /* HttpResponseCode.swift */,
+				870EB68062DCF4E9380B2EB173DE3AAF /* Identifier.swift */,
+				6760DED4ED2DF670011863A74CADB891 /* ImageWithUrl.swift */,
+				B8F0797E6743A257792DA73B242ECC8F /* Incident.swift */,
+				9F85F5BA2F524E8CE01505E6CC05204A /* IntExtension.swift */,
+				B5FD6DAC3C5093D17DE42B2568D7FDA4 /* Item.swift */,
+				A11857768C7BE6E28271DC2192EEEA9D /* ItemData.swift */,
+				5284649540AEE0B3E7BABC99003C958A /* ItemId.swift */,
+				FAD1CF889D4CB3606464133A3477E4E2 /* ItemShop.swift */,
+				1DC2C49E0535DB237B981F78AA5AE30F /* JsonRequester.swift */,
+				9A22E87B552C1EE179E3C56DE94BA233 /* League.swift */,
+				ABE451DE6C5D1EEF9AC31763886B0795 /* LeagueAPI.swift */,
+				066F8A47E04341A342BEA59431FC67D1 /* LeagueId.swift */,
+				FE7581251106C1F364373CDF37849595 /* LeagueInfo.swift */,
+				562BC2E41BC617287BCA2C63030DD90A /* LeagueMethod.swift */,
+				755C5749C63990FF1297AB8C2B03A5D6 /* LeagueRequester.swift */,
+				1DC74EE5AF6041F675582C92D6F8E255 /* LegacyMastery.swift */,
+				F5923CABB1334745BCD2C24E12E674E2 /* LegacyRune.swift */,
+				CBDB0F47AB8351F8A197EB06CF5580F7 /* LocalAssets.swift */,
+				D00F608D2ABD95806B4C476839288CA5 /* Logger.swift */,
+				82750CE9BE838E6899A0B1D804864C28 /* MacOSTypealias.swift */,
+				521F15A7769DBFE6BE9040A9CFA939C3 /* Map.swift */,
+				ED21092372B5567C06778E46F6F79F10 /* MapType.swift */,
+				CD821874735328C15511AD37BF844AB1 /* Match.swift */,
+				54B69D5AF3C3BD41FACF82BF382AF913 /* MatchBusiness.swift */,
+				6BEE43BD8E6CE4C93D9C219D06CE6C2D /* MatchEvent.swift */,
+				0B318FE5B2424A03F80B5E288F4886D7 /* MatchFrame.swift */,
+				066A70C2EB56ED839E6835C0A799FA30 /* MatchList.swift */,
+				8BBC8768BC304E1CFE83B8DFDFBEDDFF /* MatchMethod.swift */,
+				2E2CB9894BF87F5F6DAD578E7B64AA42 /* MatchParticipant.swift */,
+				65996A62F105B521154374222D528F59 /* MatchParticipantFrame.swift */,
+				E34492225A2721D5F4B75650EF81C0B4 /* MatchParticipantIdentity.swift */,
+				FF0C0AC51DA6A5DBF35634260B0BAA94 /* MatchParticipantStats.swift */,
+				44D235C22FC7372B5E4668B5DDFA51D2 /* MatchParticipantTimeline.swift */,
+				E57012C2835A9AFD5A1C56412671B96C /* MatchPlayer.swift */,
+				BA4674BA35067A693EF02D8FC61B79B2 /* MatchPosition.swift */,
+				D97600A96A8A4D9ED0AA796CB9233C88 /* MatchReference.swift */,
+				5A41123592D6A2B1815DCD8D2A6127A7 /* MatchTimeline.swift */,
+				CCA6CCB0A12964D38BB5457A565DA087 /* Message.swift */,
+				051E0502480853E634F7149D898267FE /* MethodPaths.swift */,
+				664F4CA273ED098BB68122875A047E26 /* ObjectMapper.swift */,
+				36609D393E0B1E9DFE9D1A4A248F65FC /* Observer.swift */,
+				B21E7D1D2792D2EF1B80D2EF7130C163 /* Participant.swift */,
+				4042E4D7EBFAEEE8BCDA018151312C6D /* PickType.swift */,
+				CE54CAC290FB2A8C71AFDED952348792 /* Place.swift */,
+				E8DB62E090A857064917A397ED44BDAE /* Platform.swift */,
+				9D0E2A88FB5F7593E70E142A4DA1B60C /* PrimitiveType.swift */,
+				EE2BDED370A0A53734D90D8F0FFBF7CE /* ProfileIcon.swift */,
+				0FE6AD4C6A04B55A65EDE5A7D6A4BFBF /* ProfileIconData.swift */,
+				060DD48687581E665299597D0CAEF7F9 /* ProfileIconId.swift */,
+				379641828D5880C45D5ED34C885DD10C /* ProviderId.swift */,
+				F210AD41B137365A7F72EE56BC35D0BD /* Queue.swift */,
+				B7AF5C3BF47DC7372C591CBDA6226D5F /* QueueMode.swift */,
+				D8A3840C11078E4890762C48B4E3970A /* RankedBusiness.swift */,
+				6919EBB6C303FFCA75F17DD31A96D271 /* RankedDivision.swift */,
+				D7EC4158121AC0A355238365A86A4263 /* RankedEntry.swift */,
+				0D394334833006B3508C6D167353B5C6 /* RankedMethod.swift */,
+				CD7B2C2CB7580B0BEC80942B4B68A1D7 /* RankedTier.swift */,
+				D96ED1D3F826086D5594599386396A15 /* RankedTierBusiness.swift */,
+				13B0892B1C1ACC3FA609B5A4A17C89B7 /* Rate.swift */,
+				4F1FD81C7434FF57A9A7015C7B84C22B /* RateLimit.swift */,
+				E2A14E790877B020D5311D39E8B88425 /* RateLimitManager.swift */,
+				AD6E5D5BAD31AE153A5461DA92A486B1 /* RawRequester.swift */,
+				27F77B4B1328AEEA61F7E1CEA4575B57 /* Region.swift */,
+				EFC5EE2EDD658FFF6E9F5B6CB5178B62 /* RessourceType.swift */,
+				E0972B8E93D9B2A46E51303D0B7C9EE7 /* RESTRequester.swift */,
+				DC6185752AC4365CB1CAE58EF8C1CEB9 /* RiotAPI.swift */,
+				506FA47776CE3B60A34CBC0FBC369F6D /* RiotAPIRESTRequester.swift */,
+				DD07C2BC791BD60CA2CA74C1DD52F4DD /* Rune.swift */,
+				7A7492ADBB030B6FE7444C69D67646F5 /* RuneId.swift */,
+				6286E452F3D27373ED9B1F27515A5C6C /* RunePage.swift */,
+				C4074EA2F5763E9DEBC5408C6DCFCD9B /* RunePath.swift */,
+				62273FE0030A5B873BA588E827EB55CB /* RunePathId.swift */,
+				FB848F3E8C04D1664E5485B4D8609B2F /* RuneStage.swift */,
+				63E125A618A4C661872F317DD2FE3C4C /* Season.swift */,
+				DC977727C14175E76A8365366A5F353B /* Series.swift */,
+				FA4348B5A9272C62AD068CFFFD92DD63 /* Service.swift */,
+				40707094859D0A01E6086AFD9ADD2672 /* ServiceProxy.swift */,
+				1A073738DC794894260AF5147AA5DFF3 /* ServiceStatus.swift */,
+				6168DE96A05930736C0A0368D3D12C64 /* ServicesUrl.swift */,
+				672674FC7F78501BE7D49782561D68DB /* Skin.swift */,
+				D29A13DCA24E6E8DCBE04FAF8A4DFADA /* SkinData.swift */,
+				0AF9E40F93946AD2E50A668BA2DBC772 /* SkinId.swift */,
+				D03F3E7000F42E6989D38CEF8551637F /* SkinImages.swift */,
+				8939E6434B0A08859152C848736EDDCD /* SpectatorBusiness.swift */,
+				D967549E775CC4FB386E7DC6975747EB /* SpectatorMethod.swift */,
+				935FC82A6CE79135E84ED3393408BB90 /* SpectatorType.swift */,
+				19396DF6AC4C5B7FC4307539654D7391 /* StatusBusiness.swift */,
+				66B521419DF062320C483482A44D5C7B /* StatusMethod.swift */,
+				59B97C595FF987EEE2A2F1F016983558 /* StringExtension.swift */,
+				9D497B0B8CE6CC1C977C52A2C0E8DC1E /* Summoner.swift */,
+				4B27D49A1C6393B0D46C57527233CFCF /* SummonerBusiness.swift */,
+				0C9D737D9B917611502CB628667A2473 /* SummonerId.swift */,
+				D21DA670ABBD236116DFC21EB5A6BF30 /* SummonerMethod.swift */,
+				B8AB0DC5594F77E0C3F07BFF0B40FF45 /* SummonerPuuid.swift */,
+				2FD71D77B3E80B97B4EC84DF2104B8C8 /* SummonerSpell.swift */,
+				3344FF7AE9010DD862B8F94E09EB7A58 /* SummonerSpellData.swift */,
+				7BD1FC4D9504B6E6F491C025CBA11AF3 /* SummonerSpellId.swift */,
+				DA5C97D1DCB72F342BC6706A16FF2C94 /* TeamBan.swift */,
+				5AFF0D1D693B3B2E56F1F194F855D5C9 /* TeamStats.swift */,
+				3614455293F70FD296FE4D64FB862F01 /* ThirdPartyCodeBusiness.swift */,
+				9E892AC80B73BCD371FC6B356BC5D0C7 /* ThirdPartyCodeMethod.swift */,
+				77207239E77586C9021FB62EE537374A /* TournamentBusiness.swift */,
+				F140E3531ED6172438444CEEE2D12D1E /* TournamentCode.swift */,
+				530C7AAE1BFCE64EA9AE614E50EEBE36 /* TournamentDetails.swift */,
+				EF1210C598F7CE82B2B1566974BDA2E1 /* TournamentEvent.swift */,
+				E495EFDBACC35EDD26E4D6D3B61123C8 /* TournamentEventList.swift */,
+				F3C72AA471D19846F020579154D3982E /* TournamentId.swift */,
+				5F9878723CEACE693BD56C819F9A5AAB /* TournamentInfo.swift */,
+				FCBBC636F72447897448D7B539358B79 /* TournamentInitializer.swift */,
+				FDC3CCABCF861A5CEEE7308565A4BD95 /* TournamentMethod.swift */,
+				E69FCCEB3B66F93EE64960861423A2FF /* TournamentProvider.swift */,
+				E34C1D14A5E5849D5C50793E8D614A13 /* TournamentRegion.swift */,
+				3ED3F572BA4088B6E83EB503FAFD7190 /* TournamentStubBusiness.swift */,
+				C1FBF3539276FA12E4DA1873F62269F0 /* TournamentStubMethod.swift */,
+				33E7B063EE0E7DCCDC41E10AB9F4D2FA /* TournamentUpdate.swift */,
+				13B48028FEE3F03005F482F629A092BB /* Translation.swift */,
+				E8ABE80AF05668ABBCAB98C6257A218D /* TypeAlias.swift */,
+				CF1335631AB44E6347B2F7C7987A88D5 /* Version.swift */,
+				236774F85598A7E382BA4C6DA432B7C6 /* Resources */,
+				1157C49CC54360524BBC7DAAB3AB220F /* Support Files */,
+			);
+			name = LeagueAPI;
+			path = LeagueAPI;
+			sourceTree = "<group>";
+		};
+		2AE574613FD8F8ED922A80BE5CDB65B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5E47B7E07DC47CD359F781157A44AD9 /* LeagueAPI.framework */,
+				65997C61819CE276F8D6F798C8973C5B /* Pods_VIPER_LOL_APP.framework */,
+				067A43ADEE806A448739025D43C3A52E /* Pods_VIPER_LOL_APPTests.framework */,
+				57ED670B936AA068E38F70982A4B5CD1 /* Pods_VIPER_LOL_APPUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49108F0589E483A7E925211482E8C825 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				29E910C54B674A6999D305B67514C77E /* LeagueAPI */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6D1FD76D0C2EAD805097B121FA500DA2 /* Pods-VIPER-LOL-APPTests */ = {
+			isa = PBXGroup;
+			children = (
+				A6B980AD962157E845E2F143C54D6948 /* Pods-VIPER-LOL-APPTests.modulemap */,
+				5A19ACB2A86B5B3ADAE223B37C2A967A /* Pods-VIPER-LOL-APPTests-acknowledgements.markdown */,
+				3479710CC97E681829FCFA087DDDD1A6 /* Pods-VIPER-LOL-APPTests-acknowledgements.plist */,
+				C216A4B35C8712031A5A0E6130E07D72 /* Pods-VIPER-LOL-APPTests-dummy.m */,
+				D03A9CA7568F8644191875DD5FE1953F /* Pods-VIPER-LOL-APPTests-Info.plist */,
+				053519FE433BC1C858FBBA776761625D /* Pods-VIPER-LOL-APPTests-umbrella.h */,
+				6BF5213D7B69D8F9BB43B807C0B14C12 /* Pods-VIPER-LOL-APPTests.debug.xcconfig */,
+				409E947EB1DD405A11408707D92BF5CE /* Pods-VIPER-LOL-APPTests.release.xcconfig */,
+			);
+			name = "Pods-VIPER-LOL-APPTests";
+			path = "Target Support Files/Pods-VIPER-LOL-APPTests";
+			sourceTree = "<group>";
+		};
+		7845F69632A9404A390F4E0C246496E2 /* Pods-VIPER-LOL-APPUITests */ = {
+			isa = PBXGroup;
+			children = (
+				25D9C2AD5465B2ED04E6349921472329 /* Pods-VIPER-LOL-APPUITests.modulemap */,
+				522D17A13378248B3D4D93BC3721AA3B /* Pods-VIPER-LOL-APPUITests-acknowledgements.markdown */,
+				CC1B05ADCC46FF4508A561553A4BA411 /* Pods-VIPER-LOL-APPUITests-acknowledgements.plist */,
+				EBB3D414DB364ED98945E589BB1F8204 /* Pods-VIPER-LOL-APPUITests-dummy.m */,
+				BC40D5EFFEC7C191E8A1169DA6ECED6B /* Pods-VIPER-LOL-APPUITests-Info.plist */,
+				58B63A8C350DB828DBEB1EE6BA7DCC02 /* Pods-VIPER-LOL-APPUITests-umbrella.h */,
+				3C2E6A60CC2C8B5445EF5E4E1F12E8F5 /* Pods-VIPER-LOL-APPUITests.debug.xcconfig */,
+				99D3725759325D411D0238D1A1F98AE5 /* Pods-VIPER-LOL-APPUITests.release.xcconfig */,
+			);
+			name = "Pods-VIPER-LOL-APPUITests";
+			path = "Target Support Files/Pods-VIPER-LOL-APPUITests";
+			sourceTree = "<group>";
+		};
+		B72185BC2860A9E6FD7F3A083D6C11FA /* Pods-VIPER-LOL-APP */ = {
+			isa = PBXGroup;
+			children = (
+				F207E0EBB0088E6CAD61817052D05A77 /* Pods-VIPER-LOL-APP.modulemap */,
+				AE636ACF867BE65EACC122DADF1DE066 /* Pods-VIPER-LOL-APP-acknowledgements.markdown */,
+				71AD51C0C00FE4C421770836AA218BB6 /* Pods-VIPER-LOL-APP-acknowledgements.plist */,
+				B4C2469C8820EB97A33B656B282BE68E /* Pods-VIPER-LOL-APP-dummy.m */,
+				1081E369D406C2FDF7C8B3B896C83B63 /* Pods-VIPER-LOL-APP-frameworks.sh */,
+				1A2E1995869BEBD6EEDEA712543A8A10 /* Pods-VIPER-LOL-APP-Info.plist */,
+				191A288D711C44FC45D712A213B99078 /* Pods-VIPER-LOL-APP-umbrella.h */,
+				E5B172504061B0D882F47219CBF8E6C1 /* Pods-VIPER-LOL-APP.debug.xcconfig */,
+				90B68B923AFA411FC9B81D419E2D8359 /* Pods-VIPER-LOL-APP.release.xcconfig */,
+			);
+			name = "Pods-VIPER-LOL-APP";
+			path = "Target Support Files/Pods-VIPER-LOL-APP";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				49108F0589E483A7E925211482E8C825 /* Pods */,
+				2AE574613FD8F8ED922A80BE5CDB65B3 /* Products */,
+				23F1F1E6E011ADE2C7D7BB6E36918414 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		14164E2D0288DE79FCA7EB14451CF321 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F94BEEB7B8A2A4B9EAC580347C2E6CE /* Pods-VIPER-LOL-APPTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84029BD9E2E4C70FD464A7AD1534A6E6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EC330D32BC1DC7DAC7393475A7509D6 /* LeagueAPI-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B67D3F9EFB52C5120231B599E4E03EF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CC912338C272A8C90FADAE6F2FBE052 /* Pods-VIPER-LOL-APP-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1CA5961D51A0062A769B628880FDAE1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A432DB347FFD2BBCD8C813E252F8066C /* Pods-VIPER-LOL-APPUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		05FFFAD7C4A9AD0801C2D3C34412F440 /* Pods-VIPER-LOL-APPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48CB1AABBB6DEDFF9B23CDCAD3993D24 /* Build configuration list for PBXNativeTarget "Pods-VIPER-LOL-APPTests" */;
+			buildPhases = (
+				14164E2D0288DE79FCA7EB14451CF321 /* Headers */,
+				98164B21DB7761E2876A825E5B1BCE45 /* Sources */,
+				38EC3DBDE88E25C572047CC7E83314EC /* Frameworks */,
+				FE5854A7281127336B6F2956C5A9526A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D326C021B1ACDD75FB39DF4591FFE37B /* PBXTargetDependency */,
+			);
+			name = "Pods-VIPER-LOL-APPTests";
+			productName = "Pods-VIPER-LOL-APPTests";
+			productReference = 067A43ADEE806A448739025D43C3A52E /* Pods_VIPER_LOL_APPTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3AC6239B6F043A6C9950389888684F4D /* Pods-VIPER-LOL-APP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F78D1BE2E4E07B57086E3CDDB84EFD51 /* Build configuration list for PBXNativeTarget "Pods-VIPER-LOL-APP" */;
+			buildPhases = (
+				9B67D3F9EFB52C5120231B599E4E03EF /* Headers */,
+				AFF4FD787938BB273360D1BFF6A53564 /* Sources */,
+				4A80B04AC2B71CF1653A3A2D93B56EA2 /* Frameworks */,
+				BBD0D8CC351FA6BA08F6ED99E69264BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37973C07C453281C6EB77A290CC43CED /* PBXTargetDependency */,
+			);
+			name = "Pods-VIPER-LOL-APP";
+			productName = "Pods-VIPER-LOL-APP";
+			productReference = 65997C61819CE276F8D6F798C8973C5B /* Pods_VIPER_LOL_APP.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8EA801139C99E0F1F8E3768D4864F813 /* LeagueAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEC5AADB863C2F44A0ED8B16D29C3317 /* Build configuration list for PBXNativeTarget "LeagueAPI" */;
+			buildPhases = (
+				84029BD9E2E4C70FD464A7AD1534A6E6 /* Headers */,
+				454CA8BF96011A2622E472F99D6EF5D1 /* Sources */,
+				ABC3E019CD4D99E40E5FD8AD6F2D5959 /* Frameworks */,
+				8C80E4563E4CD08381EC6F5C706D5A01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LeagueAPI;
+			productName = LeagueAPI;
+			productReference = D5E47B7E07DC47CD359F781157A44AD9 /* LeagueAPI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A336EA88DA3648C9C0D16D32EDCFCA24 /* Pods-VIPER-LOL-APPUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5AF7100565C7F9A400D96948FAA3AEC /* Build configuration list for PBXNativeTarget "Pods-VIPER-LOL-APPUITests" */;
+			buildPhases = (
+				A1CA5961D51A0062A769B628880FDAE1 /* Headers */,
+				CF93EB743DFDD4B420C6759A096645E5 /* Sources */,
+				00A07D624A7357CDC07CC1B7FEAB0684 /* Frameworks */,
+				530C0E062C2F9EEBF808E2B616691402 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE645DDBCE94704A8D1F4A59AE7EA314 /* PBXTargetDependency */,
+			);
+			name = "Pods-VIPER-LOL-APPUITests";
+			productName = "Pods-VIPER-LOL-APPUITests";
+			productReference = 57ED670B936AA068E38F70982A4B5CD1 /* Pods_VIPER_LOL_APPUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 2AE574613FD8F8ED922A80BE5CDB65B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8EA801139C99E0F1F8E3768D4864F813 /* LeagueAPI */,
+				3AC6239B6F043A6C9950389888684F4D /* Pods-VIPER-LOL-APP */,
+				05FFFAD7C4A9AD0801C2D3C34412F440 /* Pods-VIPER-LOL-APPTests */,
+				A336EA88DA3648C9C0D16D32EDCFCA24 /* Pods-VIPER-LOL-APPUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		530C0E062C2F9EEBF808E2B616691402 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C80E4563E4CD08381EC6F5C706D5A01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A44D6928B3B56A3BB137805214E9959 /* Bronze_Emblem.png in Resources */,
+				36A620BC69AD35E19CC9F935F942309C /* Challenger_Emblem.png in Resources */,
+				E31CF4791B06E15C67DF08C4DB542D5F /* Diamond_Emblem.png in Resources */,
+				4756D823809C7D458C8686036CBA7315 /* Gold_Emblem.png in Resources */,
+				ABC6091841AE1E177F68AA0F8E2C732B /* Grandmaster_Emblem.png in Resources */,
+				76B42D8ACB350293E7F5F8175AA1ADB9 /* Iron_Emblem.png in Resources */,
+				8B31AE309E09C2DC81D44660077BAF91 /* Master_Emblem.png in Resources */,
+				068C3E5EAA4F296A373AECF8F34B9CE6 /* Platinum_Emblem.png in Resources */,
+				3249D10ED7FC9C27330D5E2AF738203C /* Silver_Emblem.png in Resources */,
+				1609F64FFA8820F5C509D581F00578BE /* Unranked_Emblem.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBD0D8CC351FA6BA08F6ED99E69264BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE5854A7281127336B6F2956C5A9526A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		454CA8BF96011A2622E472F99D6EF5D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98EB7976902F75C0133D94B3A966F766 /* AccountId.swift in Sources */,
+				67F803CF8F12677B5A3C4E5313EABABB /* APIBusiness.swift in Sources */,
+				495DF15A28193A41F72CC1697E576784 /* APIClient.swift in Sources */,
+				DF5BD8C96E97BB7939CC19F61113603A /* APIKey.swift in Sources */,
+				14A996E037D85AAEC3D533133ED12CDF /* ArrayExtension.swift in Sources */,
+				BC97C9C52119E8D40BA62E0CED353523 /* BannedChampion.swift in Sources */,
+				780631C4DBE06A9D4CD9E9A907E5C85A /* BuildInfo.swift in Sources */,
+				B622FDCD4F44C1C34F3263A46534F0D8 /* ChampionAdditionalDetails.swift in Sources */,
+				20A414156F76E71368195BC3C33B875F /* ChampionAdditionalDetailsData.swift in Sources */,
+				6C831BE856A00B5C592CCEDB181A428D /* ChampionBusiness.swift in Sources */,
+				463B4451C83EFE5FC2334833D8AD8DBE /* ChampionDetails.swift in Sources */,
+				51B1D97315362F38530AA435E41291CD /* ChampionDifficulties.swift in Sources */,
+				E0913BE897CBF78F267FFB7BE0509BF7 /* ChampionId.swift in Sources */,
+				6CEAA2D06C14A9995CBCC7E359213F5D /* ChampionMastery.swift in Sources */,
+				9E77DA1980EA0401243C9193E9036CBB /* ChampionMasteryBusiness.swift in Sources */,
+				98577E625D12AAD9FE9B2F9C39AF7786 /* ChampionMasteryMethod.swift in Sources */,
+				E2FA30B125BAA1242F086B6AC2C7F9B5 /* ChampionMethod.swift in Sources */,
+				2A065F6A9C627F5E8BE868D0A3A3308F /* ChampionPassive.swift in Sources */,
+				269BBFC0E7EB24AA20C6294D9FADFD9D /* ChampionPassiveData.swift in Sources */,
+				95AAA30D3D4536F9F50B1E83DECA4EC2 /* ChampionRole.swift in Sources */,
+				522C6E81F95820B15F808BE1E6D35C2A /* ChampionRotations.swift in Sources */,
+				E54E3595849498F88D61D631DE7FE51A /* ChampionsDetails.swift in Sources */,
+				B0FF22F5EA009811CDCC690A28F80D11 /* ChampionSpell.swift in Sources */,
+				BC7A3DB2410898F159123AA5035CBDA3 /* ChampionSpellData.swift in Sources */,
+				B06E9D7281D6F9D9EACA30824C993973 /* ChampionStats.swift in Sources */,
+				4893126E6CF13C80C6543922DDC96ECF /* DataDragonChampionBusiness.swift in Sources */,
+				6EC2D46321D72F54262BA837FAAE35CF /* DataDragonItemBusiness.swift in Sources */,
+				565EB8E9411FE3854C8FF1022B6F4819 /* DataDragonProfileIconBusiness.swift in Sources */,
+				388040F6512C27C72925B26E1827051A /* DataDragonRequester.swift in Sources */,
+				DCF2700B0ED6751FA00BBA37CA110545 /* DataDragonRuneBusiness.swift in Sources */,
+				A02BCC438EAC350FCE68EC3BD726BD39 /* DataDragonSummonerSpellBusiness.swift in Sources */,
+				D3C89308ACD42371F3DB8ACCA95CBE52 /* DataDragonVersionBusiness.swift in Sources */,
+				29DC1EA8054E316C4547C1F0DA9AC341 /* DataRequester.swift in Sources */,
+				FCB94E061D58BEA5CAEA60B33CDAE681 /* Datetime.swift in Sources */,
+				F12462803573819BBDEB11B9DF74D459 /* DatetimeEnums.swift in Sources */,
+				8F56D35ED1BB1816C4F63D08FACD4EBC /* DateToken.swift in Sources */,
+				F7407F3355B1D7B60D48E4BEFE60670B /* DDragonChampionFile.swift in Sources */,
+				78DF28421CBA26BE50D39CDDE787C377 /* DDragonChampionsFile.swift in Sources */,
+				241C68193C2A551672E445A1F9A3DCD8 /* DDragonItemsFile.swift in Sources */,
+				DBA506F856DFFD8009A57523C9C66EEE /* DDragonProfileIconsFile.swift in Sources */,
+				0BF73F7A595CBC210B37A9FF63FB7B22 /* DDragonSummonerSpellsFile.swift in Sources */,
+				BF6E165A77C22CF8C9D008FF6A0A50CD /* DDragonVersions.swift in Sources */,
+				89CFA130C6B4D1C32A01E6C21D1A33DB /* DelayedRequest.swift in Sources */,
+				A9A10C3C82920A8441294CEB51F8B41E /* DelayedTask.swift in Sources */,
+				B4C307F4847960D6BA59D0A1D72E8530 /* Duration.swift in Sources */,
+				4D370D4A73324A751C7BE49031FB1B5A /* DurationDelayedRequest.swift in Sources */,
+				B0EC12955BAE21A121824532214822BB /* EmptyReply.swift in Sources */,
+				424A20B61DBBFAC50C255AE15F81E015 /* Endpoint.swift in Sources */,
+				4E1E38C60284F8EE02C1EEA08409B7FB /* ErrorMessage.swift in Sources */,
+				82481F3BA00904CD310401740553D1B7 /* ErrorStatus.swift in Sources */,
+				A8C2DB0BE0BA0AF28C5BE4B2B20676D9 /* ExploringLeagueRequest.swift in Sources */,
+				5DD530224A6C9CA82C4EC80475E41A60 /* ExploringRequest.swift in Sources */,
+				3843AF3A38EE8BB3F14ADC15C3021DDD /* FeaturedGames.swift in Sources */,
+				0C28E8D3398DD2816479FF63F396349F /* GameCustomObject.swift in Sources */,
+				6091F3FD30685F4E343DA605EB9B2DC6 /* GameId.swift in Sources */,
+				1AE6B88239681E920C36B04001EC249B /* GameInfo.swift in Sources */,
+				360CEDD3E8C5D4C3A24A9DF3CDA125D4 /* GameMode.swift in Sources */,
+				3C2ABE0701A5437C571938ACB453796A /* GameRole.swift in Sources */,
+				534E10EB527A147AC8FDAB68F31BFAC7 /* GameType.swift in Sources */,
+				DCAFE1AF1A4343E8D021ECE2345B6CA8 /* HttpResponseCode.swift in Sources */,
+				5131AA59B99C3C3F5F116FCB629593C9 /* Identifier.swift in Sources */,
+				E278CD4C8169F2FF42EE19A89EBFB698 /* ImageWithUrl.swift in Sources */,
+				C5D6DFBD6A78521B414A2945E8E98AFA /* Incident.swift in Sources */,
+				2E8AFE542D8445079925085FF1C1BD10 /* IntExtension.swift in Sources */,
+				06A7429089C37415BB42C6AFD10EF882 /* Item.swift in Sources */,
+				5FE28E00FF7FFBF87C50C90ECEAB1524 /* ItemData.swift in Sources */,
+				9F333C5703B1270DA385546F02A5B1A1 /* ItemId.swift in Sources */,
+				142E59D494C0A38A03A55B57D5EEA377 /* ItemShop.swift in Sources */,
+				71742A0A1A492F8A7B5E2A2EADCD6106 /* JsonRequester.swift in Sources */,
+				99B06F9EC20D4878C88A8B7E88253E5F /* League.swift in Sources */,
+				A6AA84B2D06B011745043BB0956545CF /* LeagueAPI-dummy.m in Sources */,
+				23CC8BAEB93EBAAB0B76CA0FC7328C5E /* LeagueAPI.swift in Sources */,
+				CBB7CBDFE3E034AC19B5772800615947 /* LeagueId.swift in Sources */,
+				9A607CBD1D6E26EECD88979AE3C401E0 /* LeagueInfo.swift in Sources */,
+				B19805213A8180BC2FB8B913057B937A /* LeagueMethod.swift in Sources */,
+				46B14B8D74B3BD4EAF36D3909704E6D8 /* LeagueRequester.swift in Sources */,
+				5DBDA92707FC2D21508775AFA60A3A7C /* LegacyMastery.swift in Sources */,
+				F920600FF696C16E7DBCB4C691D729CE /* LegacyRune.swift in Sources */,
+				53BDF9AA2F657EF060B24FD17A2280B9 /* LocalAssets.swift in Sources */,
+				92CC9A499C010B4BFFCC6A6C209CE982 /* Logger.swift in Sources */,
+				C6055E0F011626EACD5F7A47A776BC97 /* MacOSTypealias.swift in Sources */,
+				761D6D1B788C3A039F8255C7F6554FD8 /* Map.swift in Sources */,
+				7E6F90641A8E3CFFA7662514FE9B055E /* MapType.swift in Sources */,
+				0796E98E2A4557AC953142920E1062D3 /* Match.swift in Sources */,
+				51191435836C6C730FF62BAE609E4F3E /* MatchBusiness.swift in Sources */,
+				F27B673992BB27B8D0B9C891487B6EDE /* MatchEvent.swift in Sources */,
+				44BCDDF63C345A810186AE81E348C410 /* MatchFrame.swift in Sources */,
+				77111B504008F74D07434C2B1E15AB26 /* MatchList.swift in Sources */,
+				7B7053AA2CBE2FE76A51835785DD8121 /* MatchMethod.swift in Sources */,
+				65A3E48AE8F0F611E70ABC8D305CA7F0 /* MatchParticipant.swift in Sources */,
+				D31EDD3CC1340E04A10C2C6C45905407 /* MatchParticipantFrame.swift in Sources */,
+				B0B52C52436011E2A377437D2BFD616A /* MatchParticipantIdentity.swift in Sources */,
+				A14738F40BCB2785358555E86F946B3C /* MatchParticipantStats.swift in Sources */,
+				344E59D371EDF69534A868BF2751701D /* MatchParticipantTimeline.swift in Sources */,
+				6B91FFEE3840A8A9B61E674058FCDFE6 /* MatchPlayer.swift in Sources */,
+				A527C059ED5FBF15DC0ED6AD992A7C1F /* MatchPosition.swift in Sources */,
+				4063165BA1333200E80CE64668D7C8DE /* MatchReference.swift in Sources */,
+				1E23336EA0239421236F40E9CB567E95 /* MatchTimeline.swift in Sources */,
+				7FC81BA965845210EBC602AAFCA15A65 /* Message.swift in Sources */,
+				BCFAD99E762C9296A3EAFEE61E4CE552 /* MethodPaths.swift in Sources */,
+				4331061A161054F7AB4AAEE5BBAD3D1B /* ObjectMapper.swift in Sources */,
+				9629D6004135CBCCFC54974F7CBC0250 /* Observer.swift in Sources */,
+				6E005C53F963856D75E290524F352516 /* Participant.swift in Sources */,
+				42BAC165BE8646007ED00C7CE87CD2EB /* PickType.swift in Sources */,
+				837A353A3AE66BAF0A47A89F80A0D158 /* Place.swift in Sources */,
+				454236150789C6EE3A92DE8A7EF2670C /* Platform.swift in Sources */,
+				367ACE3AE0F2EFECDA9CB65C287213EA /* PrimitiveType.swift in Sources */,
+				B007B63D2E2C8AACE8FF94FF59298E1F /* ProfileIcon.swift in Sources */,
+				7ABA987BE3529FACB0A9392DC8F5E039 /* ProfileIconData.swift in Sources */,
+				6B7B05DC7224514389457AF82E77A1B0 /* ProfileIconId.swift in Sources */,
+				743940919BE7A8DB3F2940AF8ECC25FA /* ProviderId.swift in Sources */,
+				0AB1EFBD31FD7A0D395A576E0B88CA91 /* Queue.swift in Sources */,
+				046AFBE5AA68046792B1D9563224B692 /* QueueMode.swift in Sources */,
+				D795FD19FB6F3D89346EE91657A0F0AE /* RankedBusiness.swift in Sources */,
+				8B74CC75D370C03F8A92E3D6A1C21A6A /* RankedDivision.swift in Sources */,
+				0F11EE8C656749048C5F144F02600684 /* RankedEntry.swift in Sources */,
+				5AAC97C3FDE19C57F1953AA4E98F61AD /* RankedMethod.swift in Sources */,
+				731D97DFC32F3C742196FEBA7F126436 /* RankedTier.swift in Sources */,
+				28A7390E9C29C5112090DFF678AD0247 /* RankedTierBusiness.swift in Sources */,
+				03B89EDE7636AF6FA11CAB37787B0FF4 /* Rate.swift in Sources */,
+				1059AC1694CFEB38AF942F83820B8F7A /* RateLimit.swift in Sources */,
+				C84AB62C6B9615AD09AF09836A23000C /* RateLimitManager.swift in Sources */,
+				CE9319688A1022BFA41D4BD5FFBEE85E /* RawRequester.swift in Sources */,
+				646DDDDCF32DC186885F8DD4F7C5FB60 /* Region.swift in Sources */,
+				4EBD3E7DCDFDCC4AA3923AF8E484F35C /* RessourceType.swift in Sources */,
+				C51F55701B28CB6F3940248CE60C9D4D /* RESTRequester.swift in Sources */,
+				BB2C38E72B8E3C3F0841311D72A8784A /* RiotAPI.swift in Sources */,
+				D76EFBF85580E39AC9206A0EE6CAB37A /* RiotAPIRESTRequester.swift in Sources */,
+				7D3C2C44B9940CBD7140C991F82B9F6E /* Rune.swift in Sources */,
+				90F6A7AB7B17D365A63D6AC918F3EF8B /* RuneId.swift in Sources */,
+				67F266705F85BAF55F8C2E1F1965957A /* RunePage.swift in Sources */,
+				C17DA4117E78C629BE35BEB3E85D2EC5 /* RunePath.swift in Sources */,
+				B25414CE6B334ACE0236901314203620 /* RunePathId.swift in Sources */,
+				BF6CD2C919A1923F68BED280E1A225FB /* RuneStage.swift in Sources */,
+				7FD2F47BB0B8D935500255796FFD5643 /* Season.swift in Sources */,
+				DE5236C9EFFF40391D6F307C1A7027DD /* Series.swift in Sources */,
+				5C21A7AC203AF455D6904F093B912585 /* Service.swift in Sources */,
+				2DA506F239D38B16A67D5B5114FEB190 /* ServiceProxy.swift in Sources */,
+				97EF342787A09F25DA41E4E0E06E5B73 /* ServiceStatus.swift in Sources */,
+				0F43E622126187F9B6C8A0355D7657FA /* ServicesUrl.swift in Sources */,
+				23055451F0AADE013735C7D4FF944C8A /* Skin.swift in Sources */,
+				A8CE6D17445C568613D397F9D9FACFF3 /* SkinData.swift in Sources */,
+				7F09F2172B0479D1E50D6C192BC0C2A0 /* SkinId.swift in Sources */,
+				BCC31474D8BEDD7878E70D863C727E93 /* SkinImages.swift in Sources */,
+				4AE54676138769576A1B83DF0A486C18 /* SpectatorBusiness.swift in Sources */,
+				6C78F3AA55E7309E0B6B9ACBEBA5EDAF /* SpectatorMethod.swift in Sources */,
+				4A058558430FA4D6535231FC555DA58F /* SpectatorType.swift in Sources */,
+				981722C3EC77035910431B791FEC97C5 /* StatusBusiness.swift in Sources */,
+				CD8C3BA47CE324070ECA6EEAF70FE5E9 /* StatusMethod.swift in Sources */,
+				BB1BFE34D7B8ED0560D1CA15DA86B12F /* StringExtension.swift in Sources */,
+				927DAC3D6E0202102B18854F153F26AC /* Summoner.swift in Sources */,
+				B16B426D93C9812D05A513DE1DCCC14C /* SummonerBusiness.swift in Sources */,
+				98726BA725D77C85C4081BB64D975B1E /* SummonerId.swift in Sources */,
+				838D08F76C1486CAEB2F85ADEFFB565E /* SummonerMethod.swift in Sources */,
+				20A7A5B29A9946F70481B1D313F1F292 /* SummonerPuuid.swift in Sources */,
+				AA65CBB8BD35DD672C6EA0AF120AC93E /* SummonerSpell.swift in Sources */,
+				418B71F9C6F1E0733A8D28D45D42C8BC /* SummonerSpellData.swift in Sources */,
+				135FFD0A89163EA72FCABEB7E37D5756 /* SummonerSpellId.swift in Sources */,
+				A3441FB7212374CEAF050D8A28E39CEA /* TeamBan.swift in Sources */,
+				B764D65222853D4ED1D25B9E4A203166 /* TeamStats.swift in Sources */,
+				8C1B64B0C22FE73CDA4F48E49274889C /* ThirdPartyCodeBusiness.swift in Sources */,
+				5B459868178A18793821E259948BFD4E /* ThirdPartyCodeMethod.swift in Sources */,
+				F8FB72B54C7BEE74BF3424B7EA1659E1 /* TournamentBusiness.swift in Sources */,
+				CC8CE62673B1F1AFF7117FF10CCE5BE1 /* TournamentCode.swift in Sources */,
+				CA2EC8D16B1C9C1A36D10AF617C10EB1 /* TournamentDetails.swift in Sources */,
+				5C04EF90A021A4E6224D47A19856A22E /* TournamentEvent.swift in Sources */,
+				52532DC10D835C9839C982AEBF50EAB5 /* TournamentEventList.swift in Sources */,
+				8954E0CDA129CB4D0381EBAE6747B74B /* TournamentId.swift in Sources */,
+				80F83E2EE80AA2C222A1FA59F1B2190E /* TournamentInfo.swift in Sources */,
+				F163FD0B9D0EDD9D95ACCFBE6D55468C /* TournamentInitializer.swift in Sources */,
+				E281E3E245AAD573FA9A96D417038B7B /* TournamentMethod.swift in Sources */,
+				41CF6C383F222DC9E47F773D6A74046E /* TournamentProvider.swift in Sources */,
+				09FCF2D8E5FE42564289B87AE109F929 /* TournamentRegion.swift in Sources */,
+				A566DD3C18581D816A827F16E557D9B5 /* TournamentStubBusiness.swift in Sources */,
+				834A7A987175E82CB5539DFB213D09D9 /* TournamentStubMethod.swift in Sources */,
+				A70C43F321CF8877C14B6C6818B00872 /* TournamentUpdate.swift in Sources */,
+				8DBCB5883EF03DDABC8E4338A0A8BDB5 /* Translation.swift in Sources */,
+				A5F2D18AC1F81F37B1E4A6AEA663590F /* TypeAlias.swift in Sources */,
+				BE380E67EF48C97C7AB0FC48B1FF432D /* Version.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98164B21DB7761E2876A825E5B1BCE45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E9991677CF67C8329CE89AB8DC0DDE5 /* Pods-VIPER-LOL-APPTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFF4FD787938BB273360D1BFF6A53564 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09F85CFF9C9EAB4C069FF6DE063CB3E2 /* Pods-VIPER-LOL-APP-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF93EB743DFDD4B420C6759A096645E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44FAB1586D6AB0F14680A433A7CDE1B6 /* Pods-VIPER-LOL-APPUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		37973C07C453281C6EB77A290CC43CED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LeagueAPI;
+			target = 8EA801139C99E0F1F8E3768D4864F813 /* LeagueAPI */;
+			targetProxy = E5140855631943B9FE4CDC764B2007E5 /* PBXContainerItemProxy */;
+		};
+		D326C021B1ACDD75FB39DF4591FFE37B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-VIPER-LOL-APP";
+			target = 3AC6239B6F043A6C9950389888684F4D /* Pods-VIPER-LOL-APP */;
+			targetProxy = B054558F9A8C8CE78F9C6EE2F88DCC2C /* PBXContainerItemProxy */;
+		};
+		FE645DDBCE94704A8D1F4A59AE7EA314 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-VIPER-LOL-APP";
+			target = 3AC6239B6F043A6C9950389888684F4D /* Pods-VIPER-LOL-APP */;
+			targetProxy = C6BBE20EBA6026EF3E2E44DF065C0F22 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0BF48F9BE4B96AA63C2045E22AE1F89D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB203921E1AF0614F337307AD6BD2012 /* LeagueAPI.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LeagueAPI/LeagueAPI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LeagueAPI/LeagueAPI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/LeagueAPI/LeagueAPI.modulemap";
+				PRODUCT_MODULE_NAME = LeagueAPI;
+				PRODUCT_NAME = LeagueAPI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3B6C7A596FCAD013E389E94DB80C4DB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5B172504061B0D882F47219CBF8E6C1 /* Pods-VIPER-LOL-APP.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VIPER-LOL-APP/Pods-VIPER-LOL-APP-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VIPER-LOL-APP/Pods-VIPER-LOL-APP.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		51DD1D2F2C9EF1543627FC4B505F19A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 409E947EB1DD405A11408707D92BF5CE /* Pods-VIPER-LOL-APPTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VIPER-LOL-APPTests/Pods-VIPER-LOL-APPTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VIPER-LOL-APPTests/Pods-VIPER-LOL-APPTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6410F571BA8C1AEC6A19403F1B61B0B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		981E7BE7FE8D2CAB8CCB310D836B93E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB203921E1AF0614F337307AD6BD2012 /* LeagueAPI.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LeagueAPI/LeagueAPI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LeagueAPI/LeagueAPI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/LeagueAPI/LeagueAPI.modulemap";
+				PRODUCT_MODULE_NAME = LeagueAPI;
+				PRODUCT_NAME = LeagueAPI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A27713CB74E99AF202AADC23200A32F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		C2BEC7185BEBC024BEAD5A50981FD59D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BF5213D7B69D8F9BB43B807C0B14C12 /* Pods-VIPER-LOL-APPTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VIPER-LOL-APPTests/Pods-VIPER-LOL-APPTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VIPER-LOL-APPTests/Pods-VIPER-LOL-APPTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C2FF41FC43F3F62A53D9031AF3C5D71C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C2E6A60CC2C8B5445EF5E4E1F12E8F5 /* Pods-VIPER-LOL-APPUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VIPER-LOL-APPUITests/Pods-VIPER-LOL-APPUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VIPER-LOL-APPUITests/Pods-VIPER-LOL-APPUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C52879A77E4494353F6C7B0F2F2A2FF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99D3725759325D411D0238D1A1F98AE5 /* Pods-VIPER-LOL-APPUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VIPER-LOL-APPUITests/Pods-VIPER-LOL-APPUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VIPER-LOL-APPUITests/Pods-VIPER-LOL-APPUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E92DEDF4955AD1E120B1523151EF8212 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90B68B923AFA411FC9B81D419E2D8359 /* Pods-VIPER-LOL-APP.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VIPER-LOL-APP/Pods-VIPER-LOL-APP-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VIPER-LOL-APP/Pods-VIPER-LOL-APP.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6410F571BA8C1AEC6A19403F1B61B0B5 /* Debug */,
+				A27713CB74E99AF202AADC23200A32F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48CB1AABBB6DEDFF9B23CDCAD3993D24 /* Build configuration list for PBXNativeTarget "Pods-VIPER-LOL-APPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2BEC7185BEBC024BEAD5A50981FD59D /* Debug */,
+				51DD1D2F2C9EF1543627FC4B505F19A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5AF7100565C7F9A400D96948FAA3AEC /* Build configuration list for PBXNativeTarget "Pods-VIPER-LOL-APPUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2FF41FC43F3F62A53D9031AF3C5D71C /* Debug */,
+				C52879A77E4494353F6C7B0F2F2A2FF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F78D1BE2E4E07B57086E3CDDB84EFD51 /* Build configuration list for PBXNativeTarget "Pods-VIPER-LOL-APP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B6C7A596FCAD013E389E94DB80C4DB0 /* Debug */,
+				E92DEDF4955AD1E120B1523151EF8212 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEC5AADB863C2F44A0ED8B16D29C3317 /* Build configuration list for PBXNativeTarget "LeagueAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				981E7BE7FE8D2CAB8CCB310D836B93E7 /* Debug */,
+				0BF48F9BE4B96AA63C2045E22AE1F89D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

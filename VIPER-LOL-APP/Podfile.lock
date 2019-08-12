@@ -1,0 +1,16 @@
+PODS:
+  - LeagueAPI (2.1.0)
+
+DEPENDENCIES:
+  - LeagueAPI
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - LeagueAPI
+
+SPEC CHECKSUMS:
+  LeagueAPI: 548a3193a4e97f9ca538acd7523e444aa15feb96
+
+PODFILE CHECKSUM: 0d0de671d4d8f52d8556af5e4586e3c731266050
+
+COCOAPODS: 1.7.5
