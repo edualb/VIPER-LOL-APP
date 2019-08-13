@@ -20,6 +20,7 @@
 		ED4931602301F6EB00E63481 /* ChampionsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED49315F2301F6EB00E63481 /* ChampionsPresenter.swift */; };
 		ED4931642301FA4A00E63481 /* ChampionsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4931632301FA4A00E63481 /* ChampionsInteractor.swift */; };
 		ED4931662302F1F500E63481 /* ChampionsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4931652302F1F500E63481 /* ChampionsRouter.swift */; };
+		ED4931682303495500E63481 /* ChampionEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4931672303495500E63481 /* ChampionEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		ED49315F2301F6EB00E63481 /* ChampionsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionsPresenter.swift; sourceTree = "<group>"; };
 		ED4931632301FA4A00E63481 /* ChampionsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionsInteractor.swift; sourceTree = "<group>"; };
 		ED4931652302F1F500E63481 /* ChampionsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionsRouter.swift; sourceTree = "<group>"; };
+		ED4931672303495500E63481 /* ChampionEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 		ED4931562301DFF100E63481 /* entity */ = {
 			isa = PBXGroup;
 			children = (
+				ED4931672303495500E63481 /* ChampionEntity.swift */,
 			);
 			path = entity;
 			sourceTree = "<group>";
@@ -448,6 +451,7 @@
 				ED4931642301FA4A00E63481 /* ChampionsInteractor.swift in Sources */,
 				ED4931662302F1F500E63481 /* ChampionsRouter.swift in Sources */,
 				ED4931602301F6EB00E63481 /* ChampionsPresenter.swift in Sources */,
+				ED4931682303495500E63481 /* ChampionEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,18 +17,6 @@ final class ChampionsViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.viewDidLoad()
-        
-        let eduardo = Pessoa(name: "Eduardo")
-        print("Struct: \(eduardo.name)") // Eduardo
-        var barbara = eduardo
-        barbara.name = "Bárbara"
-        print("Struct: \(eduardo.name)") // Eduardo
-        
-        let eduardoClass = Pessoa2(name: "Eduardo")
-        print("Class: \(eduardoClass.name)") // Eduardo
-        let barbaraClass = eduardoClass
-        barbaraClass.name = "Bárbara"
-        print("Class: \(eduardoClass.name)") // Bárbara
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
