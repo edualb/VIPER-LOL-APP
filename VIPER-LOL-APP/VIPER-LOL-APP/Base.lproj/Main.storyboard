@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Champions View Controller-->
+        <!--Champion View Controller-->
         <scene sceneID="pce-N0-2jK">
             <objects>
-                <tableViewController storyboardIdentifier="ChampionsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="y4I-Ba-VpP" customClass="ChampionsViewController" customModule="VIPER_LOL_APP" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="ChampionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="y4I-Ba-VpP" customClass="ChampionViewController" customModule="VIPER_LOL_APP" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" sectionIndexMinimumDisplayRowCount="10" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="52L-uZ-0b3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
