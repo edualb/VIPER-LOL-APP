@@ -76,7 +76,8 @@ struct ChampionEntityMapper {
         let championEntity = ChampionEntity(
             name: championDetails.name,
             title: championDetails.title,
-            description: championDetails.presentationText)
+            description: championDetails.presentationText,
+            img: championDetails.images?.square ?? nil)
         return championEntity
     }
 }

@@ -46,29 +46,35 @@ final class ChampionPresenter: ChampionWeekPresenterProtocol {
 extension ChampionPresenter: ChampionWeekInteractorDelegate {
     func fetched(champions: [ChampionEntity]) {
         DispatchQueue.main.async {
-            self.delegate?.showWeekChampions(with: ChampionModelViewMapper.convert(from: champions))
+            ChampionModelViewMapper.convert(from: champions, completion: { (champions) in
+                self.delegate?.showWeekChampions(with: champions)
+            })
         }
     }
     
     func fetchFailed() {
         return
     }
-    
-    private func convert(from champions: [ChampionEntity]) -> [ChampionModelView] {
-        var championsModelView: [ChampionModelView] = []
-        champions.forEach { champion in
-            championsModelView.append(ChampionModelView(name: champion.name))
-        }
-        return championsModelView
-    }
+
 }
 
 struct ChampionModelViewMapper {
-    static func convert(from champions: [ChampionEntity]) -> [ChampionModelView] {
+    static func convert(from champions: [ChampionEntity], completion: @escaping ([ChampionModelView]) -> Void ) {
         var championsModelView: [ChampionModelView] = []
+        let dispatchGroup = DispatchGroup()
         champions.forEach { champion in
-            championsModelView.append(ChampionModelView(name: champion.name))
+            dispatchGroup.enter()
+            champion.img?.getImage(handler: { (img, msgError) in
+                if let img = img {
+                    championsModelView.append(ChampionModelView(
+                        name: champion.name,
+                        img: img))
+                }
+                dispatchGroup.leave()
+            })
         }
-        return championsModelView
+        dispatchGroup.notify(queue: .main) {
+            completion(championsModelView)
+        }
     }
 }
