@@ -10,7 +10,6 @@ import UIKit
 import LeagueAPI
 
 struct ChampionEntity {
-    var championId: ChampionId
     var name: String
     var title: String
     var description: String
