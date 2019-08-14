@@ -31,6 +31,7 @@ final class ChampionViewController: UITableViewController {
         cell?.textLabel?.text = championsRotation?[indexPath.row].name
         cell?.textLabel?.textColor = UIColor.white
         cell?.selectedBackgroundView = customBackgroundColor
+        cell?.imageView?.image = championsRotation?[indexPath.row].img
         return cell!
     }
     
