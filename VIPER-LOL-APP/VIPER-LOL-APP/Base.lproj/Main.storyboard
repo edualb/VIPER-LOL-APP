@@ -70,18 +70,27 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wbc-eo-hK0">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OCm-93-poc">
+                                <rect key="frame" x="16" y="468" width="83" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Wbc-eo-hK0" firstAttribute="centerY" secondItem="EfT-QY-Qqg" secondAttribute="centerY" id="0BZ-M6-NGt"/>
+                            <constraint firstItem="Wbc-eo-hK0" firstAttribute="leading" secondItem="OCm-93-poc" secondAttribute="trailing" constant="-99" id="6Wr-6z-QTA"/>
                             <constraint firstItem="Wbc-eo-hK0" firstAttribute="centerX" secondItem="EfT-QY-Qqg" secondAttribute="centerX" id="A3o-ID-2p3"/>
                             <constraint firstItem="Wbc-eo-hK0" firstAttribute="leading" secondItem="EfT-QY-Qqg" secondAttribute="leading" id="OCf-l6-LQM"/>
+                            <constraint firstItem="OCm-93-poc" firstAttribute="top" secondItem="Wbc-eo-hK0" secondAttribute="bottom" constant="-344" id="Sx3-Rl-CQu"/>
                             <constraint firstItem="Wbc-eo-hK0" firstAttribute="top" secondItem="EfT-QY-Qqg" secondAttribute="top" id="xre-Mk-XaM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fJ9-vN-KsV"/>
                     </view>
                     <connections>
                         <outlet property="championImg" destination="Wbc-eo-hK0" id="mWB-az-gqP"/>
+                        <outlet property="championName" destination="OCm-93-poc" id="SBU-5h-gE4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iNh-hj-8U1" userLabel="First Responder" sceneMemberID="firstResponder"/>

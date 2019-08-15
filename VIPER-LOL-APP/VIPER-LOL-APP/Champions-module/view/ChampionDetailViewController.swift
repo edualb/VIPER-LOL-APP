@@ -14,12 +14,14 @@ class ChampionDetailViewController: UIViewController {
     var presenter: ChampionDetailPresenter?
     var modelView: ChampionModelView?
     
+    @IBOutlet weak var championName: UILabel!
     @IBOutlet weak var championImg: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.black
         championImg.image = modelView?.imgUnique
+        championName.text = modelView?.name
         championImg.layer.insertSublayer( self.includeGradient(imageView: championImg), at: 0)
     }
 

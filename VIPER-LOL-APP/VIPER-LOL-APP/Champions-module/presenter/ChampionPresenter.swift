@@ -80,6 +80,7 @@ struct ChampionModelViewMapper {
                         if let imgUnique = imgUnique {
                             championsModelView.append(ChampionModelView(
                                 name: champion.name,
+                                description: champion.description,
                                 img: img,
                                 imgUnique: imgUnique))
                         }
