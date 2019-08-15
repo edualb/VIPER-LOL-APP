@@ -14,6 +14,7 @@ class ChampionDetailViewController: UIViewController {
     var presenter: ChampionDetailPresenter?
     var modelView: ChampionModelView?
     
+    @IBOutlet weak var championDescription: UILabel!
     @IBOutlet weak var championName: UILabel!
     @IBOutlet weak var championImg: UIImageView!
     
@@ -22,9 +23,13 @@ class ChampionDetailViewController: UIViewController {
         self.view.backgroundColor = UIColor.black
         championImg.image = modelView?.imgUnique
         championName.text = modelView?.name
+        championDescription.text = modelView?.description
         championImg.layer.insertSublayer( self.includeGradient(imageView: championImg), at: 0)
     }
 
+    @IBAction func backButton(_ sender: Any) {
+        presenter?.backToInitial()
+    }
 }
 
 extension ChampionDetailViewController {

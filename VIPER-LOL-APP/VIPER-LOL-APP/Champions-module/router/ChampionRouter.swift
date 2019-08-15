@@ -12,11 +12,13 @@ import UIKit
 protocol ChampionsWeekRouterProtocol {
     func present(at window: UIWindow?)
     func presentChampionDetail(modelView: ChampionModelView, interactor: ChampionWeekInteractorProtocol)
+    func presentChampion()
 }
 
 final class ChampionRouter: ChampionsWeekRouterProtocol {
     
     private var viewController: ChampionViewController?
+    private var window: UIWindow?
     
     func present(at window: UIWindow?) {
         let storyboard = self.getMainStoryboard()
@@ -25,6 +27,7 @@ final class ChampionRouter: ChampionsWeekRouterProtocol {
         viewController.presenter = presenter
         self.viewController = viewController
         window?.rootViewController = self.viewController
+        self.window = window
     }
     
     func presentChampionDetail(modelView: ChampionModelView, interactor: ChampionWeekInteractorProtocol) {
@@ -34,6 +37,10 @@ final class ChampionRouter: ChampionsWeekRouterProtocol {
         viewController.presenter = presenter
         viewController.modelView = modelView
         self.viewController?.show(viewController, sender: "segueChampion")
+    }
+    
+    func presentChampion() {
+        self.present(at: self.window)
     }
 
     private func getMainStoryboard() -> UIStoryboard {

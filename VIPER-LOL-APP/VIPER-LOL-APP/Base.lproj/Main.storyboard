@@ -71,31 +71,54 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OCm-93-poc">
-                                <rect key="frame" x="16" y="468" width="83" height="42"/>
+                                <rect key="frame" x="48" y="468" width="83" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="200" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWU-Me-HvQ">
+                                <rect key="frame" x="48" y="518" width="44" height="21.666666666666629"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6v-CJ-Jyj">
+                                <rect key="frame" x="16" y="44" width="44" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButton:" destination="BSI-xV-qb6" eventType="touchUpInside" id="MeA-bB-XX1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Wbc-eo-hK0" firstAttribute="centerY" secondItem="EfT-QY-Qqg" secondAttribute="centerY" id="0BZ-M6-NGt"/>
-                            <constraint firstItem="Wbc-eo-hK0" firstAttribute="leading" secondItem="OCm-93-poc" secondAttribute="trailing" constant="-99" id="6Wr-6z-QTA"/>
+                            <constraint firstItem="OCm-93-poc" firstAttribute="leading" secondItem="kWU-Me-HvQ" secondAttribute="leading" id="7Oc-SE-BTT"/>
                             <constraint firstItem="Wbc-eo-hK0" firstAttribute="centerX" secondItem="EfT-QY-Qqg" secondAttribute="centerX" id="A3o-ID-2p3"/>
-                            <constraint firstItem="Wbc-eo-hK0" firstAttribute="leading" secondItem="EfT-QY-Qqg" secondAttribute="leading" id="OCf-l6-LQM"/>
-                            <constraint firstItem="OCm-93-poc" firstAttribute="top" secondItem="Wbc-eo-hK0" secondAttribute="bottom" constant="-344" id="Sx3-Rl-CQu"/>
+                            <constraint firstItem="fJ9-vN-KsV" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="OCm-93-poc" secondAttribute="trailing" symbolic="YES" id="DJ8-sL-IZu"/>
+                            <constraint firstItem="kWU-Me-HvQ" firstAttribute="top" secondItem="Wbc-eo-hK0" secondAttribute="bottom" constant="-294" id="TJa-Mi-5gZ"/>
+                            <constraint firstItem="OCm-93-poc" firstAttribute="top" secondItem="Wbc-eo-hK0" secondAttribute="bottom" constant="-344" id="WeO-Xl-gSu"/>
+                            <constraint firstItem="Wbc-eo-hK0" firstAttribute="top" secondItem="H6v-CJ-Jyj" secondAttribute="bottom" constant="-80" id="dO6-ek-wEM"/>
+                            <constraint firstItem="Wbc-eo-hK0" firstAttribute="leading" secondItem="H6v-CJ-Jyj" secondAttribute="trailing" constant="-60" id="ek1-UC-C3z"/>
+                            <constraint firstItem="kWU-Me-HvQ" firstAttribute="leading" secondItem="Wbc-eo-hK0" secondAttribute="trailing" constant="-327" id="fGw-49-8Mh"/>
+                            <constraint firstItem="OCm-93-poc" firstAttribute="leading" secondItem="fJ9-vN-KsV" secondAttribute="leading" constant="48" id="g3h-gz-1AX"/>
+                            <constraint firstItem="fJ9-vN-KsV" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kWU-Me-HvQ" secondAttribute="trailing" symbolic="YES" id="uqn-t3-ow7"/>
                             <constraint firstItem="Wbc-eo-hK0" firstAttribute="top" secondItem="EfT-QY-Qqg" secondAttribute="top" id="xre-Mk-XaM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fJ9-vN-KsV"/>
                     </view>
                     <connections>
+                        <outlet property="championDescription" destination="kWU-Me-HvQ" id="unP-Wx-bZV"/>
                         <outlet property="championImg" destination="Wbc-eo-hK0" id="mWB-az-gqP"/>
                         <outlet property="championName" destination="OCm-93-poc" id="SBU-5h-gE4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iNh-hj-8U1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1011.5942028985507" y="101.78571428571428"/>
+            <point key="canvasLocation" x="1010.4" y="101.23152709359606"/>
         </scene>
     </scenes>
 </document>

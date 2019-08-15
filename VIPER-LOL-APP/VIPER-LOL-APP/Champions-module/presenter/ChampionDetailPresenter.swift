@@ -8,7 +8,11 @@
 
 import UIKit
 
-class ChampionDetailPresenter: PresenterProtocol {
+protocol ChampionDetailPresenterProtocol: PresenterProtocol {
+    func backToInitial()
+}
+
+class ChampionDetailPresenter: ChampionDetailPresenterProtocol {
     
     private weak var delegate: ChampionDetailViewController?
     private var router: ChampionsWeekRouterProtocol?
@@ -23,6 +27,10 @@ class ChampionDetailPresenter: PresenterProtocol {
     
     func viewDidLoad() {
         
+    }
+    
+    func backToInitial() {
+        router?.presentChampion()
     }
     
 }
