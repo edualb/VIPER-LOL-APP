@@ -11,4 +11,5 @@ import UIKit
 struct ChampionModelView {
     var name: String
     var img: UIImage
+    var imgUnique: UIImage
 }

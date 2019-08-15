@@ -22,6 +22,8 @@
 		ED4931662302F1F500E63481 /* ChampionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4931652302F1F500E63481 /* ChampionRouter.swift */; };
 		ED4931682303495500E63481 /* ChampionEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4931672303495500E63481 /* ChampionEntity.swift */; };
 		ED49316A2304511F00E63481 /* ChampionModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4931692304511F00E63481 /* ChampionModelView.swift */; };
+		ED49316C2304938200E63481 /* ChampionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED49316B2304938200E63481 /* ChampionDetailViewController.swift */; };
+		ED4931702305CC1200E63481 /* ChampionDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED49316F2305CC1200E63481 /* ChampionDetailPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		ED4931652302F1F500E63481 /* ChampionRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionRouter.swift; sourceTree = "<group>"; };
 		ED4931672303495500E63481 /* ChampionEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionEntity.swift; sourceTree = "<group>"; };
 		ED4931692304511F00E63481 /* ChampionModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionModelView.swift; sourceTree = "<group>"; };
+		ED49316B2304938200E63481 /* ChampionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionDetailViewController.swift; sourceTree = "<group>"; };
+		ED49316F2305CC1200E63481 /* ChampionDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionDetailPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				ED49315F2301F6EB00E63481 /* ChampionPresenter.swift */,
+				ED49316F2305CC1200E63481 /* ChampionDetailPresenter.swift */,
 			);
 			path = presenter;
 			sourceTree = "<group>";
@@ -224,6 +229,7 @@
 			children = (
 				ED49315D2301E30B00E63481 /* ChampionViewController.swift */,
 				ED4931692304511F00E63481 /* ChampionModelView.swift */,
+				ED49316B2304938200E63481 /* ChampionDetailViewController.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -450,11 +456,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED4931272301DAEB00E63481 /* AppDelegate.swift in Sources */,
+				ED4931702305CC1200E63481 /* ChampionDetailPresenter.swift in Sources */,
 				ED49316A2304511F00E63481 /* ChampionModelView.swift in Sources */,
 				ED49315E2301E30B00E63481 /* ChampionViewController.swift in Sources */,
 				ED4931642301FA4A00E63481 /* ChampionInteractor.swift in Sources */,
 				ED4931662302F1F500E63481 /* ChampionRouter.swift in Sources */,
 				ED4931602301F6EB00E63481 /* ChampionPresenter.swift in Sources */,
+				ED49316C2304938200E63481 /* ChampionDetailViewController.swift in Sources */,
 				ED4931682303495500E63481 /* ChampionEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

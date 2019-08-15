@@ -12,7 +12,7 @@ import LeagueAPI
 final class ChampionViewController: UITableViewController {
     
     var championsRotation: [ChampionModelView]?
-    var presenter: ChampionWeekPresenterProtocol?
+    var presenter: ChampionPresenterProtocol?
     var activityIndicator = UIActivityIndicatorView()
     
     override func viewDidLoad() {
@@ -50,9 +50,10 @@ final class ChampionViewController: UITableViewController {
             cell.alpha = 1.0
         }
     }
-//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        <#code#>
-//    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter?.presentChampionDetail(modelView: (championsRotation?[indexPath.row])!)
+    }
 
 }
 

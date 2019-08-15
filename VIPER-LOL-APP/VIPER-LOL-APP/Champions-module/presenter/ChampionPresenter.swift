@@ -9,28 +9,38 @@
 import UIKit
 import LeagueAPI
 
-//View -> Presenter
-protocol ChampionWeekPresenterProtocol {
+protocol PresenterProtocol {
     func viewDidLoad()
+}
+
+//View -> Presenter
+protocol ChampionPresenterProtocol: PresenterProtocol {
+    func presentChampionDetail(modelView: ChampionModelView)
 }
 
 protocol ChampionWeekPresenterDelegate: class {
     func showWeekChampions(with champions: [ChampionModelView])
 }
 
-final class ChampionPresenter: ChampionWeekPresenterProtocol {
+final class ChampionPresenter: ChampionPresenterProtocol {
     
     private weak var delegate: ChampionWeekPresenterDelegate?
+    private var router: ChampionsWeekRouterProtocol?
     private var interactor: ChampionWeekInteractorProtocol
     
-    init(delegate: ChampionWeekPresenterDelegate, interactor: ChampionWeekInteractorProtocol = ChampionInteractor()) {
+    init(delegate: ChampionWeekPresenterDelegate, router: ChampionsWeekRouterProtocol, interactor: ChampionWeekInteractorProtocol = ChampionInteractor()) {
         self.delegate = delegate
         self.interactor = interactor
+        self.router = router
         self.interactor.setDelegate(delegate: self)
     }
     
     func viewDidLoad() {
         self.loadWeekChampions()
+    }
+    
+    func presentChampionDetail(modelView: ChampionModelView) {
+        self.router?.presentChampionDetail(modelView: modelView, interactor: self.interactor)
     }
     
     private func fetchPressedFor(championId id: Int) {
@@ -66,11 +76,16 @@ struct ChampionModelViewMapper {
             dispatchGroup.enter()
             champion.img?.getImage(handler: { (img, msgError) in
                 if let img = img {
-                    championsModelView.append(ChampionModelView(
-                        name: champion.name,
-                        img: img))
+                    champion.imgUnique?.getImage(handler: { (imgUnique, msgError) in
+                        if let imgUnique = imgUnique {
+                            championsModelView.append(ChampionModelView(
+                                name: champion.name,
+                                img: img,
+                                imgUnique: imgUnique))
+                        }
+                        dispatchGroup.leave()
+                    })
                 }
-                dispatchGroup.leave()
             })
         }
         dispatchGroup.notify(queue: .main) {

@@ -23,7 +23,7 @@ protocol ChampionWeekInteractorDelegate: class {
 
 final class ChampionInteractor: ChampionWeekInteractorProtocol {
     
-    let league = LeagueAPI(APIToken: "RGAPI-cc5b7d11-103e-4efe-b8d1-265b025c0c0a")
+    let league = LeagueAPI(APIToken: "RGAPI-8c34cb10-03d8-41a8-a118-56c6a4f1f1c4")
     private weak var delegate: ChampionWeekInteractorDelegate?
     
     func fetch() {
@@ -77,7 +77,8 @@ struct ChampionEntityMapper {
             name: championDetails.name,
             title: championDetails.title,
             description: championDetails.presentationText,
-            img: championDetails.images?.square ?? nil)
+            img: championDetails.images?.square ?? nil,
+            imgUnique: championDetails.images?.loading ?? nil)
         return championEntity
     }
 }
