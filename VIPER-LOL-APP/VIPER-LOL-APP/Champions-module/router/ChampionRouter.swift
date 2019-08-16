@@ -12,7 +12,6 @@ import UIKit
 protocol ChampionsWeekRouterProtocol: RouterProtocol {
     func present(at window: UIWindow?)
     func presentChampionDetail(modelView: ChampionModelView, interactor: ChampionWeekInteractorProtocol)
-    func presentChampion()
 }
 
 protocol RouterProtocol {
@@ -39,17 +38,8 @@ class ChampionRouter: ChampionsWeekRouterProtocol {
     }
     
     func presentChampionDetail(modelView: ChampionModelView, interactor: ChampionWeekInteractorProtocol) {
-        let storyboard = self.getMainStoryboard()
-        let viewController = storyboard.instantiateViewController(withIdentifier: "ChampionDetailViewController") as! ChampionDetailViewController
-        let presenter = ChampionDetailPresenter(delegate: viewController, router: self, interactor: interactor)
-        viewController.presenter = presenter
-        viewController.modelView = modelView
-        self.window?.rootViewController?.show(viewController, sender: "segueChampion")
-        // self.viewController?.show(viewController, sender: "segueChampion")
-    }
-    
-    func presentChampion() {
-        self.present(at: self.window)
+        let router = ChampionDetailRouter(router: self, window: self.window)
+        router.present(modelView: modelView, interactor: interactor)
     }
 
 }

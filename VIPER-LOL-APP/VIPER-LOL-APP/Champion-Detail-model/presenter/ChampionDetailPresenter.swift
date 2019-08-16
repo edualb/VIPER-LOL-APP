@@ -15,10 +15,10 @@ protocol ChampionDetailPresenterProtocol: PresenterProtocol {
 final class ChampionDetailPresenter: ChampionDetailPresenterProtocol {
     
     private weak var delegate: ChampionDetailViewController?
-    private var router: ChampionsWeekRouterProtocol?
+    private var router: ChampionsDetailRouterProtocol?
     private var interactor: ChampionWeekInteractorProtocol
     
-    init(delegate: ChampionDetailViewController, router: ChampionsWeekRouterProtocol, interactor: ChampionWeekInteractorProtocol = ChampionInteractor()) {
+    init(delegate: ChampionDetailViewController, router: ChampionsDetailRouterProtocol, interactor: ChampionWeekInteractorProtocol = ChampionInteractor()) {
         self.delegate = delegate
         self.interactor = interactor
         self.router = router
