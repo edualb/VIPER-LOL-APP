@@ -9,15 +9,24 @@
 import UIKit
 
 // Presenter -> Router
-protocol ChampionsWeekRouterProtocol {
+protocol ChampionsWeekRouterProtocol: RouterProtocol {
     func present(at window: UIWindow?)
     func presentChampionDetail(modelView: ChampionModelView, interactor: ChampionWeekInteractorProtocol)
     func presentChampion()
 }
 
-final class ChampionRouter: ChampionsWeekRouterProtocol {
+protocol RouterProtocol {
+    func getMainStoryboard() -> UIStoryboard
+}
+
+extension RouterProtocol {
+    func getMainStoryboard() -> UIStoryboard {
+        return UIStoryboard(name: "Main", bundle: nil)
+    }
+}
+
+class ChampionRouter: ChampionsWeekRouterProtocol {
     
-    private weak var viewController: ChampionViewController?
     private var window: UIWindow?
     
     func present(at window: UIWindow?) {
@@ -25,8 +34,7 @@ final class ChampionRouter: ChampionsWeekRouterProtocol {
         let viewController = storyboard.instantiateViewController(withIdentifier: "ChampionViewController") as! ChampionViewController
         let presenter = ChampionPresenter(delegate: viewController, router: self)
         viewController.presenter = presenter
-        self.viewController = viewController
-        window?.rootViewController = self.viewController
+        window?.rootViewController = viewController
         self.window = window
     }
     
@@ -36,15 +44,12 @@ final class ChampionRouter: ChampionsWeekRouterProtocol {
         let presenter = ChampionDetailPresenter(delegate: viewController, router: self, interactor: interactor)
         viewController.presenter = presenter
         viewController.modelView = modelView
-        self.viewController?.show(viewController, sender: "segueChampion")
+        self.window?.rootViewController?.show(viewController, sender: "segueChampion")
+        // self.viewController?.show(viewController, sender: "segueChampion")
     }
     
     func presentChampion() {
         self.present(at: self.window)
-    }
-
-    private func getMainStoryboard() -> UIStoryboard {
-        return UIStoryboard(name: "Main", bundle: nil)
     }
 
 }

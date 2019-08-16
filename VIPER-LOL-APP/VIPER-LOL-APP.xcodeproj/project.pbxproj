@@ -24,6 +24,7 @@
 		ED49316A2304511F00E63481 /* ChampionModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4931692304511F00E63481 /* ChampionModelView.swift */; };
 		ED49316C2304938200E63481 /* ChampionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED49316B2304938200E63481 /* ChampionDetailViewController.swift */; };
 		ED4931702305CC1200E63481 /* ChampionDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED49316F2305CC1200E63481 /* ChampionDetailPresenter.swift */; };
+		ED4931782306F1BC00E63481 /* ChampionDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4931772306F1BC00E63481 /* ChampionDetailRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		ED4931692304511F00E63481 /* ChampionModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionModelView.swift; sourceTree = "<group>"; };
 		ED49316B2304938200E63481 /* ChampionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionDetailViewController.swift; sourceTree = "<group>"; };
 		ED49316F2305CC1200E63481 /* ChampionDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionDetailPresenter.swift; sourceTree = "<group>"; };
+		ED4931772306F1BC00E63481 /* ChampionDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionDetailRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,6 +266,7 @@
 		ED4931742306F03600E63481 /* router */ = {
 			isa = PBXGroup;
 			children = (
+				ED4931772306F1BC00E63481 /* ChampionDetailRouter.swift */,
 			);
 			path = router;
 			sourceTree = "<group>";
@@ -509,6 +512,7 @@
 				ED49315E2301E30B00E63481 /* ChampionViewController.swift in Sources */,
 				ED4931642301FA4A00E63481 /* ChampionInteractor.swift in Sources */,
 				ED4931662302F1F500E63481 /* ChampionRouter.swift in Sources */,
+				ED4931782306F1BC00E63481 /* ChampionDetailRouter.swift in Sources */,
 				ED4931602301F6EB00E63481 /* ChampionPresenter.swift in Sources */,
 				ED49316C2304938200E63481 /* ChampionDetailViewController.swift in Sources */,
 				ED4931682303495500E63481 /* ChampionEntity.swift in Sources */,
