@@ -32,7 +32,6 @@ final class ChampionInteractor: ChampionWeekInteractorProtocol {
                 self.getChampionsEntity(by: rotations, completion: { (championsEntity) in
                     self.delegate?.fetched(champions: championsEntity)
                 })
-                // self.delegate?.fetched(champions: rotations)
             } else {
                 print("Request failed cause: \(errorMsg ?? "No error description")")
             }

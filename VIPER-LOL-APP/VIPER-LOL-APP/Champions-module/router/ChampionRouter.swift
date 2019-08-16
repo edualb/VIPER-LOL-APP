@@ -17,7 +17,7 @@ protocol ChampionsWeekRouterProtocol {
 
 final class ChampionRouter: ChampionsWeekRouterProtocol {
     
-    private var viewController: ChampionViewController?
+    private weak var viewController: ChampionViewController?
     private var window: UIWindow?
     
     func present(at window: UIWindow?) {

@@ -12,7 +12,7 @@ protocol ChampionDetailPresenterProtocol: PresenterProtocol {
     func backToInitial()
 }
 
-class ChampionDetailPresenter: ChampionDetailPresenterProtocol {
+final class ChampionDetailPresenter: ChampionDetailPresenterProtocol {
     
     private weak var delegate: ChampionDetailViewController?
     private var router: ChampionsWeekRouterProtocol?

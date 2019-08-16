@@ -25,7 +25,7 @@ protocol ChampionWeekPresenterDelegate: class {
 final class ChampionPresenter: ChampionPresenterProtocol {
     
     private weak var delegate: ChampionWeekPresenterDelegate?
-    private var router: ChampionsWeekRouterProtocol?
+    private var router: ChampionsWeekRouterProtocol
     private var interactor: ChampionWeekInteractorProtocol
     
     init(delegate: ChampionWeekPresenterDelegate, router: ChampionsWeekRouterProtocol, interactor: ChampionWeekInteractorProtocol = ChampionInteractor()) {
@@ -40,7 +40,7 @@ final class ChampionPresenter: ChampionPresenterProtocol {
     }
     
     func presentChampionDetail(modelView: ChampionModelView) {
-        self.router?.presentChampionDetail(modelView: modelView, interactor: self.interactor)
+        self.router.presentChampionDetail(modelView: modelView, interactor: self.interactor)
     }
     
     private func fetchPressedFor(championId id: Int) {

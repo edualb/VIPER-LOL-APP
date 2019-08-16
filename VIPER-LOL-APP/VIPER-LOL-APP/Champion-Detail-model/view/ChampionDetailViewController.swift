@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ChampionDetailViewController: UIViewController {
+final class ChampionDetailViewController: UIViewController {
 
     var championsRotation: [ChampionModelView]?
     var presenter: ChampionDetailPresenter?
