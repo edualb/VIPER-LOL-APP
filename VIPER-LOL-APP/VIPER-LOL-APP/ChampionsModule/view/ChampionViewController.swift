@@ -11,9 +11,9 @@ import LeagueAPI
 
 final class ChampionViewController: UITableViewController {
     
-    var championsRotation: [ChampionModelView]?
-    var presenter: ChampionPresenterProtocol?
-    var activityIndicator = UIActivityIndicatorView()
+    private var championsRotation: [ChampionModelView]?
+    private var presenter: ChampionPresenterProtocol?
+    private var activityIndicator = UIActivityIndicatorView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,6 +51,7 @@ final class ChampionViewController: UITableViewController {
         }
     }
     
+    // Pass index to presenter
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         presenter?.presentChampionDetail(modelView: (championsRotation?[indexPath.row])!)
     }
@@ -62,6 +63,10 @@ extension ChampionViewController: ChampionWeekPresenterDelegate {
         self.championsRotation = champions
         self.tableView.reloadData()
         self.stopActivityIndicator()
+    }
+    
+    func setPresenter(presenter: ChampionPresenterProtocol) {
+        self.presenter = presenter
     }
     
     private func beginActivityIndicator(view: UIView) {

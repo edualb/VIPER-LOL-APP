@@ -10,9 +10,9 @@ import UIKit
 
 final class ChampionDetailViewController: UIViewController {
 
-    var championsRotation: [ChampionModelView]?
-    var presenter: ChampionDetailPresenter?
-    var modelView: ChampionModelView?
+    private var championsRotation: [ChampionModelView]?
+    private var presenter: ChampionDetailPresenter?
+    private var modelView: ChampionModelView?
     
     @IBOutlet weak var championDescription: UILabel!
     @IBOutlet weak var championName: UILabel!
@@ -41,5 +41,13 @@ extension ChampionDetailViewController {
         gradient.colors = [startColor, endColor]
         gradient.locations = [0.0, 0.6]
         return gradient
+    }
+    
+    func setPresenter(presenter: ChampionDetailPresenter) {
+        self.presenter = presenter
+    }
+    
+    func setModelView(modelView: ChampionModelView) {
+        self.modelView = modelView
     }
 }

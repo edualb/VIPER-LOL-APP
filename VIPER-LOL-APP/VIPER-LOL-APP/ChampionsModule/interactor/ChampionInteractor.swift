@@ -23,7 +23,7 @@ protocol ChampionWeekInteractorDelegate: class {
 
 final class ChampionInteractor: ChampionWeekInteractorProtocol {
     
-    let league = LeagueAPI(APIToken: "RGAPI-8c34cb10-03d8-41a8-a118-56c6a4f1f1c4")
+    private let league = LeagueAPI(APIToken: "RGAPI-ce890563-09a2-43e1-a351-fda98effeb0f")
     private weak var delegate: ChampionWeekInteractorDelegate?
     
     func fetch() {

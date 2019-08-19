@@ -32,8 +32,8 @@ final class ChampionDetailRouter: ChampionsDetailRouterProtocol {
         let storyboard = self.getMainStoryboard()
         let viewController = storyboard.instantiateViewController(withIdentifier: "ChampionDetailViewController") as! ChampionDetailViewController
         let presenter = ChampionDetailPresenter(delegate: viewController, router: self, interactor: interactor)
-        viewController.presenter = presenter
-        viewController.modelView = modelView
+        viewController.setPresenter(presenter: presenter)
+        viewController.setModelView(modelView: modelView)
         self.window?.rootViewController?.show(viewController, sender: "segueChampion")
     }
 }

@@ -153,8 +153,8 @@
 		ED4931252301DAEB00E63481 /* VIPER-LOL-APP */ = {
 			isa = PBXGroup;
 			children = (
-				ED4931712306EFE400E63481 /* Champion-Detail-model */,
-				ED4931542301DFCD00E63481 /* Champions-module */,
+				ED4931712306EFE400E63481 /* ChampionDetailModule */,
+				ED4931542301DFCD00E63481 /* ChampionsModule */,
 				ED4931262301DAEB00E63481 /* AppDelegate.swift */,
 				ED49312A2301DAEB00E63481 /* Main.storyboard */,
 				ED49312D2301DAEC00E63481 /* Assets.xcassets */,
@@ -182,7 +182,7 @@
 			path = "VIPER-LOL-APPUITests";
 			sourceTree = "<group>";
 		};
-		ED4931542301DFCD00E63481 /* Champions-module */ = {
+		ED4931542301DFCD00E63481 /* ChampionsModule */ = {
 			isa = PBXGroup;
 			children = (
 				ED49315A2301E04200E63481 /* view */,
@@ -191,7 +191,7 @@
 				ED4931572301E00900E63481 /* interactor */,
 				ED4931562301DFF100E63481 /* entity */,
 			);
-			path = "Champions-module";
+			path = ChampionsModule;
 			sourceTree = "<group>";
 		};
 		ED4931562301DFF100E63481 /* entity */ = {
@@ -235,16 +235,14 @@
 			path = view;
 			sourceTree = "<group>";
 		};
-		ED4931712306EFE400E63481 /* Champion-Detail-model */ = {
+		ED4931712306EFE400E63481 /* ChampionDetailModule */ = {
 			isa = PBXGroup;
 			children = (
-				ED4931762306F05A00E63481 /* entity */,
-				ED4931752306F04700E63481 /* interactor */,
 				ED4931742306F03600E63481 /* router */,
 				ED4931732306F00B00E63481 /* presenter */,
 				ED4931722306F00200E63481 /* view */,
 			);
-			path = "Champion-Detail-model";
+			path = ChampionDetailModule;
 			sourceTree = "<group>";
 		};
 		ED4931722306F00200E63481 /* view */ = {
@@ -269,20 +267,6 @@
 				ED4931772306F1BC00E63481 /* ChampionDetailRouter.swift */,
 			);
 			path = router;
-			sourceTree = "<group>";
-		};
-		ED4931752306F04700E63481 /* interactor */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = interactor;
-			sourceTree = "<group>";
-		};
-		ED4931762306F05A00E63481 /* entity */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

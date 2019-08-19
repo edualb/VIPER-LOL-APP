@@ -43,10 +43,6 @@ final class ChampionPresenter: ChampionPresenterProtocol {
         self.router.presentChampionDetail(modelView: modelView, interactor: self.interactor)
     }
     
-    private func fetchPressedFor(championId id: Int) {
-        return
-    }
-    
     private func loadWeekChampions() {
         interactor.fetch()
     }
@@ -68,6 +64,7 @@ extension ChampionPresenter: ChampionWeekInteractorDelegate {
 
 }
 
+// Mapper doesn't do request
 struct ChampionModelViewMapper {
     static func convert(from champions: [ChampionEntity], completion: @escaping ([ChampionModelView]) -> Void ) {
         var championsModelView: [ChampionModelView] = []
@@ -91,6 +88,7 @@ struct ChampionModelViewMapper {
         }
         dispatchGroup.notify(queue: .main) {
             completion(championsModelView)
+            
         }
     }
 }
