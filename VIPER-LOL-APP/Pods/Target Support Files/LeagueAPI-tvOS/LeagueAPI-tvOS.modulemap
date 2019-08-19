@@ -1,0 +1,7 @@
+module LeagueAPI {
+  umbrella header "LeagueAPI-tvOS-umbrella.h"
+  exclude header "LeagueAPI-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

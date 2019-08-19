@@ -1,4 +1,4 @@
-framework module Pods_VIPER_LOL_APP {
+module Pods_VIPER_LOL_APP {
   umbrella header "Pods-VIPER-LOL-APP-umbrella.h"
 
   export *

@@ -1,22 +1,28 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
+def pods
+	pod "LeagueAPI"
+end
+
 target 'VIPER-LOL-APP' do
-    # Comment the next line if you don't want to use dynamic frameworks
-    use_frameworks!
+    	workspace 'VIPER-LOL-APP'
+	project 'VIPER-LOL-APP/VIPER-LOL-APP.xcodeproj'
+	platform :ios, '12.4'
+    	target 'VIPER-LOL-APPTests' do
+    		inherit! :search_paths
+    		# Pods for testing
+    	end
+    	target 'VIPER-LOL-APPUITests' do
+    		inherit! :search_paths
+    		# Pods for testing
+	end
+	pods
+end
 
-    # Pods for VIPER-LOL-APP
-
-    pod "LeagueAPI"
-
-    target 'VIPER-LOL-APPTests' do
-    inherit! :search_paths
-    # Pods for testing
-    end
-
-    target 'VIPER-LOL-APPUITests' do
-    inherit! :search_paths
-    # Pods for testing
-    end
-
+target 'VIPER-LOL-APP-TVOS' do
+	workspace 'VIPER-LOL-APP'
+	platform :tvos, '12.4'
+	project 'VIPER-LOL-APP-TVOS/VIPER-LOL-APP-TVOS.xcodeproj'
+	pods
 end

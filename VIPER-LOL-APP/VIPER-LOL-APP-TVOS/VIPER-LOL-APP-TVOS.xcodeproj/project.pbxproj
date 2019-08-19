@@ -1,0 +1,644 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD9764EF087EEF057FECA5F2 /* libPods-VIPER-LOL-APP-TVOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0286E421201E738A0E7D5249 /* libPods-VIPER-LOL-APP-TVOS.a */; };
+		ED493186230B1D9800E63481 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED493185230B1D9800E63481 /* AppDelegate.swift */; };
+		ED493188230B1D9800E63481 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED493187230B1D9800E63481 /* ViewController.swift */; };
+		ED49318B230B1D9800E63481 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED493189230B1D9800E63481 /* Main.storyboard */; };
+		ED49318D230B1D9A00E63481 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED49318C230B1D9A00E63481 /* Assets.xcassets */; };
+		ED493198230B1D9A00E63481 /* VIPER_LOL_APP_TVOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED493197230B1D9A00E63481 /* VIPER_LOL_APP_TVOSTests.swift */; };
+		ED4931A3230B1D9A00E63481 /* VIPER_LOL_APP_TVOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4931A2230B1D9A00E63481 /* VIPER_LOL_APP_TVOSUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ED493194230B1D9A00E63481 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED49317A230B1D9800E63481 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED493181230B1D9800E63481;
+			remoteInfo = "VIPER-LOL-APP-TVOS";
+		};
+		ED49319F230B1D9A00E63481 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED49317A230B1D9800E63481 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED493181230B1D9800E63481;
+			remoteInfo = "VIPER-LOL-APP-TVOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0286E421201E738A0E7D5249 /* libPods-VIPER-LOL-APP-TVOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VIPER-LOL-APP-TVOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B84942F3DD7B1267E799F12 /* Pods-VIPER-LOL-APP-TVOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER-LOL-APP-TVOS.release.xcconfig"; path = "Target Support Files/Pods-VIPER-LOL-APP-TVOS/Pods-VIPER-LOL-APP-TVOS.release.xcconfig"; sourceTree = "<group>"; };
+		99E978B91E1EEC25EA997F63 /* Pods-VIPER-LOL-APP-TVOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER-LOL-APP-TVOS.debug.xcconfig"; path = "Target Support Files/Pods-VIPER-LOL-APP-TVOS/Pods-VIPER-LOL-APP-TVOS.debug.xcconfig"; sourceTree = "<group>"; };
+		ED493182230B1D9800E63481 /* VIPER-LOL-APP-TVOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIPER-LOL-APP-TVOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED493185230B1D9800E63481 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ED493187230B1D9800E63481 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ED49318A230B1D9800E63481 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ED49318C230B1D9A00E63481 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED49318E230B1D9A00E63481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED493193230B1D9A00E63481 /* VIPER-LOL-APP-TVOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VIPER-LOL-APP-TVOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED493197230B1D9A00E63481 /* VIPER_LOL_APP_TVOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPER_LOL_APP_TVOSTests.swift; sourceTree = "<group>"; };
+		ED493199230B1D9A00E63481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED49319E230B1D9A00E63481 /* VIPER-LOL-APP-TVOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VIPER-LOL-APP-TVOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED4931A2230B1D9A00E63481 /* VIPER_LOL_APP_TVOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPER_LOL_APP_TVOSUITests.swift; sourceTree = "<group>"; };
+		ED4931A4230B1D9A00E63481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED49317F230B1D9800E63481 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD9764EF087EEF057FECA5F2 /* libPods-VIPER-LOL-APP-TVOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED493190230B1D9A00E63481 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED49319B230B1D9A00E63481 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		31ADA9E90DCB4BE651250080 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0286E421201E738A0E7D5249 /* libPods-VIPER-LOL-APP-TVOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5DCED84D3AD4FB6706027C8C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				99E978B91E1EEC25EA997F63 /* Pods-VIPER-LOL-APP-TVOS.debug.xcconfig */,
+				7B84942F3DD7B1267E799F12 /* Pods-VIPER-LOL-APP-TVOS.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		ED493179230B1D9800E63481 = {
+			isa = PBXGroup;
+			children = (
+				ED493184230B1D9800E63481 /* VIPER-LOL-APP-TVOS */,
+				ED493196230B1D9A00E63481 /* VIPER-LOL-APP-TVOSTests */,
+				ED4931A1230B1D9A00E63481 /* VIPER-LOL-APP-TVOSUITests */,
+				ED493183230B1D9800E63481 /* Products */,
+				5DCED84D3AD4FB6706027C8C /* Pods */,
+				31ADA9E90DCB4BE651250080 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ED493183230B1D9800E63481 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED493182230B1D9800E63481 /* VIPER-LOL-APP-TVOS.app */,
+				ED493193230B1D9A00E63481 /* VIPER-LOL-APP-TVOSTests.xctest */,
+				ED49319E230B1D9A00E63481 /* VIPER-LOL-APP-TVOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED493184230B1D9800E63481 /* VIPER-LOL-APP-TVOS */ = {
+			isa = PBXGroup;
+			children = (
+				ED493185230B1D9800E63481 /* AppDelegate.swift */,
+				ED493187230B1D9800E63481 /* ViewController.swift */,
+				ED493189230B1D9800E63481 /* Main.storyboard */,
+				ED49318C230B1D9A00E63481 /* Assets.xcassets */,
+				ED49318E230B1D9A00E63481 /* Info.plist */,
+			);
+			path = "VIPER-LOL-APP-TVOS";
+			sourceTree = "<group>";
+		};
+		ED493196230B1D9A00E63481 /* VIPER-LOL-APP-TVOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				ED493197230B1D9A00E63481 /* VIPER_LOL_APP_TVOSTests.swift */,
+				ED493199230B1D9A00E63481 /* Info.plist */,
+			);
+			path = "VIPER-LOL-APP-TVOSTests";
+			sourceTree = "<group>";
+		};
+		ED4931A1230B1D9A00E63481 /* VIPER-LOL-APP-TVOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ED4931A2230B1D9A00E63481 /* VIPER_LOL_APP_TVOSUITests.swift */,
+				ED4931A4230B1D9A00E63481 /* Info.plist */,
+			);
+			path = "VIPER-LOL-APP-TVOSUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED493181230B1D9800E63481 /* VIPER-LOL-APP-TVOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED4931A7230B1D9A00E63481 /* Build configuration list for PBXNativeTarget "VIPER-LOL-APP-TVOS" */;
+			buildPhases = (
+				EF049AB5AE53F00D9E6B9D8B /* [CP] Check Pods Manifest.lock */,
+				ED49317E230B1D9800E63481 /* Sources */,
+				ED49317F230B1D9800E63481 /* Frameworks */,
+				ED493180230B1D9800E63481 /* Resources */,
+				79FB5093562D6AA01C8A0B49 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VIPER-LOL-APP-TVOS";
+			productName = "VIPER-LOL-APP-TVOS";
+			productReference = ED493182230B1D9800E63481 /* VIPER-LOL-APP-TVOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ED493192230B1D9A00E63481 /* VIPER-LOL-APP-TVOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED4931AA230B1D9A00E63481 /* Build configuration list for PBXNativeTarget "VIPER-LOL-APP-TVOSTests" */;
+			buildPhases = (
+				ED49318F230B1D9A00E63481 /* Sources */,
+				ED493190230B1D9A00E63481 /* Frameworks */,
+				ED493191230B1D9A00E63481 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED493195230B1D9A00E63481 /* PBXTargetDependency */,
+			);
+			name = "VIPER-LOL-APP-TVOSTests";
+			productName = "VIPER-LOL-APP-TVOSTests";
+			productReference = ED493193230B1D9A00E63481 /* VIPER-LOL-APP-TVOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ED49319D230B1D9A00E63481 /* VIPER-LOL-APP-TVOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED4931AD230B1D9A00E63481 /* Build configuration list for PBXNativeTarget "VIPER-LOL-APP-TVOSUITests" */;
+			buildPhases = (
+				ED49319A230B1D9A00E63481 /* Sources */,
+				ED49319B230B1D9A00E63481 /* Frameworks */,
+				ED49319C230B1D9A00E63481 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED4931A0230B1D9A00E63481 /* PBXTargetDependency */,
+			);
+			name = "VIPER-LOL-APP-TVOSUITests";
+			productName = "VIPER-LOL-APP-TVOSUITests";
+			productReference = ED49319E230B1D9A00E63481 /* VIPER-LOL-APP-TVOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED49317A230B1D9800E63481 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = eduardo.silva;
+				TargetAttributes = {
+					ED493181230B1D9800E63481 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					ED493192230B1D9A00E63481 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = ED493181230B1D9800E63481;
+					};
+					ED49319D230B1D9A00E63481 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = ED493181230B1D9800E63481;
+					};
+				};
+			};
+			buildConfigurationList = ED49317D230B1D9800E63481 /* Build configuration list for PBXProject "VIPER-LOL-APP-TVOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED493179230B1D9800E63481;
+			productRefGroup = ED493183230B1D9800E63481 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED493181230B1D9800E63481 /* VIPER-LOL-APP-TVOS */,
+				ED493192230B1D9A00E63481 /* VIPER-LOL-APP-TVOSTests */,
+				ED49319D230B1D9A00E63481 /* VIPER-LOL-APP-TVOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED493180230B1D9800E63481 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED49318D230B1D9A00E63481 /* Assets.xcassets in Resources */,
+				ED49318B230B1D9800E63481 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED493191230B1D9A00E63481 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED49319C230B1D9A00E63481 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		79FB5093562D6AA01C8A0B49 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VIPER-LOL-APP-TVOS/Pods-VIPER-LOL-APP-TVOS-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VIPER-LOL-APP-TVOS/Pods-VIPER-LOL-APP-TVOS-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VIPER-LOL-APP-TVOS/Pods-VIPER-LOL-APP-TVOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF049AB5AE53F00D9E6B9D8B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VIPER-LOL-APP-TVOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED49317E230B1D9800E63481 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED493188230B1D9800E63481 /* ViewController.swift in Sources */,
+				ED493186230B1D9800E63481 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED49318F230B1D9A00E63481 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED493198230B1D9A00E63481 /* VIPER_LOL_APP_TVOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED49319A230B1D9A00E63481 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED4931A3230B1D9A00E63481 /* VIPER_LOL_APP_TVOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ED493195230B1D9A00E63481 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED493181230B1D9800E63481 /* VIPER-LOL-APP-TVOS */;
+			targetProxy = ED493194230B1D9A00E63481 /* PBXContainerItemProxy */;
+		};
+		ED4931A0230B1D9A00E63481 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED493181230B1D9800E63481 /* VIPER-LOL-APP-TVOS */;
+			targetProxy = ED49319F230B1D9A00E63481 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ED493189230B1D9800E63481 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED49318A230B1D9800E63481 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ED4931A5230B1D9A00E63481 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 12.4;
+			};
+			name = Debug;
+		};
+		ED4931A6230B1D9A00E63481 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TVOS_DEPLOYMENT_TARGET = 12.4;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED4931A8230B1D9A00E63481 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99E978B91E1EEC25EA997F63 /* Pods-VIPER-LOL-APP-TVOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "VIPER-LOL-APP-TVOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.helloWorld.VIPER-LOL-APP-TVOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		ED4931A9230B1D9A00E63481 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B84942F3DD7B1267E799F12 /* Pods-VIPER-LOL-APP-TVOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "VIPER-LOL-APP-TVOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.helloWorld.VIPER-LOL-APP-TVOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+		ED4931AB230B1D9A00E63481 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "VIPER-LOL-APP-TVOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.helloWorld.VIPER-LOL-APP-TVOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VIPER-LOL-APP-TVOS.app/VIPER-LOL-APP-TVOS";
+			};
+			name = Debug;
+		};
+		ED4931AC230B1D9A00E63481 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "VIPER-LOL-APP-TVOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.helloWorld.VIPER-LOL-APP-TVOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VIPER-LOL-APP-TVOS.app/VIPER-LOL-APP-TVOS";
+			};
+			name = Release;
+		};
+		ED4931AE230B1D9A00E63481 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "VIPER-LOL-APP-TVOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.helloWorld.VIPER-LOL-APP-TVOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = "VIPER-LOL-APP-TVOS";
+			};
+			name = Debug;
+		};
+		ED4931AF230B1D9A00E63481 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "VIPER-LOL-APP-TVOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.helloWorld.VIPER-LOL-APP-TVOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = "VIPER-LOL-APP-TVOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED49317D230B1D9800E63481 /* Build configuration list for PBXProject "VIPER-LOL-APP-TVOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED4931A5230B1D9A00E63481 /* Debug */,
+				ED4931A6230B1D9A00E63481 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED4931A7230B1D9A00E63481 /* Build configuration list for PBXNativeTarget "VIPER-LOL-APP-TVOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED4931A8230B1D9A00E63481 /* Debug */,
+				ED4931A9230B1D9A00E63481 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED4931AA230B1D9A00E63481 /* Build configuration list for PBXNativeTarget "VIPER-LOL-APP-TVOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED4931AB230B1D9A00E63481 /* Debug */,
+				ED4931AC230B1D9A00E63481 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED4931AD230B1D9A00E63481 /* Build configuration list for PBXNativeTarget "VIPER-LOL-APP-TVOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED4931AE230B1D9A00E63481 /* Debug */,
+				ED4931AF230B1D9A00E63481 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED49317A230B1D9800E63481 /* Project object */;
+}

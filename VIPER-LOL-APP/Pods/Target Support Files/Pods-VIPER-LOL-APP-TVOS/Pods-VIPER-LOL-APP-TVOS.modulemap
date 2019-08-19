@@ -1,0 +1,6 @@
+module Pods_VIPER_LOL_APP_TVOS {
+  umbrella header "Pods-VIPER-LOL-APP-TVOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

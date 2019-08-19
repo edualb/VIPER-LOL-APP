@@ -1,0 +1,11 @@
+${PODS_ROOT}/Target Support Files/Pods-VIPER-LOL-APP/Pods-VIPER-LOL-APP-resources.sh
+${PODS_ROOT}/LeagueAPI/LeagueAPI/LeagueAPI/Assets/Bronze_Emblem.png
+${PODS_ROOT}/LeagueAPI/LeagueAPI/LeagueAPI/Assets/Challenger_Emblem.png
+${PODS_ROOT}/LeagueAPI/LeagueAPI/LeagueAPI/Assets/Diamond_Emblem.png
+${PODS_ROOT}/LeagueAPI/LeagueAPI/LeagueAPI/Assets/Gold_Emblem.png
+${PODS_ROOT}/LeagueAPI/LeagueAPI/LeagueAPI/Assets/Grandmaster_Emblem.png
+${PODS_ROOT}/LeagueAPI/LeagueAPI/LeagueAPI/Assets/Iron_Emblem.png
+${PODS_ROOT}/LeagueAPI/LeagueAPI/LeagueAPI/Assets/Master_Emblem.png
+${PODS_ROOT}/LeagueAPI/LeagueAPI/LeagueAPI/Assets/Platinum_Emblem.png
+${PODS_ROOT}/LeagueAPI/LeagueAPI/LeagueAPI/Assets/Silver_Emblem.png
+${PODS_ROOT}/LeagueAPI/LeagueAPI/LeagueAPI/Assets/Unranked_Emblem.png
