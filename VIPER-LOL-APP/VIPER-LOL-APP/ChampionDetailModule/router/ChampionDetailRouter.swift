@@ -16,16 +16,16 @@ protocol ChampionsDetailRouterProtocol: RouterProtocol {
 
 final class ChampionDetailRouter: ChampionsDetailRouterProtocol {
     
-    private weak var window: UIWindow?
+    private weak var viewController: UITableViewController?
     private var router: ChampionsWeekRouterProtocol?
     
-    init(router: ChampionsWeekRouterProtocol, window: UIWindow?) {
+    init(router: ChampionsWeekRouterProtocol, viewController: UITableViewController?) {
         self.router = router
-        self.window = window
+        self.viewController = viewController
     }
     
     func presentChampion() {
-        router?.present(at: self.window)
+        router?.present()
     }
     
     func present(modelView: ChampionModelView, interactor: ChampionWeekInteractorProtocol) {
@@ -34,6 +34,6 @@ final class ChampionDetailRouter: ChampionsDetailRouterProtocol {
         let presenter = ChampionDetailPresenter(delegate: viewController, router: self, interactor: interactor)
         viewController.setPresenter(presenter: presenter)
         viewController.setModelView(modelView: modelView)
-        self.window?.rootViewController?.show(viewController, sender: "segueChampion")
+        self.viewController?.show(viewController, sender: "segueChampion")
     }
 }
