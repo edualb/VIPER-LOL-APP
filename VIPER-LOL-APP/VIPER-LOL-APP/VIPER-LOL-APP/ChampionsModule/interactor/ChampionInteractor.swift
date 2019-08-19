@@ -23,18 +23,11 @@ protocol ChampionWeekInteractorDelegate: class {
 
 final class ChampionInteractor: ChampionWeekInteractorProtocol {
     
-    private let league = LeagueAPI(APIToken: "RGAPI-ce890563-09a2-43e1-a351-fda98effeb0f")
     private weak var delegate: ChampionWeekInteractorDelegate?
     
     func fetch() {
-        league.riotAPI.getChampionRotation(on: .BR) { (rotations, errorMsg) in
-            if let rotations = rotations {
-                self.getChampionsEntity(by: rotations, completion: { (championsEntity) in
-                    self.delegate?.fetched(champions: championsEntity)
-                })
-            } else {
-                print("Request failed cause: \(errorMsg ?? "No error description")")
-            }
+        ChampionOrchestration.getChampions { (champions) in
+            self.delegate?.fetched(champions: ChampionEntityMapper.make(from: champions))
         }
     }
 
@@ -42,50 +35,19 @@ final class ChampionInteractor: ChampionWeekInteractorProtocol {
         self.delegate = delegate
     }
     
-    private func getChampionsEntity(by rotations: ChampionRotations, completion: @escaping ([ChampionEntity]) -> Void) {
-        var champions: [ChampionEntity] = []
-        let dispatchGroup = DispatchGroup()
-        for championId in rotations.rotation {
-            dispatchGroup.enter()
-            self.fetch(by: championId, completion: { (champion, errorMsg) in
-                if let champion = champion {
-                    champion.images?.square.getImage(handler: { (img, msgError) in
-                        if let img = img {
-                            champion.images?.loading.getImage(handler: { (imgUnique, msgError) in
-                                if let imgUnique = imgUnique {
-                                    champions.append(ChampionEntityMapper.make(from: champion, imgSquare: img, imgLoading:  imgUnique))
-                                }
-                                dispatchGroup.leave()
-                            })
-                        }
-                    })
-                }
-            })
-        }
-        dispatchGroup.notify(queue: .main) {
-            completion(champions)
-        }
-    }
-    
-    private func fetch(by id: ChampionId, completion: @escaping (ChampionDetails?, String?) -> Void) {
-        self.league.getChampionDetails(by: id) { (champion, errorMsg) in
-            if let champion = champion {
-                completion(champion, nil)
-            } else {
-                completion(nil, errorMsg)
-            }
-        }
-    }
 }
 
 struct ChampionEntityMapper {
-    static func make(from championDetails: ChampionDetails, imgSquare: UIImage, imgLoading: UIImage) -> ChampionEntity {
-        let championEntity = ChampionEntity(
-            name: championDetails.name,
-            title: championDetails.title,
-            description: championDetails.presentationText,
-            img: imgSquare,
-            imgUnique: imgLoading)
-        return championEntity
+    static func make(from championsDetails: [Champion]) -> [ChampionEntity] {
+        var championsEntity: [ChampionEntity] = []
+        championsDetails.forEach { (champion) in
+            championsEntity.append(ChampionEntity(
+                name: champion.name,
+                title: champion.title,
+                description: champion.description,
+                img: champion.img,
+                imgUnique: champion.imgLoading))
+        }
+        return championsEntity
     }
 }

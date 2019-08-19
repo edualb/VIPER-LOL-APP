@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,8 @@
 		ED49318D230B1D9A00E63481 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED49318C230B1D9A00E63481 /* Assets.xcassets */; };
 		ED493198230B1D9A00E63481 /* VIPER_LOL_APP_TVOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED493197230B1D9A00E63481 /* VIPER_LOL_APP_TVOSTests.swift */; };
 		ED4931A3230B1D9A00E63481 /* VIPER_LOL_APP_TVOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4931A2230B1D9A00E63481 /* VIPER_LOL_APP_TVOSUITests.swift */; };
+		EDB01A7A230B4561006B5925 /* Champion.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB01A77230B4561006B5925 /* Champion.swift */; };
+		EDB01A7B230B4561006B5925 /* ChampionOrchestration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB01A79230B4561006B5925 /* ChampionOrchestration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		ED49319E230B1D9A00E63481 /* VIPER-LOL-APP-TVOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VIPER-LOL-APP-TVOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED4931A2230B1D9A00E63481 /* VIPER_LOL_APP_TVOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPER_LOL_APP_TVOSUITests.swift; sourceTree = "<group>"; };
 		ED4931A4230B1D9A00E63481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDB01A77230B4561006B5925 /* Champion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Champion.swift; sourceTree = "<group>"; };
+		EDB01A79230B4561006B5925 /* ChampionOrchestration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChampionOrchestration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,7 @@
 		ED493184230B1D9800E63481 /* VIPER-LOL-APP-TVOS */ = {
 			isa = PBXGroup;
 			children = (
+				EDB01A75230B4561006B5925 /* CORE */,
 				ED493185230B1D9800E63481 /* AppDelegate.swift */,
 				ED493187230B1D9800E63481 /* ViewController.swift */,
 				ED493189230B1D9800E63481 /* Main.storyboard */,
@@ -145,6 +150,32 @@
 				ED4931A4230B1D9A00E63481 /* Info.plist */,
 			);
 			path = "VIPER-LOL-APP-TVOSUITests";
+			sourceTree = "<group>";
+		};
+		EDB01A75230B4561006B5925 /* CORE */ = {
+			isa = PBXGroup;
+			children = (
+				EDB01A76230B4561006B5925 /* entity */,
+				EDB01A78230B4561006B5925 /* orchestration */,
+			);
+			name = CORE;
+			path = ../../CORE;
+			sourceTree = "<group>";
+		};
+		EDB01A76230B4561006B5925 /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				EDB01A77230B4561006B5925 /* Champion.swift */,
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
+		EDB01A78230B4561006B5925 /* orchestration */ = {
+			isa = PBXGroup;
+			children = (
+				EDB01A79230B4561006B5925 /* ChampionOrchestration.swift */,
+			);
+			path = orchestration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,6 +354,8 @@
 			files = (
 				ED493188230B1D9800E63481 /* ViewController.swift in Sources */,
 				ED493186230B1D9800E63481 /* AppDelegate.swift in Sources */,
+				EDB01A7B230B4561006B5925 /* ChampionOrchestration.swift in Sources */,
+				EDB01A7A230B4561006B5925 /* Champion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

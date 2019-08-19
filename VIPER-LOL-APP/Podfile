@@ -6,7 +6,7 @@ def pods
 end
 
 target 'VIPER-LOL-APP' do
-    	workspace 'VIPER-LOL-APP'
+  workspace 'VIPER-LOL-APP'
 	project 'VIPER-LOL-APP/VIPER-LOL-APP.xcodeproj'
 	platform :ios, '12.4'
     	target 'VIPER-LOL-APPTests' do
