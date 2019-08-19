@@ -52,9 +52,10 @@ final class ChampionPresenter: ChampionPresenterProtocol {
 extension ChampionPresenter: ChampionWeekInteractorDelegate {
     func fetched(champions: [ChampionEntity]) {
         DispatchQueue.main.async {
-            ChampionModelViewMapper.convert(from: champions, completion: { (champions) in
-                self.delegate?.showWeekChampions(with: champions)
-            })
+            self.delegate?.showWeekChampions(with: ChampionModelViewMapper.convert(from: champions))
+//            ChampionModelViewMapper.convert(from: champions, completion: { (champions) in
+//                self.delegate?.showWeekChampions(with: champions)
+//            })
         }
     }
     
@@ -64,31 +65,17 @@ extension ChampionPresenter: ChampionWeekInteractorDelegate {
 
 }
 
-// Mapper doesn't do request
 struct ChampionModelViewMapper {
-    static func convert(from champions: [ChampionEntity], completion: @escaping ([ChampionModelView]) -> Void ) {
+    static func convert(from champions: [ChampionEntity]) -> [ChampionModelView] {
         var championsModelView: [ChampionModelView] = []
-        let dispatchGroup = DispatchGroup()
         champions.forEach { champion in
-            dispatchGroup.enter()
-            champion.img?.getImage(handler: { (img, msgError) in
-                if let img = img {
-                    champion.imgUnique?.getImage(handler: { (imgUnique, msgError) in
-                        if let imgUnique = imgUnique {
-                            championsModelView.append(ChampionModelView(
-                                name: champion.name,
-                                description: champion.description,
-                                img: img,
-                                imgUnique: imgUnique))
-                        }
-                        dispatchGroup.leave()
-                    })
-                }
-            })
+            championsModelView.append(ChampionModelView(
+                name: champion.name,
+                description: champion.description,
+                img: champion.img,
+                imgUnique: champion.imgUnique)
+            )
         }
-        dispatchGroup.notify(queue: .main) {
-            completion(championsModelView)
-            
-        }
+        return championsModelView
     }
 }

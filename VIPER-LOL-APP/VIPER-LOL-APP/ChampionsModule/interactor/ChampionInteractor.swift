@@ -49,9 +49,17 @@ final class ChampionInteractor: ChampionWeekInteractorProtocol {
             dispatchGroup.enter()
             self.fetch(by: championId, completion: { (champion, errorMsg) in
                 if let champion = champion {
-                    champions.append(ChampionEntityMapper.make(from: champion))
+                    champion.images?.square.getImage(handler: { (img, msgError) in
+                        if let img = img {
+                            champion.images?.loading.getImage(handler: { (imgUnique, msgError) in
+                                if let imgUnique = imgUnique {
+                                    champions.append(ChampionEntityMapper.make(from: champion, imgSquare: img, imgLoading:  imgUnique))
+                                }
+                                dispatchGroup.leave()
+                            })
+                        }
+                    })
                 }
-                dispatchGroup.leave()
             })
         }
         dispatchGroup.notify(queue: .main) {
@@ -71,13 +79,13 @@ final class ChampionInteractor: ChampionWeekInteractorProtocol {
 }
 
 struct ChampionEntityMapper {
-    static func make(from championDetails: ChampionDetails) -> ChampionEntity {
+    static func make(from championDetails: ChampionDetails, imgSquare: UIImage, imgLoading: UIImage) -> ChampionEntity {
         let championEntity = ChampionEntity(
             name: championDetails.name,
             title: championDetails.title,
             description: championDetails.presentationText,
-            img: championDetails.images?.square ?? nil,
-            imgUnique: championDetails.images?.loading ?? nil)
+            img: imgSquare,
+            imgUnique: imgLoading)
         return championEntity
     }
 }
