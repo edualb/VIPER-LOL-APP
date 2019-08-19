@@ -15,7 +15,7 @@ protocol PresenterProtocol {
 
 //View -> Presenter
 protocol ChampionPresenterProtocol: PresenterProtocol {
-    func presentChampionDetail(modelView: ChampionModelView)
+    func didSelectRowAt(index: Int)
 }
 
 protocol ChampionWeekPresenterDelegate: class {
@@ -27,6 +27,7 @@ final class ChampionPresenter: ChampionPresenterProtocol {
     private weak var delegate: ChampionWeekPresenterDelegate?
     private var router: ChampionsWeekRouterProtocol
     private var interactor: ChampionWeekInteractorProtocol
+    private var champions: [ChampionModelView] = []
     
     init(delegate: ChampionWeekPresenterDelegate, router: ChampionsWeekRouterProtocol, interactor: ChampionWeekInteractorProtocol = ChampionInteractor()) {
         self.delegate = delegate
@@ -39,7 +40,8 @@ final class ChampionPresenter: ChampionPresenterProtocol {
         self.loadWeekChampions()
     }
     
-    func presentChampionDetail(modelView: ChampionModelView) {
+    func didSelectRowAt(index: Int) {
+        let modelView = champions[index]
         self.router.presentChampionDetail(modelView: modelView, interactor: self.interactor)
     }
     
@@ -52,7 +54,8 @@ final class ChampionPresenter: ChampionPresenterProtocol {
 extension ChampionPresenter: ChampionWeekInteractorDelegate {
     func fetched(champions: [ChampionEntity]) {
         DispatchQueue.main.async {
-            self.delegate?.showWeekChampions(with: ChampionModelViewMapper.convert(from: champions))
+            self.champions = ChampionModelViewMapper.convert(from: champions)
+            self.delegate?.showWeekChampions(with: self.champions)
         }
     }
     

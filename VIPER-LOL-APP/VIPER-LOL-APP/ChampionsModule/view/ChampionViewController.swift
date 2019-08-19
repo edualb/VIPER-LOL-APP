@@ -53,7 +53,7 @@ final class ChampionViewController: UITableViewController {
     
     // Pass index to presenter
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        presenter?.presentChampionDetail(modelView: (championsRotation?[indexPath.row])!)
+        presenter?.didSelectRowAt(index: indexPath.row)
     }
 
 }
