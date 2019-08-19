@@ -53,9 +53,6 @@ extension ChampionPresenter: ChampionWeekInteractorDelegate {
     func fetched(champions: [ChampionEntity]) {
         DispatchQueue.main.async {
             self.delegate?.showWeekChampions(with: ChampionModelViewMapper.convert(from: champions))
-//            ChampionModelViewMapper.convert(from: champions, completion: { (champions) in
-//                self.delegate?.showWeekChampions(with: champions)
-//            })
         }
     }
     
