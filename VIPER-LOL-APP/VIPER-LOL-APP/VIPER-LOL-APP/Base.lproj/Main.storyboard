@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y4I-Ba-VpP">
-    <device id="retina5_9" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,7 +15,7 @@
             <objects>
                 <tableViewController storyboardIdentifier="ChampionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="y4I-Ba-VpP" customClass="ChampionViewController" customModule="VIPER_LOL_APP" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" sectionIndexMinimumDisplayRowCount="10" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="52L-uZ-0b3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="separatorColor" red="0.011477687590000001" green="0.010556725770000001" blue="0.01202234456" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
@@ -34,15 +34,49 @@
                             </items>
                         </navigationBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="championsCell" id="NXL-F4-4h3">
-                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="championsCell" rowHeight="116" id="NXL-F4-4h3" customClass="ChampionTableViewCell" customModule="VIPER_LOL_APP" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="375" height="116"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NXL-F4-4h3" id="Mup-0z-lP3">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="116"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hmL-na-AYk">
+                                            <rect key="frame" x="114" y="43" width="245" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PvB-Nd-hTd">
+                                            <rect key="frame" x="16" y="13" width="90" height="90"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="90" id="0jz-Hc-XCd"/>
+                                                <constraint firstAttribute="width" constant="90" id="qeI-YZ-I4S"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.011477687590000001" green="0.010556725770000001" blue="0.01202234456" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                    <constraints>
+                                        <constraint firstItem="PvB-Nd-hTd" firstAttribute="centerY" secondItem="Mup-0z-lP3" secondAttribute="centerY" id="2xt-gK-nXZ"/>
+                                        <constraint firstAttribute="trailing" secondItem="hmL-na-AYk" secondAttribute="trailing" constant="16" id="AHM-jc-1ul"/>
+                                        <constraint firstItem="hmL-na-AYk" firstAttribute="leading" secondItem="PvB-Nd-hTd" secondAttribute="trailing" constant="8" id="KvO-Kq-OnN"/>
+                                        <constraint firstItem="PvB-Nd-hTd" firstAttribute="leading" secondItem="Mup-0z-lP3" secondAttribute="leading" constant="16" id="V7O-OF-4AH"/>
+                                        <constraint firstItem="hmL-na-AYk" firstAttribute="centerY" secondItem="PvB-Nd-hTd" secondAttribute="centerY" id="hpK-jQ-PQE"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="championImageView" destination="PvB-Nd-hTd" id="Aoy-CI-3u7"/>
+                                    <outlet property="nameLabel" destination="hmL-na-AYk" id="fRu-V0-96y"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Mi6-v6-aYy">
+                                <rect key="frame" x="0.0" y="188" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Mi6-v6-aYy" id="gFu-SQ-kDk">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.89841775835915483" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -57,27 +91,27 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zWS-Hb-lwx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="114.49275362318842" y="102.45535714285714"/>
+            <point key="canvasLocation" x="114.40000000000001" y="101.19940029985008"/>
         </scene>
         <!--Champion Detail View Controller-->
         <scene sceneID="ev1-mt-ONk">
             <objects>
                 <viewController storyboardIdentifier="ChampionDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BSI-xV-qb6" customClass="ChampionDetailViewController" customModule="VIPER_LOL_APP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EfT-QY-Qqg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wbc-eo-hK0">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OCm-93-poc">
-                                <rect key="frame" x="48" y="468" width="83" height="42"/>
+                                <rect key="frame" x="48" y="323" width="83" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="200" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWU-Me-HvQ">
-                                <rect key="frame" x="48" y="518" width="44" height="21.666666666666629"/>
+                                <rect key="frame" x="48" y="373" width="44" height="21.5"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>

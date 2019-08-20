@@ -28,15 +28,9 @@ final class ChampionViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "championsCell")
-        let customBackgroundColor = UIView()
-        customBackgroundColor.backgroundColor = UIColor.black
-        cell?.textLabel?.text = championsRotation?[indexPath.row].name
-        cell?.textLabel?.textColor = UIColor.white
-        cell?.selectedBackgroundView = customBackgroundColor
-        cell?.imageView?.image = championsRotation?[indexPath.row].img
-        cell?.layer.borderWidth = 5
-        return cell!
+        let cell = tableView.dequeueReusableCell(withIdentifier: "championsCell", for: indexPath) as! ChampionTableViewCell
+        cell.setupCell(with: championsRotation![indexPath.row])
+        return cell
     }
     
     
@@ -51,7 +45,6 @@ final class ChampionViewController: UITableViewController {
         }
     }
     
-    // Pass index to presenter
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         presenter?.didSelectRowAt(index: indexPath.row)
     }
