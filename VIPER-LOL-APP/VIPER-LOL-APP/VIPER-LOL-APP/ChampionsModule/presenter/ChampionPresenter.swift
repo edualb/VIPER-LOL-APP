@@ -73,7 +73,7 @@ struct ChampionModelViewMapper {
                 name: champion.name,
                 description: champion.description,
                 img: champion.img,
-                imgUnique: champion.imgUnique)
+                imgLoading: champion.imgLoading)
             )
         }
         return championsModelView

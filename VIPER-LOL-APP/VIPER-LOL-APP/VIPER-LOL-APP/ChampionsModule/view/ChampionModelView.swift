@@ -12,5 +12,5 @@ struct ChampionModelView {
     var name: String
     var description: String
     var img: UIImage?
-    var imgUnique: UIImage?
+    var imgLoading: UIImage?
 }

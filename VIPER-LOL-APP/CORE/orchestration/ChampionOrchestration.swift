@@ -9,14 +9,14 @@ import UIKit
 import LeagueAPI
 
 protocol ChampionOrchestrationProtocol {
-    static func getChampions(completion: @escaping ([Champion]) -> Void)
+    static func getChampions(completion: @escaping ([ChampionEntity]) -> Void)
 }
 
 class ChampionOrchestration: ChampionOrchestrationProtocol {
     
     private static let league = LeagueAPI(APIToken: "RGAPI-ce890563-09a2-43e1-a351-fda98effeb0f")
     
-    static func getChampions(completion: @escaping ([Champion]) -> Void) {
+    static func getChampions(completion: @escaping ([ChampionEntity]) -> Void) {
         league.riotAPI.getChampionRotation(on: .BR) { (rotations, errorMsg) in
             if let rotations = rotations {
                 self.getChampions(by: rotations, completion: { (champions) in
@@ -28,8 +28,8 @@ class ChampionOrchestration: ChampionOrchestrationProtocol {
         }
     }
     
-    private static func getChampions(by rotations: ChampionRotations, completion: @escaping ([Champion]) -> Void) {
-        var champions: [Champion] = []
+    private static func getChampions(by rotations: ChampionRotations, completion: @escaping ([ChampionEntity]) -> Void) {
+        var champions: [ChampionEntity] = []
         let dispatchGroup = DispatchGroup()
         for championId in rotations.rotation {
             dispatchGroup.enter()
@@ -39,7 +39,7 @@ class ChampionOrchestration: ChampionOrchestrationProtocol {
                         if let img = img {
                             champion.images?.loading.getImage(handler: { (imgUnique, msgError) in
                                 if let imgUnique = imgUnique {
-                                    champions.append(ChampionMapper.make(from: champion, imgSquare: img, imgLoading:  imgUnique))
+                                    champions.append(ChampionEntityMapper.make(from: champion, imgSquare: img, imgLoading:  imgUnique))
                                 }
                                 dispatchGroup.leave()
                             })
@@ -64,9 +64,9 @@ class ChampionOrchestration: ChampionOrchestrationProtocol {
     }
 }
 
-struct ChampionMapper {
-    static func make(from championDetails: ChampionDetails, imgSquare: UIImage, imgLoading: UIImage) -> Champion {
-        let champion = Champion(
+struct ChampionEntityMapper {
+    static func make(from championDetails: ChampionDetails, imgSquare: UIImage, imgLoading: UIImage) -> ChampionEntity {
+        let champion = ChampionEntity(
             name: championDetails.name,
             title: championDetails.title,
             description: championDetails.presentationText,

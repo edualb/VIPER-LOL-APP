@@ -14,5 +14,5 @@ struct ChampionEntity {
     var title: String
     var description: String
     var img: UIImage?
-    var imgUnique: UIImage?
+    var imgLoading: UIImage?
 }

@@ -27,7 +27,7 @@ final class ChampionInteractor: ChampionWeekInteractorProtocol {
     
     func fetch() {
         ChampionOrchestration.getChampions { (champions) in
-            self.delegate?.fetched(champions: ChampionEntityMapper.make(from: champions))
+            self.delegate?.fetched(champions: champions)
         }
     }
 
@@ -35,19 +35,4 @@ final class ChampionInteractor: ChampionWeekInteractorProtocol {
         self.delegate = delegate
     }
     
-}
-
-struct ChampionEntityMapper {
-    static func make(from championsDetails: [Champion]) -> [ChampionEntity] {
-        var championsEntity: [ChampionEntity] = []
-        championsDetails.forEach { (champion) in
-            championsEntity.append(ChampionEntity(
-                name: champion.name,
-                title: champion.title,
-                description: champion.description,
-                img: champion.img,
-                imgUnique: champion.imgLoading))
-        }
-        return championsEntity
-    }
 }
