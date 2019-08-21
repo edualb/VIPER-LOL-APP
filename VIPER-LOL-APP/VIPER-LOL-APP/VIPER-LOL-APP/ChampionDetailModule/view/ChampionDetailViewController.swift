@@ -30,7 +30,7 @@ final class ChampionDetailViewController: UIViewController {
         })
         championName.text = modelView?.name
         championDescription.text = modelView?.description
-        championImg.layer.insertSublayer( self.includeGradient(imageView: championImg), at: 0)
+        championImg.includeGradient(view: self.view)
     }
 
     @IBAction func backButton(_ sender: Any) {
@@ -39,15 +39,6 @@ final class ChampionDetailViewController: UIViewController {
 }
 
 extension ChampionDetailViewController {
-    private func includeGradient(imageView: UIImageView) -> CAGradientLayer {
-        let gradient = CAGradientLayer()
-        gradient.frame = self.view.frame
-        let startColor = UIColor.clear.cgColor
-        let endColor = UIColor.black.cgColor
-        gradient.colors = [startColor, endColor]
-        gradient.locations = [0.0, 0.6]
-        return gradient
-    }
     
     func setPresenter(presenter: ChampionDetailPresenter) {
         self.presenter = presenter

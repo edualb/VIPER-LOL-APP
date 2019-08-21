@@ -37,6 +37,18 @@ extension UIView {
     }
 }
 
+extension UIImageView {
+    func includeGradient(view: UIView) {
+        let gradient = CAGradientLayer()
+        gradient.frame = view.frame
+        let startColor = UIColor.clear.cgColor
+        let endColor = UIColor.black.cgColor
+        gradient.colors = [startColor, endColor]
+        gradient.locations = [0.0, 0.6]
+        self.layer.insertSublayer(gradient, at: 0)
+    }
+}
+
 extension UITableViewCell {
     func setupChampionCell() {
         self.contentView.backgroundColor = UIColor(white: 0.0, alpha: 0.9)
