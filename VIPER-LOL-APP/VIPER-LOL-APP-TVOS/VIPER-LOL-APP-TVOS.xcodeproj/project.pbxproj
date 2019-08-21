@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		BD9764EF087EEF057FECA5F2 /* libPods-VIPER-LOL-APP-TVOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0286E421201E738A0E7D5249 /* libPods-VIPER-LOL-APP-TVOS.a */; };
 		ED493186230B1D9800E63481 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED493185230B1D9800E63481 /* AppDelegate.swift */; };
-		ED493188230B1D9800E63481 /* ChampionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED493187230B1D9800E63481 /* ChampionViewController.swift */; };
 		ED49318B230B1D9800E63481 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED493189230B1D9800E63481 /* Main.storyboard */; };
 		ED49318D230B1D9A00E63481 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED49318C230B1D9A00E63481 /* Assets.xcassets */; };
 		ED493198230B1D9A00E63481 /* VIPER_LOL_APP_TVOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED493197230B1D9A00E63481 /* VIPER_LOL_APP_TVOSTests.swift */; };
 		ED4931A3230B1D9A00E63481 /* VIPER_LOL_APP_TVOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4931A2230B1D9A00E63481 /* VIPER_LOL_APP_TVOSUITests.swift */; };
 		ED986F77230C5B10004AE411 /* ChampionEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED986F76230C5B0F004AE411 /* ChampionEntity.swift */; };
+		ED986F87230C7DEE004AE411 /* ChampionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED986F86230C7DEE004AE411 /* ChampionTableViewCell.swift */; };
+		ED986F8F230D876B004AE411 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED986F8E230D876B004AE411 /* extensions.swift */; };
 		EDB01A7B230B4561006B5925 /* ChampionOrchestration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB01A79230B4561006B5925 /* ChampionOrchestration.swift */; };
 		EDB01A89230C4F11006B5925 /* ChampionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB01A88230C4F11006B5925 /* ChampionRouter.swift */; };
 /* End PBXBuildFile section */
@@ -42,7 +43,6 @@
 		99E978B91E1EEC25EA997F63 /* Pods-VIPER-LOL-APP-TVOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER-LOL-APP-TVOS.debug.xcconfig"; path = "Target Support Files/Pods-VIPER-LOL-APP-TVOS/Pods-VIPER-LOL-APP-TVOS.debug.xcconfig"; sourceTree = "<group>"; };
 		ED493182230B1D9800E63481 /* VIPER-LOL-APP-TVOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIPER-LOL-APP-TVOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED493185230B1D9800E63481 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ED493187230B1D9800E63481 /* ChampionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionViewController.swift; sourceTree = "<group>"; };
 		ED49318A230B1D9800E63481 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED49318C230B1D9A00E63481 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED49318E230B1D9A00E63481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +53,8 @@
 		ED4931A2230B1D9A00E63481 /* VIPER_LOL_APP_TVOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPER_LOL_APP_TVOSUITests.swift; sourceTree = "<group>"; };
 		ED4931A4230B1D9A00E63481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED986F76230C5B0F004AE411 /* ChampionEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionEntity.swift; sourceTree = "<group>"; };
+		ED986F86230C7DEE004AE411 /* ChampionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChampionTableViewCell.swift; sourceTree = "<group>"; };
+		ED986F8E230D876B004AE411 /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		EDB01A79230B4561006B5925 /* ChampionOrchestration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChampionOrchestration.swift; sourceTree = "<group>"; };
 		EDB01A88230C4F11006B5925 /* ChampionRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -154,9 +156,28 @@
 			path = "VIPER-LOL-APP-TVOSUITests";
 			sourceTree = "<group>";
 		};
+		ED986F85230C7DEE004AE411 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				ED986F86230C7DEE004AE411 /* ChampionTableViewCell.swift */,
+			);
+			name = cells;
+			path = "../VIPER-LOL-APP/VIPER-LOL-APP/ChampionsModule/view/cells";
+			sourceTree = "<group>";
+		};
+		ED986F8D230D876B004AE411 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				ED986F8E230D876B004AE411 /* extensions.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
 		EDB01A75230B4561006B5925 /* CORE */ = {
 			isa = PBXGroup;
 			children = (
+				ED986F8D230D876B004AE411 /* common */,
+				ED986F85230C7DEE004AE411 /* cells */,
 				EDB01A76230B4561006B5925 /* entity */,
 				EDB01A78230B4561006B5925 /* orchestration */,
 			);
@@ -194,7 +215,6 @@
 		EDB01A84230C4A80006B5925 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				ED493187230B1D9800E63481 /* ChampionViewController.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -395,11 +415,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED493188230B1D9800E63481 /* ChampionViewController.swift in Sources */,
 				ED493186230B1D9800E63481 /* AppDelegate.swift in Sources */,
+				ED986F87230C7DEE004AE411 /* ChampionTableViewCell.swift in Sources */,
 				EDB01A7B230B4561006B5925 /* ChampionOrchestration.swift in Sources */,
 				EDB01A89230C4F11006B5925 /* ChampionRouter.swift in Sources */,
 				ED986F77230C5B10004AE411 /* ChampionEntity.swift in Sources */,
+				ED986F8F230D876B004AE411 /* extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

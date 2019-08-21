@@ -16,10 +16,10 @@ protocol ChampionsDetailRouterProtocol: RouterProtocol {
 
 final class ChampionDetailRouter: ChampionsDetailRouterProtocol {
     
-    private weak var viewController: UITableViewController?
+    private weak var viewController: UIViewController?
     private var router: ChampionsWeekRouterProtocol?
     
-    init(router: ChampionsWeekRouterProtocol, viewController: UITableViewController?) {
+    init(router: ChampionsWeekRouterProtocol, viewController: UIViewController?) {
         self.router = router
         self.viewController = viewController
     }

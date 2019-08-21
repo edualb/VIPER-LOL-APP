@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y4I-Ba-VpP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tge-MW-Yvu">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -11,87 +11,80 @@
     </dependencies>
     <scenes>
         <!--Champion View Controller-->
-        <scene sceneID="pce-N0-2jK">
+        <scene sceneID="sMT-JN-17K">
             <objects>
-                <tableViewController storyboardIdentifier="ChampionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="y4I-Ba-VpP" customClass="ChampionViewController" customModule="VIPER_LOL_APP" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" sectionIndexMinimumDisplayRowCount="10" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="52L-uZ-0b3">
+                <viewController storyboardIdentifier="ChampionViewController" id="Tge-MW-Yvu" customClass="ChampionViewController" customModule="VIPER_LOL_APP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cVB-qm-QYV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="separatorColor" red="0.011477687590000001" green="0.010556725770000001" blue="0.01202234456" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="sectionIndexColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="sectionIndexBackgroundColor" red="0.011477687590000001" green="0.010556725770000001" blue="0.01202234456" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="sectionIndexTrackingBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="RRJ-i6-458">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <color key="barTintColor" red="0.011477687591339669" green="0.010556725768645603" blue="0.012022344559585507" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
-                            <textAttributes key="titleTextAttributes">
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </textAttributes>
-                            <items>
-                                <navigationItem title="Week Champions" id="JO3-GS-kxo"/>
-                            </items>
-                        </navigationBar>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="championsCell" rowHeight="116" id="NXL-F4-4h3" customClass="ChampionTableViewCell" customModule="VIPER_LOL_APP" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="72" width="375" height="116"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NXL-F4-4h3" id="Mup-0z-lP3">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="116"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hmL-na-AYk">
-                                            <rect key="frame" x="114" y="43" width="245" height="30"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PvB-Nd-hTd">
-                                            <rect key="frame" x="16" y="13" width="90" height="90"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="90" id="0jz-Hc-XCd"/>
-                                                <constraint firstAttribute="width" constant="90" id="qeI-YZ-I4S"/>
-                                            </constraints>
-                                        </imageView>
-                                    </subviews>
-                                    <color key="backgroundColor" red="0.011477687590000001" green="0.010556725770000001" blue="0.01202234456" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
-                                    <constraints>
-                                        <constraint firstItem="PvB-Nd-hTd" firstAttribute="centerY" secondItem="Mup-0z-lP3" secondAttribute="centerY" id="2xt-gK-nXZ"/>
-                                        <constraint firstAttribute="trailing" secondItem="hmL-na-AYk" secondAttribute="trailing" constant="16" id="AHM-jc-1ul"/>
-                                        <constraint firstItem="hmL-na-AYk" firstAttribute="leading" secondItem="PvB-Nd-hTd" secondAttribute="trailing" constant="8" id="KvO-Kq-OnN"/>
-                                        <constraint firstItem="PvB-Nd-hTd" firstAttribute="leading" secondItem="Mup-0z-lP3" secondAttribute="leading" constant="16" id="V7O-OF-4AH"/>
-                                        <constraint firstItem="hmL-na-AYk" firstAttribute="centerY" secondItem="PvB-Nd-hTd" secondAttribute="centerY" id="hpK-jQ-PQE"/>
-                                    </constraints>
-                                </tableViewCellContentView>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Zyc-X7-NCh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="championsCell" rowHeight="116" id="hjg-KG-KIB" customClass="ChampionTableViewCell" customModule="VIPER_LOL_APP" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="116"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hjg-KG-KIB" id="8ho-dI-s9j">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="115.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ikg-gP-wFm">
+                                                    <rect key="frame" x="114" y="43" width="245" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0MS-SZ-xUC">
+                                                    <rect key="frame" x="16" y="13" width="90" height="90"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="90" id="pSE-1c-Php"/>
+                                                        <constraint firstAttribute="height" constant="90" id="shq-FU-KCT"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.011477687590000001" green="0.010556725770000001" blue="0.01202234456" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Ikg-gP-wFm" secondAttribute="trailing" constant="16" id="6pD-Vs-LjB"/>
+                                                <constraint firstItem="0MS-SZ-xUC" firstAttribute="centerY" secondItem="8ho-dI-s9j" secondAttribute="centerY" id="9hf-iB-bES"/>
+                                                <constraint firstItem="Ikg-gP-wFm" firstAttribute="leading" secondItem="0MS-SZ-xUC" secondAttribute="trailing" constant="8" id="EQo-Ol-c0J"/>
+                                                <constraint firstItem="Ikg-gP-wFm" firstAttribute="centerY" secondItem="0MS-SZ-xUC" secondAttribute="centerY" id="EUd-sj-Rg3"/>
+                                                <constraint firstItem="0MS-SZ-xUC" firstAttribute="leading" secondItem="8ho-dI-s9j" secondAttribute="leading" constant="16" id="idw-xf-p2K"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="championImageView" destination="0MS-SZ-xUC" id="6ln-S0-p12"/>
+                                            <outlet property="nameLabel" destination="Ikg-gP-wFm" id="tVm-C5-PI8"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
-                                    <outlet property="championImageView" destination="PvB-Nd-hTd" id="Aoy-CI-3u7"/>
-                                    <outlet property="nameLabel" destination="hmL-na-AYk" id="fRu-V0-96y"/>
+                                    <outlet property="dataSource" destination="Tge-MW-Yvu" id="gFu-Yc-lgz"/>
+                                    <outlet property="delegate" destination="Tge-MW-Yvu" id="Qg8-jp-ZI5"/>
                                 </connections>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Mi6-v6-aYy">
-                                <rect key="frame" x="0.0" y="188" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Mi6-v6-aYy" id="gFu-SQ-kDk">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="y4I-Ba-VpP" id="POM-do-Y1r"/>
-                            <outlet property="delegate" destination="y4I-Ba-VpP" id="RiX-cw-4us"/>
-                        </connections>
-                    </tableView>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Zyc-X7-NCh" firstAttribute="top" secondItem="cVB-qm-QYV" secondAttribute="top" id="73n-7l-hEe"/>
+                            <constraint firstItem="49l-r4-uNo" firstAttribute="trailing" secondItem="Zyc-X7-NCh" secondAttribute="trailing" id="DKJ-6O-fNP"/>
+                            <constraint firstItem="Zyc-X7-NCh" firstAttribute="leading" secondItem="49l-r4-uNo" secondAttribute="leading" id="Sx0-02-9k8"/>
+                            <constraint firstItem="Zyc-X7-NCh" firstAttribute="bottom" secondItem="49l-r4-uNo" secondAttribute="bottom" id="U7Q-E3-c8o"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="49l-r4-uNo"/>
+                    </view>
                     <connections>
-                        <segue destination="BSI-xV-qb6" kind="show" identifier="segueChampion" id="NwS-yl-Rvd"/>
+                        <outlet property="tableView" destination="Zyc-X7-NCh" id="hpY-b0-AUU"/>
+                        <segue destination="BSI-xV-qb6" kind="presentation" identifier="segueChampion" id="yBf-8Y-UrS"/>
                     </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zWS-Hb-lwx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ud-Zg-zed" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="114.40000000000001" y="101.19940029985008"/>
+            <point key="canvasLocation" x="112.8" y="788.45577211394311"/>
         </scene>
         <!--Champion Detail View Controller-->
         <scene sceneID="ev1-mt-ONk">
@@ -152,7 +145,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iNh-hj-8U1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1010.4" y="101.23152709359606"/>
+            <point key="canvasLocation" x="1009" y="788"/>
         </scene>
     </scenes>
 </document>

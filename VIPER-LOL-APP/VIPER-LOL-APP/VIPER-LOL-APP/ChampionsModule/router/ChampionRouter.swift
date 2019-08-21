@@ -28,7 +28,7 @@ extension RouterProtocol {
 class ChampionRouter: ChampionsWeekRouterProtocol {
     
     private weak var window: UIWindow?
-    private var viewController: UITableViewController?
+    private var viewController: UIViewController?
     
     func present(at window: UIWindow?) {
         let storyboard = self.getMainStoryboard()

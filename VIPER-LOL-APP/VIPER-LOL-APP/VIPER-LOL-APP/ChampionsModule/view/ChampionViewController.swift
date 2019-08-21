@@ -9,7 +9,9 @@
 import UIKit
 import LeagueAPI
 
-final class ChampionViewController: UITableViewController {
+final class ChampionViewController: UIViewController {
+    
+    @IBOutlet weak private var tableView: UITableView!
     
     private var championsRotation: [ChampionModelView]?
     private var presenter: ChampionPresenterProtocol?
@@ -17,62 +19,45 @@ final class ChampionViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.black
+        self.tableView.backgroundColor = .black
         self.tableView.rowHeight = 100.0
-        self.beginActivityIndicator(view: self.tableView)
+        self.view.beginCenterSpinner(activityIndicator: self.activityIndicator)
         presenter?.viewDidLoad()
     }
+}
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//MARK: - TableView Datasource/Delegate
+
+extension ChampionViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return championsRotation?.count ?? 0
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "championsCell", for: indexPath) as! ChampionTableViewCell
         cell.setupCell(with: championsRotation![indexPath.row])
         return cell
     }
     
-    
-    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        let rotationTransform = CATransform3DTranslate(CATransform3DIdentity, 0, -10, 0)
-        cell.layer.transform = rotationTransform
-        cell.alpha = 0.1
-        
-        UIView.animate(withDuration: 0.85) {
-            cell.layer.transform = CATransform3DIdentity
-            cell.alpha = 1.0
-        }
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.smokeAnimation()
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         presenter?.didSelectRowAt(index: indexPath.row)
     }
-
 }
 
 extension ChampionViewController: ChampionWeekPresenterDelegate {
     func showWeekChampions(with champions: [ChampionModelView]) {
         self.championsRotation = champions
         self.tableView.reloadData()
-        self.stopActivityIndicator()
+        self.view.stopCenterSpinner(activityIndicator: self.activityIndicator)
+        //self.stopActivityIndicator()
     }
     
     func setPresenter(presenter: ChampionPresenterProtocol) {
         self.presenter = presenter
-    }
-    
-    private func beginActivityIndicator(view: UIView) {
-        self.activityIndicator.center = view.center
-        self.activityIndicator.hidesWhenStopped = true
-        self.activityIndicator.style = UIActivityIndicatorView.Style.white
-        view.addSubview(activityIndicator)
-        self.activityIndicator.startAnimating()
-        UIApplication.shared.beginIgnoringInteractionEvents()
-    }
-    
-    private func stopActivityIndicator() {
-        self.activityIndicator.stopAnimating()
-        UIApplication.shared.endIgnoringInteractionEvents()
     }
 }
