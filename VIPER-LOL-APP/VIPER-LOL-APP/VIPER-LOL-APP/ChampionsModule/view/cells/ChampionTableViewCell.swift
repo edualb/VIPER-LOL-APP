@@ -34,7 +34,13 @@ final class ChampionTableViewCell: UITableViewCell {
     }
     
     func setupCell(with model: ChampionModelView) {
-        self.championImageView.image = model.img
+         model.img?.getImage(handler: { (img, msgError) in
+            if let img = img {
+                DispatchQueue.main.async {
+                    self.championImageView.image = img
+                }
+            }
+        })
         self.nameLabel.text = model.name
         self.nameLabel.textColor = .white
     }

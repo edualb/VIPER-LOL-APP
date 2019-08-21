@@ -6,11 +6,12 @@
 //  Copyright © 2019 eduardo.silva. All rights reserved.
 //
 
-import UIKit
+import Foundation
+import LeagueAPI
 
 struct ChampionModelView {
     var name: String
     var description: String
-    var img: UIImage?
-    var imgLoading: UIImage?
+    var img: ImageWithUrl?
+    var imgLoading: ImageWithUrl?
 }

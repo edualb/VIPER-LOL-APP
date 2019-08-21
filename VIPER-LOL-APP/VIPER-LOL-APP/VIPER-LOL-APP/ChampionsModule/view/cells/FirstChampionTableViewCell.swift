@@ -26,7 +26,13 @@ class FirstChampionTableViewCell: UITableViewCell {
     func setupCell(with model: ChampionModelView) {
         self.championImg.contentMode = .top
         self.championImg.clipsToBounds = true
-        self.championImg.image = model.imgLoading?.resizeTopAlignedToFill(newWidth: self.championImg.frame.width * 1.1)
+        model.imgLoading?.getImage(handler: { (img, msgError) in
+            if let img = img {
+                DispatchQueue.main.async {
+                    self.championImg.image = img.resizeTopAlignedToFill(newWidth: self.championImg.frame.width * 1.1)
+                }
+            }
+        })
     }
 
 }

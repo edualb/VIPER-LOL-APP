@@ -20,14 +20,12 @@ final class ChampionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.backgroundColor = .black
-        //self.tableView.rowHeight = 100.0
         self.view.beginCenterSpinner(activityIndicator: self.activityIndicator)
         presenter?.viewDidLoad()
     }
 }
 
 //MARK: - TableView Datasource/Delegate
-
 extension ChampionViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

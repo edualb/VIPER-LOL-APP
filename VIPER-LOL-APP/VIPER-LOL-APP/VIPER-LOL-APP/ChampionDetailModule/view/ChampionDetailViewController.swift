@@ -21,7 +21,13 @@ final class ChampionDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.black
-        championImg.image = modelView?.imgLoading
+        modelView?.imgLoading?.getImage(handler: { (img, msgError) in
+            if let img = img {
+                DispatchQueue.main.async {
+                    self.championImg.image = img
+                }
+            }
+        })
         championName.text = modelView?.name
         championDescription.text = modelView?.description
         championImg.layer.insertSublayer( self.includeGradient(imageView: championImg), at: 0)

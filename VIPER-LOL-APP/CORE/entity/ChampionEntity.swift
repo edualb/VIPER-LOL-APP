@@ -13,6 +13,7 @@ struct ChampionEntity {
     var name: String
     var title: String
     var description: String
-    var img: UIImage?
-    var imgLoading: UIImage?
+    var img: ImageWithUrl?
+    var imgLoading: ImageWithUrl?
+    var imgSkins: [ImageWithUrl]
 }

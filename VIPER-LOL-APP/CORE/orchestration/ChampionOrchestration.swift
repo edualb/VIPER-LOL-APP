@@ -14,7 +14,7 @@ protocol ChampionOrchestrationProtocol {
 
 class ChampionOrchestration: ChampionOrchestrationProtocol {
     
-    private static let league = LeagueAPI(APIToken: "RGAPI-aa2139c4-6771-4786-b8a6-01d7963bff06")
+    private static let league = LeagueAPI(APIToken: "RGAPI-94c50247-7319-4f4f-85ba-6529c935168b")
     
     static func getChampions(completion: @escaping ([ChampionEntity]) -> Void) {
         league.riotAPI.getChampionRotation(on: .BR) { (rotations, errorMsg) in
@@ -28,6 +28,7 @@ class ChampionOrchestration: ChampionOrchestrationProtocol {
         }
     }
     
+    //TODO: remove dispatchGroup
     private static func getChampions(by rotations: ChampionRotations, completion: @escaping ([ChampionEntity]) -> Void) {
         var champions: [ChampionEntity] = []
         let dispatchGroup = DispatchGroup()
@@ -35,15 +36,9 @@ class ChampionOrchestration: ChampionOrchestrationProtocol {
             dispatchGroup.enter()
             self.getChampion(by: championId, completion: { (champion, errorMsg) in
                 if let champion = champion {
-                    champion.images?.square.getImage(handler: { (img, msgError) in
-                        if let img = img {
-                            champion.images?.loading.getImage(handler: { (imgUnique, msgError) in
-                                if let imgUnique = imgUnique {
-                                    champions.append(ChampionEntityMapper.make(from: champion, imgSquare: img, imgLoading:  imgUnique))
-                                }
-                                dispatchGroup.leave()
-                            })
-                        }
+                    self.getChampionSkinImages(by: champion, completion: { (imgSkins) in
+                        champions.append(ChampionEntityMapper.make(from: champion, imgSkins: imgSkins))
+                        dispatchGroup.leave()
                     })
                 }
             })
@@ -51,6 +46,14 @@ class ChampionOrchestration: ChampionOrchestrationProtocol {
         dispatchGroup.notify(queue: .main) {
             completion(champions)
         }
+    }
+    
+    private static func getChampionSkinImages(by championDetails: ChampionDetails, completion: @escaping ([ImageWithUrl]) -> Void) {
+        var imgSkins: [ImageWithUrl] = []
+        championDetails.skins.forEach({ (skin) in
+            imgSkins.append(skin.skinImages.loading)
+        })
+        completion(imgSkins)
     }
     
     private static func getChampion(by id: ChampionId, completion: @escaping (ChampionDetails?, String?) -> Void) {
@@ -62,16 +65,17 @@ class ChampionOrchestration: ChampionOrchestrationProtocol {
             }
         }
     }
-}
 
-struct ChampionEntityMapper {
-    static func make(from championDetails: ChampionDetails, imgSquare: UIImage, imgLoading: UIImage) -> ChampionEntity {
-        let champion = ChampionEntity(
-            name: championDetails.name,
-            title: championDetails.title,
-            description: championDetails.presentationText,
-            img: imgSquare,
-            imgLoading: imgLoading)
-        return champion
+    struct ChampionEntityMapper {
+        static func make(from championDetails: ChampionDetails, imgSkins: [ImageWithUrl]) -> ChampionEntity {
+            let champion = ChampionEntity(
+                name: championDetails.name,
+                title: championDetails.title,
+                description: championDetails.presentationText,
+                img: championDetails.images?.square,
+                imgLoading: championDetails.images?.loading,
+                imgSkins: imgSkins)
+            return champion
+        }
     }
 }
