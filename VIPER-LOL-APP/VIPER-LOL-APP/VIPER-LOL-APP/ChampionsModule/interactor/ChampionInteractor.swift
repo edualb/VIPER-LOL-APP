@@ -17,7 +17,7 @@ protocol ChampionWeekInteractorProtocol {
 
 //Interactor -> Presenter
 protocol ChampionWeekInteractorDelegate: class {
-    func fetched(champions: [ChampionEntity])
+    func fetched(champion: ChampionEntity)
     func fetchFailed()
 }
 
@@ -26,8 +26,8 @@ final class ChampionInteractor: ChampionWeekInteractorProtocol {
     private weak var delegate: ChampionWeekInteractorDelegate?
     
     func fetch() {
-        ChampionOrchestration.getChampions { (champions) in
-            self.delegate?.fetched(champions: champions)
+        ChampionOrchestration.getChampions { (champion) in
+            self.delegate?.fetched(champion: champion)
         }
     }
 

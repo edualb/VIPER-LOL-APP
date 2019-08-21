@@ -9,14 +9,14 @@ import UIKit
 import LeagueAPI
 
 protocol ChampionOrchestrationProtocol {
-    static func getChampions(completion: @escaping ([ChampionEntity]) -> Void)
+    static func getChampions(completion: @escaping (ChampionEntity) -> Void)
 }
 
-class ChampionOrchestration: ChampionOrchestrationProtocol {
+final class ChampionOrchestration: ChampionOrchestrationProtocol {
     
     private static let league = LeagueAPI(APIToken: "RGAPI-94c50247-7319-4f4f-85ba-6529c935168b")
     
-    static func getChampions(completion: @escaping ([ChampionEntity]) -> Void) {
+    static func getChampions(completion: @escaping (ChampionEntity) -> Void) {
         league.riotAPI.getChampionRotation(on: .BR) { (rotations, errorMsg) in
             if let rotations = rotations {
                 self.getChampions(by: rotations, completion: { (champions) in
@@ -28,23 +28,15 @@ class ChampionOrchestration: ChampionOrchestrationProtocol {
         }
     }
     
-    //TODO: remove dispatchGroup
-    private static func getChampions(by rotations: ChampionRotations, completion: @escaping ([ChampionEntity]) -> Void) {
-        var champions: [ChampionEntity] = []
-        let dispatchGroup = DispatchGroup()
+    private static func getChampions(by rotations: ChampionRotations, completion: @escaping (ChampionEntity) -> Void) {
         for championId in rotations.rotation {
-            dispatchGroup.enter()
             self.getChampion(by: championId, completion: { (champion, errorMsg) in
                 if let champion = champion {
                     self.getChampionSkinImages(by: champion, completion: { (imgSkins) in
-                        champions.append(ChampionEntityMapper.make(from: champion, imgSkins: imgSkins))
-                        dispatchGroup.leave()
+                        completion(ChampionEntityMapper.make(from: champion, imgSkins: imgSkins))
                     })
                 }
             })
-        }
-        dispatchGroup.notify(queue: .main) {
-            completion(champions)
         }
     }
     

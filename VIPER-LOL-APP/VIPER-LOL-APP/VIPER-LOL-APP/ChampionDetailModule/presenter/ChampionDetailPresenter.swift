@@ -36,7 +36,7 @@ final class ChampionDetailPresenter: ChampionDetailPresenterProtocol {
 }
 
 extension ChampionDetailPresenter: ChampionWeekInteractorDelegate {
-    func fetched(champions: [ChampionEntity]) {
+    func fetched(champion: ChampionEntity) {
         
     }
     
