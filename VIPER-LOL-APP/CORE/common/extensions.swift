@@ -36,3 +36,27 @@ extension UIView {
         UIApplication.shared.endIgnoringInteractionEvents()
     }
 }
+
+extension UITableViewCell {
+    func setupChampionCell() {
+        self.contentView.backgroundColor = UIColor(white: 0.0, alpha: 0.9)
+    }
+}
+
+extension UIImage {
+    
+    // Link of solution -  https://stackoverflow.com/questions/47884519/is-it-possible-to-use-the-aspect-fill-content-mode-combined-with-the-top-content
+    func resizeTopAlignedToFill(newWidth: CGFloat) -> UIImage? {
+        let newHeight = size.height
+        
+        let newSize = CGSize(width: newWidth, height: newHeight)
+        
+        UIGraphicsBeginImageContextWithOptions(newSize, false, UIScreen.main.scale)
+        draw(in: CGRect(origin: .zero, size: newSize))
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return newImage
+    }
+    
+}

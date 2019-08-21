@@ -61,6 +61,31 @@
                                             <outlet property="nameLabel" destination="Ikg-gP-wFm" id="tVm-C5-PI8"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="firstChampionCell" rowHeight="200" id="2qu-Ld-wQp" customClass="FirstChampionTableViewCell" customModule="VIPER_LOL_APP" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="144" width="375" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2qu-Ld-wQp" id="3Zj-a6-HR0">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="J68-5B-WjR">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="J68-5B-WjR" firstAttribute="centerY" secondItem="3Zj-a6-HR0" secondAttribute="centerY" id="31m-ug-7tW"/>
+                                                <constraint firstItem="J68-5B-WjR" firstAttribute="leading" secondItem="3Zj-a6-HR0" secondAttribute="leading" id="5ZH-cl-GoE"/>
+                                                <constraint firstAttribute="trailing" secondItem="J68-5B-WjR" secondAttribute="trailing" id="QDx-ip-hKI"/>
+                                                <constraint firstItem="J68-5B-WjR" firstAttribute="top" secondItem="3Zj-a6-HR0" secondAttribute="top" id="S63-dY-1Ps"/>
+                                                <constraint firstAttribute="bottom" secondItem="J68-5B-WjR" secondAttribute="bottom" id="SwN-bb-lhk"/>
+                                                <constraint firstItem="J68-5B-WjR" firstAttribute="centerX" secondItem="3Zj-a6-HR0" secondAttribute="centerX" id="dIR-bG-DtG"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="championImg" destination="J68-5B-WjR" id="mJL-b2-j1t"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="Tge-MW-Yvu" id="gFu-Yc-lgz"/>

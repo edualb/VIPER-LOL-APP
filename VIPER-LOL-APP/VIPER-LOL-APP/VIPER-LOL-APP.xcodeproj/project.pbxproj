@@ -27,6 +27,7 @@
 		ED4931782306F1BC00E63481 /* ChampionDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4931772306F1BC00E63481 /* ChampionDetailRouter.swift */; };
 		ED986F7A230C6E99004AE411 /* ChampionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED986F79230C6E99004AE411 /* ChampionTableViewCell.swift */; };
 		ED986F8C230D7EC2004AE411 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED986F8B230D7EC2004AE411 /* extensions.swift */; };
+		ED986F91230D8880004AE411 /* FirstChampionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED986F90230D8880004AE411 /* FirstChampionTableViewCell.swift */; };
 		EDB01A82230B4583006B5925 /* ChampionOrchestration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB01A80230B4583006B5925 /* ChampionOrchestration.swift */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +80,7 @@
 		ED4931772306F1BC00E63481 /* ChampionDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionDetailRouter.swift; sourceTree = "<group>"; };
 		ED986F79230C6E99004AE411 /* ChampionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionTableViewCell.swift; sourceTree = "<group>"; };
 		ED986F8B230D7EC2004AE411 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		ED986F90230D8880004AE411 /* FirstChampionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstChampionTableViewCell.swift; sourceTree = "<group>"; };
 		EDB01A80230B4583006B5925 /* ChampionOrchestration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChampionOrchestration.swift; sourceTree = "<group>"; };
 		F49C2638033AF452A9D7CDCD /* libPods-VIPER-LOL-APPTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VIPER-LOL-APPTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -271,6 +273,7 @@
 			isa = PBXGroup;
 			children = (
 				ED986F79230C6E99004AE411 /* ChampionTableViewCell.swift */,
+				ED986F90230D8880004AE411 /* FirstChampionTableViewCell.swift */,
 			);
 			name = cells;
 			path = "../VIPER-LOL-APP/VIPER-LOL-APP/ChampionsModule/view/cells";
@@ -545,6 +548,7 @@
 				ED986F7A230C6E99004AE411 /* ChampionTableViewCell.swift in Sources */,
 				ED4931602301F6EB00E63481 /* ChampionPresenter.swift in Sources */,
 				ED49316C2304938200E63481 /* ChampionDetailViewController.swift in Sources */,
+				ED986F91230D8880004AE411 /* FirstChampionTableViewCell.swift in Sources */,
 				ED4931682303495500E63481 /* ChampionEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

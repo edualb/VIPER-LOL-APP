@@ -20,7 +20,7 @@ final class ChampionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.backgroundColor = .black
-        self.tableView.rowHeight = 100.0
+        //self.tableView.rowHeight = 100.0
         self.view.beginCenterSpinner(activityIndicator: self.activityIndicator)
         presenter?.viewDidLoad()
     }
@@ -35,8 +35,16 @@ extension ChampionViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "championsCell", for: indexPath) as! ChampionTableViewCell
-        cell.setupCell(with: championsRotation![indexPath.row])
+        var cell: UITableViewCell
+        if indexPath.row == 0 {
+            cell = tableView.dequeueReusableCell(withIdentifier: "firstChampionCell", for: indexPath) as! FirstChampionTableViewCell
+            (cell as! FirstChampionTableViewCell).setupCell(with: championsRotation![indexPath.row])
+            self.tableView.rowHeight = 300
+        } else {
+            cell = tableView.dequeueReusableCell(withIdentifier: "championsCell", for: indexPath) as! ChampionTableViewCell
+            (cell as! ChampionTableViewCell).setupCell(with: championsRotation![indexPath.row])
+            self.tableView.rowHeight = 100
+        }
         return cell
     }
     
@@ -54,7 +62,6 @@ extension ChampionViewController: ChampionWeekPresenterDelegate {
         self.championsRotation = champions
         self.tableView.reloadData()
         self.view.stopCenterSpinner(activityIndicator: self.activityIndicator)
-        //self.stopActivityIndicator()
     }
     
     func setPresenter(presenter: ChampionPresenterProtocol) {

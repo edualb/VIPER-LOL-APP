@@ -16,7 +16,7 @@ final class ChampionTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.contentView.backgroundColor = UIColor(white: 0.0, alpha: 0.85)
+        self.setupChampionCell()
         self.layer.borderWidth = 5
     }
     
