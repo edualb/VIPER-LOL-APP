@@ -26,3 +26,10 @@ target 'VIPER-LOL-APP-TVOS' do
 	project 'VIPER-LOL-APP-TVOS/VIPER-LOL-APP-TVOS.xcodeproj'
 	pods
 end
+
+target 'VIPER-LOL-APP-COLLECTION-VIEW' do
+	workspace 'VIPER-LOL-APP'
+	platform :ios, '12.4'
+	project 'VIPER-LOL-APP-COLLECTION-VIEW/VIPER-LOL-APP-COLLECTION-VIEW.xcodeproj'
+	pods
+end

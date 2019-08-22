@@ -10,4 +10,7 @@
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:VIPER-LOL-APP-COLLECTION-VIEW/VIPER-LOL-APP-COLLECTION-VIEW.xcodeproj">
+   </FileRef>
 </Workspace>
