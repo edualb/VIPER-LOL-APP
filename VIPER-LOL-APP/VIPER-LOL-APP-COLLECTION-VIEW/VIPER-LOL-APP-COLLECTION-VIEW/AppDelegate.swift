@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  VIPER-LOL-APP-COLLECTION-VIEW
+//  VIPER-LOL-APP
 //
-//  Created by eduardo.silva on 22/08/19.
+//  Created by eduardo.silva on 12/08/19.
 //  Copyright © 2019 eduardo.silva. All rights reserved.
 //
 
@@ -13,9 +13,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        let router = ChampionRouter()
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        router.present(at: window)
         return true
     }
 
