@@ -23,6 +23,15 @@ final class ChampionViewController: UIViewController {
         self.view.beginCenterSpinner(activityIndicator: self.activityIndicator)
         presenter?.viewDidLoad()
     }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.barStyle = .black
+        self.navigationController?.navigationBar.tintColor = .white
+    }
 }
 
 //MARK: - TableView Datasource/Delegate
