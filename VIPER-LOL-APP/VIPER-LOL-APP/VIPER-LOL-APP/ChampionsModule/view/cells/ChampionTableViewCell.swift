@@ -34,7 +34,7 @@ final class ChampionTableViewCell: UITableViewCell {
     }
     
     func setupCell(with model: ChampionModelView) {
-         model.img?.getImage(handler: { (img, msgError) in
+         model.img?.getImage(handler: { (img, _) in
             if let img = img {
                 DispatchQueue.main.async {
                     self.championImageView.image = img

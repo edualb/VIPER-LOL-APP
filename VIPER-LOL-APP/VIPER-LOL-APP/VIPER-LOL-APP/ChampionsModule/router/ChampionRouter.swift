@@ -36,7 +36,8 @@ class ChampionRouter: ChampionsWeekRouterProtocol {
         let presenter = ChampionPresenter(delegate: viewController, router: self)
         viewController.setPresenter(presenter: presenter)
         self.viewController = viewController
-        window?.rootViewController = viewController
+        let nav = UINavigationController(rootViewController: viewController)
+        window?.rootViewController = nav
         self.window = window
     }
     

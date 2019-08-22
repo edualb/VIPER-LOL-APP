@@ -32,16 +32,18 @@ extension ChampionViewController: UITableViewDataSource, UITableViewDelegate {
         return championsRotation?.count ?? 0
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return indexPath.row == 0 ? 300 : 100
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell: UITableViewCell
         if indexPath.row == 0 {
             cell = tableView.dequeueReusableCell(withIdentifier: "firstChampionCell", for: indexPath) as! FirstChampionTableViewCell
             (cell as! FirstChampionTableViewCell).setupCell(with: championsRotation![indexPath.row])
-            self.tableView.rowHeight = 300
         } else {
             cell = tableView.dequeueReusableCell(withIdentifier: "championsCell", for: indexPath) as! ChampionTableViewCell
             (cell as! ChampionTableViewCell).setupCell(with: championsRotation![indexPath.row])
-            self.tableView.rowHeight = 100
         }
         return cell
     }
