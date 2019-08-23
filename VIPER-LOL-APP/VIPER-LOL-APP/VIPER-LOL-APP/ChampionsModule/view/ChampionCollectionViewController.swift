@@ -47,6 +47,10 @@ extension ChampionCollectionViewController: UICollectionViewDataSource, UICollec
         return edgeInset
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        presenter?.didSelectRowAt(index: indexPath.row)
+    }
+    
 }
 
 extension ChampionCollectionViewController: ChampionWeekPresenterDelegate {
