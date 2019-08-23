@@ -10,7 +10,7 @@ import UIKit
 
 class ChampionCollectionViewController: UIViewController {
 
-    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak private var collectionView: UICollectionView!
     
     private var championsRotation: [ChampionModelView]?
     private var presenter: ChampionPresenterProtocol?
@@ -27,7 +27,7 @@ class ChampionCollectionViewController: UIViewController {
 
 }
 
-extension ChampionCollectionViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+extension ChampionCollectionViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return championsRotation?.count ?? 0
     }
@@ -36,6 +36,15 @@ extension ChampionCollectionViewController: UICollectionViewDataSource, UICollec
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "championCollectionCell", for: indexPath) as! ChampionCollectionViewCell
         cell.setupCell(with: self.championsRotation![indexPath.row])
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        var edgeInset = UIEdgeInsets()
+        edgeInset.top = 25
+        edgeInset.bottom = 25
+        edgeInset.left = 10
+        edgeInset.right = 10
+        return edgeInset
     }
     
 }

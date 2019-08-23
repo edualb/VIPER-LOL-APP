@@ -120,7 +120,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bvE-M6-ZZ4">
-                                <rect key="frame" x="16" y="64" width="343" height="583"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="J2O-66-g01">
                                     <size key="itemSize" width="120" height="120"/>
@@ -158,10 +158,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ZT7-mD-bLr" firstAttribute="trailing" secondItem="bvE-M6-ZZ4" secondAttribute="trailing" constant="16" id="1C1-fy-sUt"/>
-                            <constraint firstItem="bvE-M6-ZZ4" firstAttribute="top" secondItem="ZT7-mD-bLr" secondAttribute="top" id="TCY-m1-BHD"/>
-                            <constraint firstItem="ZT7-mD-bLr" firstAttribute="bottom" secondItem="bvE-M6-ZZ4" secondAttribute="bottom" constant="20" id="nrW-lK-RJC"/>
-                            <constraint firstItem="bvE-M6-ZZ4" firstAttribute="leading" secondItem="ZT7-mD-bLr" secondAttribute="leading" constant="16" id="pX2-g0-DIQ"/>
+                            <constraint firstItem="bvE-M6-ZZ4" firstAttribute="bottom" secondItem="ZT7-mD-bLr" secondAttribute="bottom" id="4Zz-97-hrH"/>
+                            <constraint firstItem="bvE-M6-ZZ4" firstAttribute="top" secondItem="ZT7-mD-bLr" secondAttribute="top" id="B3V-8i-2GA"/>
+                            <constraint firstItem="bvE-M6-ZZ4" firstAttribute="centerX" secondItem="hdt-eA-zpa" secondAttribute="centerX" id="WXe-Nq-Cx1"/>
+                            <constraint firstItem="bvE-M6-ZZ4" firstAttribute="trailing" secondItem="ZT7-mD-bLr" secondAttribute="trailing" id="cCP-Os-Z5p"/>
+                            <constraint firstItem="bvE-M6-ZZ4" firstAttribute="leading" secondItem="ZT7-mD-bLr" secondAttribute="leading" id="crI-5f-OUn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZT7-mD-bLr"/>
                     </view>
@@ -173,7 +174,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T79-gn-HB0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1052" y="1594"/>
+            <point key="canvasLocation" x="1052" y="1593.5532233883059"/>
         </scene>
         <!--Champion Detail View Controller-->
         <scene sceneID="ev1-mt-ONk">
