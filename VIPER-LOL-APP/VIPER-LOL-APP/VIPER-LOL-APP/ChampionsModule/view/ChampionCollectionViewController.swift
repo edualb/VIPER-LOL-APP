@@ -48,7 +48,29 @@ extension ChampionCollectionViewController: UICollectionViewDataSource, UICollec
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        presenter?.didSelectRowAt(index: indexPath.row)
+        UIView.animate(withDuration: 0.1) {
+            if let cell = collectionView.cellForItem(at: indexPath) as? ChampionCollectionViewCell {
+                cell.didHighlight()
+                self.presenter?.didSelectRowAt(index: indexPath.row)
+            }
+        }
+        //presenter?.didSelectRowAt(index: indexPath.row)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didHighlightItemAt indexPath: IndexPath) {
+        UIView.animate(withDuration: 0.5) {
+            if let cell = collectionView.cellForItem(at: indexPath) as? ChampionCollectionViewCell {
+                cell.didHighlight()
+            }
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didUnhighlightItemAt indexPath: IndexPath) {
+        UIView.animate(withDuration: 0.5) {
+            if let cell = collectionView.cellForItem(at: indexPath) as? ChampionCollectionViewCell {
+                cell.didUnhighlight()
+            }
+        }
     }
     
 }

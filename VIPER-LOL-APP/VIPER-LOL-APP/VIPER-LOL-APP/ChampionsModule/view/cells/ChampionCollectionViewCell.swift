@@ -10,7 +10,7 @@ import UIKit
 
 class ChampionCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var championImg: UIImageView!
+    @IBOutlet weak private var championImg: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,6 +23,12 @@ class ChampionCollectionViewCell: UICollectionViewCell {
         self.layer.cornerRadius = 5
     }
     
+    override var isSelected: Bool {
+        didSet {
+            self.championImg.transform = isSelected ? .init(scaleX: 0.1, y: 0.1) : .identity
+        }
+    }
+    
     func setupCell(with model: ChampionModelView) {
         model.img?.getImage(handler: { (img, _) in
             if let img = img {
@@ -31,5 +37,13 @@ class ChampionCollectionViewCell: UICollectionViewCell {
                 }
             }
         })
+    }
+    
+    func didHighlight() {
+        self.championImg.transform = .init(scaleX: 0.8, y: 0.8)
+    }
+    
+    func didUnhighlight() {
+        self.championImg.transform = .identity
     }
 }
