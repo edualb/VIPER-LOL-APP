@@ -54,7 +54,6 @@ extension ChampionCollectionViewController: UICollectionViewDataSource, UICollec
                 self.presenter?.didSelectRowAt(index: indexPath.row)
             }
         }
-        //presenter?.didSelectRowAt(index: indexPath.row)
     }
     
     func collectionView(_ collectionView: UICollectionView, didHighlightItemAt indexPath: IndexPath) {
