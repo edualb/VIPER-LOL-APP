@@ -20,9 +20,15 @@ class ChampionCollectionViewController: UIViewController {
         super.viewDidLoad()
         self.collectionView.dataSource = self
         self.collectionView.delegate = self
+        self.view.backgroundColor = UIColor.black
         self.collectionView.backgroundColor = .black
         self.view.beginCenterSpinner(activityIndicator: self.activityIndicator)
         presenter?.viewDidLoad()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.barStyle = .blackTranslucent
+        self.navigationController?.navigationBar.tintColor = .white
     }
 
 }

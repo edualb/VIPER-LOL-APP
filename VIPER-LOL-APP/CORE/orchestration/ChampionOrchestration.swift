@@ -14,7 +14,7 @@ protocol ChampionOrchestrationProtocol {
 
 final class ChampionOrchestration: ChampionOrchestrationProtocol {
     
-    private static let league = LeagueAPI(APIToken: "RGAPI-eb092fe1-c5cf-4a50-83da-f59516ac1d03")
+    private static let league = LeagueAPI(APIToken: "RGAPI-72904294-92cd-41e5-8c4b-07074ada77b8")
     
     static func getChampions(completion: @escaping (ChampionEntity) -> Void) {
         league.riotAPI.getChampionRotation(on: .BR) { (rotations, errorMsg) in
