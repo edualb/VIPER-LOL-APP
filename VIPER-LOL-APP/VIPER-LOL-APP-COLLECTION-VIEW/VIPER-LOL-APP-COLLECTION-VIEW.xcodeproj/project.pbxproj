@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5FA98D032BD73BA2E2B6D2E7 /* libPods-VIPER-LOL-APP-COLLECTION-VIEWTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A537E850AB9DF1FF95CE442 /* libPods-VIPER-LOL-APP-COLLECTION-VIEWTests.a */; };
 		A029819203DEC9E960F162FF /* libPods-VIPER-LOL-APP-COLLECTION-VIEW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F5F350EAE7C55AC9BA667B /* libPods-VIPER-LOL-APP-COLLECTION-VIEW.a */; };
+		BE89136C1E8079F2412B66B6 /* libPods-VIPER-LOL-APP-COLLECTION-VIEWUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC60601D20C3DF7A576866A8 /* libPods-VIPER-LOL-APP-COLLECTION-VIEWUITests.a */; };
 		ED56FBC4230F1FCC0066FB9C /* ChampionDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED56FBBF230F1FCC0066FB9C /* ChampionDetailPresenter.swift */; };
 		ED56FBC5230F1FCC0066FB9C /* ChampionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED56FBC1230F1FCC0066FB9C /* ChampionDetailViewController.swift */; };
 		ED56FBC6230F1FCC0066FB9C /* ChampionDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED56FBC3230F1FCC0066FB9C /* ChampionDetailRouter.swift */; };
@@ -50,9 +52,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		280CC80F82BCA5960972CC27 /* Pods-VIPER-LOL-APP-COLLECTION-VIEWTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER-LOL-APP-COLLECTION-VIEWTests.release.xcconfig"; path = "Target Support Files/Pods-VIPER-LOL-APP-COLLECTION-VIEWTests/Pods-VIPER-LOL-APP-COLLECTION-VIEWTests.release.xcconfig"; sourceTree = "<group>"; };
+		2A537E850AB9DF1FF95CE442 /* libPods-VIPER-LOL-APP-COLLECTION-VIEWTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VIPER-LOL-APP-COLLECTION-VIEWTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DBF45128B484679BE8FC4FE /* Pods-VIPER-LOL-APP-COLLECTION-VIEW.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER-LOL-APP-COLLECTION-VIEW.release.xcconfig"; path = "Target Support Files/Pods-VIPER-LOL-APP-COLLECTION-VIEW/Pods-VIPER-LOL-APP-COLLECTION-VIEW.release.xcconfig"; sourceTree = "<group>"; };
 		91F5F350EAE7C55AC9BA667B /* libPods-VIPER-LOL-APP-COLLECTION-VIEW.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VIPER-LOL-APP-COLLECTION-VIEW.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D93B5863FBC991F88C03CF7E /* Pods-VIPER-LOL-APP-COLLECTION-VIEWUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER-LOL-APP-COLLECTION-VIEWUITests.release.xcconfig"; path = "Target Support Files/Pods-VIPER-LOL-APP-COLLECTION-VIEWUITests/Pods-VIPER-LOL-APP-COLLECTION-VIEWUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E86E72C3CD8EA6B22109FF4F /* Pods-VIPER-LOL-APP-COLLECTION-VIEWTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER-LOL-APP-COLLECTION-VIEWTests.debug.xcconfig"; path = "Target Support Files/Pods-VIPER-LOL-APP-COLLECTION-VIEWTests/Pods-VIPER-LOL-APP-COLLECTION-VIEWTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EAE61AAB2D456A5738BE8D81 /* Pods-VIPER-LOL-APP-COLLECTION-VIEW.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER-LOL-APP-COLLECTION-VIEW.debug.xcconfig"; path = "Target Support Files/Pods-VIPER-LOL-APP-COLLECTION-VIEW/Pods-VIPER-LOL-APP-COLLECTION-VIEW.debug.xcconfig"; sourceTree = "<group>"; };
+		EC60601D20C3DF7A576866A8 /* libPods-VIPER-LOL-APP-COLLECTION-VIEWUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VIPER-LOL-APP-COLLECTION-VIEWUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED56FBBF230F1FCC0066FB9C /* ChampionDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChampionDetailPresenter.swift; sourceTree = "<group>"; };
 		ED56FBC1230F1FCC0066FB9C /* ChampionDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChampionDetailViewController.swift; sourceTree = "<group>"; };
 		ED56FBC3230F1FCC0066FB9C /* ChampionDetailRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChampionDetailRouter.swift; sourceTree = "<group>"; };
@@ -81,6 +88,7 @@
 		ED9C46AF230F1A74007B47BD /* VIPER-LOL-APP-COLLECTION-VIEWUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VIPER-LOL-APP-COLLECTION-VIEWUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED9C46B3230F1A74007B47BD /* VIPER_LOL_APP_COLLECTION_VIEWUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPER_LOL_APP_COLLECTION_VIEWUITests.swift; sourceTree = "<group>"; };
 		ED9C46B5230F1A74007B47BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6C27156209F6AEA1F16E50A /* Pods-VIPER-LOL-APP-COLLECTION-VIEWUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER-LOL-APP-COLLECTION-VIEWUITests.debug.xcconfig"; path = "Target Support Files/Pods-VIPER-LOL-APP-COLLECTION-VIEWUITests/Pods-VIPER-LOL-APP-COLLECTION-VIEWUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FA98D032BD73BA2E2B6D2E7 /* libPods-VIPER-LOL-APP-COLLECTION-VIEWTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE89136C1E8079F2412B66B6 /* libPods-VIPER-LOL-APP-COLLECTION-VIEWUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				91F5F350EAE7C55AC9BA667B /* libPods-VIPER-LOL-APP-COLLECTION-VIEW.a */,
+				2A537E850AB9DF1FF95CE442 /* libPods-VIPER-LOL-APP-COLLECTION-VIEWTests.a */,
+				EC60601D20C3DF7A576866A8 /* libPods-VIPER-LOL-APP-COLLECTION-VIEWUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -122,6 +134,10 @@
 			children = (
 				EAE61AAB2D456A5738BE8D81 /* Pods-VIPER-LOL-APP-COLLECTION-VIEW.debug.xcconfig */,
 				7DBF45128B484679BE8FC4FE /* Pods-VIPER-LOL-APP-COLLECTION-VIEW.release.xcconfig */,
+				E86E72C3CD8EA6B22109FF4F /* Pods-VIPER-LOL-APP-COLLECTION-VIEWTests.debug.xcconfig */,
+				280CC80F82BCA5960972CC27 /* Pods-VIPER-LOL-APP-COLLECTION-VIEWTests.release.xcconfig */,
+				F6C27156209F6AEA1F16E50A /* Pods-VIPER-LOL-APP-COLLECTION-VIEWUITests.debug.xcconfig */,
+				D93B5863FBC991F88C03CF7E /* Pods-VIPER-LOL-APP-COLLECTION-VIEWUITests.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../Pods;
@@ -336,6 +352,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED9C46BB230F1A74007B47BD /* Build configuration list for PBXNativeTarget "VIPER-LOL-APP-COLLECTION-VIEWTests" */;
 			buildPhases = (
+				8B9B6279E68B19A73BA3D170 /* [CP] Check Pods Manifest.lock */,
 				ED9C46A0230F1A74007B47BD /* Sources */,
 				ED9C46A1230F1A74007B47BD /* Frameworks */,
 				ED9C46A2230F1A74007B47BD /* Resources */,
@@ -354,6 +371,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED9C46BE230F1A74007B47BD /* Build configuration list for PBXNativeTarget "VIPER-LOL-APP-COLLECTION-VIEWUITests" */;
 			buildPhases = (
+				947276A5B3142B931102685C /* [CP] Check Pods Manifest.lock */,
 				ED9C46AB230F1A74007B47BD /* Sources */,
 				ED9C46AC230F1A74007B47BD /* Frameworks */,
 				ED9C46AD230F1A74007B47BD /* Resources */,
@@ -455,6 +473,50 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-VIPER-LOL-APP-COLLECTION-VIEW-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B9B6279E68B19A73BA3D170 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VIPER-LOL-APP-COLLECTION-VIEWTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		947276A5B3142B931102685C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VIPER-LOL-APP-COLLECTION-VIEWUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -588,7 +650,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -649,7 +711,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -710,6 +772,7 @@
 		};
 		ED9C46BC230F1A74007B47BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E86E72C3CD8EA6B22109FF4F /* Pods-VIPER-LOL-APP-COLLECTION-VIEWTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -730,6 +793,7 @@
 		};
 		ED9C46BD230F1A74007B47BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 280CC80F82BCA5960972CC27 /* Pods-VIPER-LOL-APP-COLLECTION-VIEWTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -750,6 +814,7 @@
 		};
 		ED9C46BF230F1A74007B47BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6C27156209F6AEA1F16E50A /* Pods-VIPER-LOL-APP-COLLECTION-VIEWUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -769,6 +834,7 @@
 		};
 		ED9C46C0230F1A74007B47BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D93B5863FBC991F88C03CF7E /* Pods-VIPER-LOL-APP-COLLECTION-VIEWUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

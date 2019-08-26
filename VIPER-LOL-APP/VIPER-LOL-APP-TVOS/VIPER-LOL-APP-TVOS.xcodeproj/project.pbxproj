@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61CA63403108622F3C047492 /* libPods-VIPER-LOL-APP-TVOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60285D55AB2A039452A81720 /* libPods-VIPER-LOL-APP-TVOSTests.a */; };
+		952CDA162FC3D4193D38998C /* libPods-VIPER-LOL-APP-TVOSUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BB49852CD540E0A38942197 /* libPods-VIPER-LOL-APP-TVOSUITests.a */; };
 		BD9764EF087EEF057FECA5F2 /* libPods-VIPER-LOL-APP-TVOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0286E421201E738A0E7D5249 /* libPods-VIPER-LOL-APP-TVOS.a */; };
 		ED493186230B1D9800E63481 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED493185230B1D9800E63481 /* AppDelegate.swift */; };
 		ED49318B230B1D9800E63481 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED493189230B1D9800E63481 /* Main.storyboard */; };
@@ -41,8 +43,14 @@
 
 /* Begin PBXFileReference section */
 		0286E421201E738A0E7D5249 /* libPods-VIPER-LOL-APP-TVOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VIPER-LOL-APP-TVOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A77F99D6DBC6CB21A33E9C0 /* Pods-VIPER-LOL-APP-TVOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER-LOL-APP-TVOSUITests.release.xcconfig"; path = "Target Support Files/Pods-VIPER-LOL-APP-TVOSUITests/Pods-VIPER-LOL-APP-TVOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		60285D55AB2A039452A81720 /* libPods-VIPER-LOL-APP-TVOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VIPER-LOL-APP-TVOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B84942F3DD7B1267E799F12 /* Pods-VIPER-LOL-APP-TVOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER-LOL-APP-TVOS.release.xcconfig"; path = "Target Support Files/Pods-VIPER-LOL-APP-TVOS/Pods-VIPER-LOL-APP-TVOS.release.xcconfig"; sourceTree = "<group>"; };
+		8AB99D39540AEAC5A05E5381 /* Pods-VIPER-LOL-APP-TVOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER-LOL-APP-TVOSTests.release.xcconfig"; path = "Target Support Files/Pods-VIPER-LOL-APP-TVOSTests/Pods-VIPER-LOL-APP-TVOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		99E978B91E1EEC25EA997F63 /* Pods-VIPER-LOL-APP-TVOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER-LOL-APP-TVOS.debug.xcconfig"; path = "Target Support Files/Pods-VIPER-LOL-APP-TVOS/Pods-VIPER-LOL-APP-TVOS.debug.xcconfig"; sourceTree = "<group>"; };
+		9BB49852CD540E0A38942197 /* libPods-VIPER-LOL-APP-TVOSUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VIPER-LOL-APP-TVOSUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FF6502D36A544F89EE3A84D /* Pods-VIPER-LOL-APP-TVOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER-LOL-APP-TVOSTests.debug.xcconfig"; path = "Target Support Files/Pods-VIPER-LOL-APP-TVOSTests/Pods-VIPER-LOL-APP-TVOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A20A256E1184E9F49442CBA9 /* Pods-VIPER-LOL-APP-TVOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER-LOL-APP-TVOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-VIPER-LOL-APP-TVOSUITests/Pods-VIPER-LOL-APP-TVOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED493182230B1D9800E63481 /* VIPER-LOL-APP-TVOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIPER-LOL-APP-TVOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED493185230B1D9800E63481 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED49318A230B1D9800E63481 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -76,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61CA63403108622F3C047492 /* libPods-VIPER-LOL-APP-TVOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				952CDA162FC3D4193D38998C /* libPods-VIPER-LOL-APP-TVOSUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				0286E421201E738A0E7D5249 /* libPods-VIPER-LOL-APP-TVOS.a */,
+				60285D55AB2A039452A81720 /* libPods-VIPER-LOL-APP-TVOSTests.a */,
+				9BB49852CD540E0A38942197 /* libPods-VIPER-LOL-APP-TVOSUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -102,6 +114,10 @@
 			children = (
 				99E978B91E1EEC25EA997F63 /* Pods-VIPER-LOL-APP-TVOS.debug.xcconfig */,
 				7B84942F3DD7B1267E799F12 /* Pods-VIPER-LOL-APP-TVOS.release.xcconfig */,
+				9FF6502D36A544F89EE3A84D /* Pods-VIPER-LOL-APP-TVOSTests.debug.xcconfig */,
+				8AB99D39540AEAC5A05E5381 /* Pods-VIPER-LOL-APP-TVOSTests.release.xcconfig */,
+				A20A256E1184E9F49442CBA9 /* Pods-VIPER-LOL-APP-TVOSUITests.debug.xcconfig */,
+				2A77F99D6DBC6CB21A33E9C0 /* Pods-VIPER-LOL-APP-TVOSUITests.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../Pods;
@@ -272,6 +288,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED4931AA230B1D9A00E63481 /* Build configuration list for PBXNativeTarget "VIPER-LOL-APP-TVOSTests" */;
 			buildPhases = (
+				2A5A08DADAC86563679A9A56 /* [CP] Check Pods Manifest.lock */,
 				ED49318F230B1D9A00E63481 /* Sources */,
 				ED493190230B1D9A00E63481 /* Frameworks */,
 				ED493191230B1D9A00E63481 /* Resources */,
@@ -290,6 +307,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED4931AD230B1D9A00E63481 /* Build configuration list for PBXNativeTarget "VIPER-LOL-APP-TVOSUITests" */;
 			buildPhases = (
+				E3AAFAA3AAE735B68A57D843 /* [CP] Check Pods Manifest.lock */,
 				ED49319A230B1D9A00E63481 /* Sources */,
 				ED49319B230B1D9A00E63481 /* Frameworks */,
 				ED49319C230B1D9A00E63481 /* Resources */,
@@ -374,6 +392,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2A5A08DADAC86563679A9A56 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VIPER-LOL-APP-TVOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		79FB5093562D6AA01C8A0B49 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -389,6 +429,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VIPER-LOL-APP-TVOS/Pods-VIPER-LOL-APP-TVOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3AAFAA3AAE735B68A57D843 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VIPER-LOL-APP-TVOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EF049AB5AE53F00D9E6B9D8B /* [CP] Check Pods Manifest.lock */ = {
@@ -628,6 +690,7 @@
 		};
 		ED4931AB230B1D9A00E63481 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FF6502D36A544F89EE3A84D /* Pods-VIPER-LOL-APP-TVOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -648,6 +711,7 @@
 		};
 		ED4931AC230B1D9A00E63481 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AB99D39540AEAC5A05E5381 /* Pods-VIPER-LOL-APP-TVOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -668,6 +732,7 @@
 		};
 		ED4931AE230B1D9A00E63481 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A20A256E1184E9F49442CBA9 /* Pods-VIPER-LOL-APP-TVOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -687,6 +752,7 @@
 		};
 		ED4931AF230B1D9A00E63481 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A77F99D6DBC6CB21A33E9C0 /* Pods-VIPER-LOL-APP-TVOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

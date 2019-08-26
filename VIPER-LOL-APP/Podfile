@@ -24,6 +24,14 @@ target 'VIPER-LOL-APP-TVOS' do
 	workspace 'VIPER-LOL-APP'
 	platform :tvos, '12.4'
 	project 'VIPER-LOL-APP-TVOS/VIPER-LOL-APP-TVOS.xcodeproj'
+    	target 'VIPER-LOL-APP-TVOSTests' do
+    		inherit! :search_paths
+    		# Pods for testing
+    	end
+    	target 'VIPER-LOL-APP-TVOSUITests' do
+    		inherit! :search_paths
+    		# Pods for testing
+	end
 	pods
 end
 
@@ -31,5 +39,13 @@ target 'VIPER-LOL-APP-COLLECTION-VIEW' do
 	workspace 'VIPER-LOL-APP'
 	platform :ios, '12.4'
 	project 'VIPER-LOL-APP-COLLECTION-VIEW/VIPER-LOL-APP-COLLECTION-VIEW.xcodeproj'
+    	target 'VIPER-LOL-APP-COLLECTION-VIEWTests' do
+    		inherit! :search_paths
+    		# Pods for testing
+    	end
+    	target 'VIPER-LOL-APP-COLLECTION-VIEWUITests' do
+    		inherit! :search_paths
+    		# Pods for testing
+	end
 	pods
 end
