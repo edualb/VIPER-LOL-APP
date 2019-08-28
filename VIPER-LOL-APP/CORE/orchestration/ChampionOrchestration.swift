@@ -9,25 +9,28 @@ import UIKit
 import LeagueAPI
 
 protocol ChampionOrchestrationProtocol {
-    func getChampions(completion: @escaping (ChampionRotations?, String?) -> Void)
-    func getChampion(by id: ChampionId, completion: @escaping (ChampionEntity?, String?) -> Void)
+    func getChampion(completion: @escaping (ChampionEntity?, String?) -> Void)
 }
 
 final class ChampionOrchestration: ChampionOrchestrationProtocol {
     
-    private let league = LeagueAPI(APIToken: "RGAPI-6abb553d-25ba-4b97-b488-1008cb2bfb4d")
+    private let league = LeagueAPI(APIToken: "RGAPI-b6b4e8a6-4297-4d4e-877e-3c4bcbc7f01e")
     
-    func getChampions(completion: @escaping (ChampionRotations?, String?) -> Void) {
+    func getChampion(completion: @escaping (ChampionEntity?, String?) -> Void) {
         self.league.riotAPI.getChampionRotation(on: .BR) { (rotations, errorMsg) in
             if let rotations = rotations {
-                completion(rotations, nil)
+                for championId in rotations.rotation {
+                    self.getChampion(by: championId, completion: { (champion, errorMsg) in
+                        completion(champion, nil)
+                    })
+                }
             } else {
                 completion(nil, errorMsg ?? "No error description")
             }
         }
     }
     
-    func getChampion(by id: ChampionId, completion: @escaping (ChampionEntity?, String?) -> Void) {
+    private func getChampion(by id: ChampionId, completion: @escaping (ChampionEntity?, String?) -> Void) {
         self.league.getChampionDetails(by: id) { (champion, errorMsg) in
             if let champion = champion {
                 self.getChampionSkinImages(by: champion, completion: { (imgSkins) in

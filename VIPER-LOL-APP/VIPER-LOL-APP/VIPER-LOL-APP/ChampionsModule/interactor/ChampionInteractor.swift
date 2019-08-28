@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import LeagueAPI
 
 //Presenter -> Interactor
 protocol ChampionWeekInteractorProtocol {
@@ -31,11 +30,9 @@ final class ChampionInteractor: ChampionWeekInteractorProtocol {
     }
     
     func fetch() {
-        self.orchestration?.getChampions { (rotation, errorMsg) in
-            if let rotation = rotation {
-                self.getChampions(by: rotation, completion: { (champion) in
-                    self.delegate?.fetched(champion: champion)
-                })
+        self.orchestration?.getChampion { (champion, errorMsg) in
+            if let champion = champion {
+                self.delegate?.fetched(champion: champion)
             } else {
                 self.delegate?.fetchFailed(errorMsg: errorMsg!)
             }
@@ -45,17 +42,4 @@ final class ChampionInteractor: ChampionWeekInteractorProtocol {
     func setDelegate(delegate: ChampionWeekInteractorDelegate) {
         self.delegate = delegate
     }
-    
-    private func getChampions(by rotations: ChampionRotations, completion: @escaping (ChampionEntity) -> Void) {
-        for championId in rotations.rotation {
-            self.orchestration?.getChampion(by: championId, completion: { (champion, errorMsg) in
-                if let champion = champion {
-                    completion(champion)
-                } else {
-                    self.delegate?.fetchFailed(errorMsg: errorMsg!)
-                }
-            })
-        }
-    }
-    
 }
