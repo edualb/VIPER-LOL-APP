@@ -25,6 +25,7 @@
 		ED49316C2304938200E63481 /* ChampionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED49316B2304938200E63481 /* ChampionDetailViewController.swift */; };
 		ED4931702305CC1200E63481 /* ChampionDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED49316F2305CC1200E63481 /* ChampionDetailPresenter.swift */; };
 		ED4931782306F1BC00E63481 /* ChampionDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4931772306F1BC00E63481 /* ChampionDetailRouter.swift */; };
+		ED596A002316D6AB0077DB78 /* ChampionEntityMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5969FF2316D6AB0077DB78 /* ChampionEntityMapper.swift */; };
 		ED70B1AF23141CF700494623 /* ChampionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED70B1AC23141CF700494623 /* ChampionTableViewCell.swift */; };
 		ED70B1B023141CF700494623 /* ChampionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED70B1AD23141CF700494623 /* ChampionCollectionViewCell.swift */; };
 		ED70B1B123141CF700494623 /* FirstChampionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED70B1AE23141CF700494623 /* FirstChampionTableViewCell.swift */; };
@@ -79,6 +80,7 @@
 		ED49316B2304938200E63481 /* ChampionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionDetailViewController.swift; sourceTree = "<group>"; };
 		ED49316F2305CC1200E63481 /* ChampionDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionDetailPresenter.swift; sourceTree = "<group>"; };
 		ED4931772306F1BC00E63481 /* ChampionDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionDetailRouter.swift; sourceTree = "<group>"; };
+		ED5969FF2316D6AB0077DB78 /* ChampionEntityMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionEntityMapper.swift; sourceTree = "<group>"; };
 		ED70B1AC23141CF700494623 /* ChampionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChampionTableViewCell.swift; sourceTree = "<group>"; };
 		ED70B1AD23141CF700494623 /* ChampionCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChampionCollectionViewCell.swift; sourceTree = "<group>"; };
 		ED70B1AE23141CF700494623 /* FirstChampionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstChampionTableViewCell.swift; sourceTree = "<group>"; };
@@ -304,6 +306,7 @@
 		EDB01A7D230B4583006B5925 /* entity */ = {
 			isa = PBXGroup;
 			children = (
+				ED5969FF2316D6AB0077DB78 /* ChampionEntityMapper.swift */,
 				ED4931672303495500E63481 /* ChampionEntity.swift */,
 			);
 			path = entity;
@@ -544,6 +547,7 @@
 				ED49316A2304511F00E63481 /* ChampionModelView.swift in Sources */,
 				ED49315E2301E30B00E63481 /* ChampionViewController.swift in Sources */,
 				ED4931642301FA4A00E63481 /* ChampionInteractor.swift in Sources */,
+				ED596A002316D6AB0077DB78 /* ChampionEntityMapper.swift in Sources */,
 				ED70B1AF23141CF700494623 /* ChampionTableViewCell.swift in Sources */,
 				ED4931662302F1F500E63481 /* ChampionRouter.swift in Sources */,
 				ED986F8C230D7EC2004AE411 /* extensions.swift in Sources */,

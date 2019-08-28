@@ -15,6 +15,7 @@
 		ED49318D230B1D9A00E63481 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED49318C230B1D9A00E63481 /* Assets.xcassets */; };
 		ED493198230B1D9A00E63481 /* VIPER_LOL_APP_TVOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED493197230B1D9A00E63481 /* VIPER_LOL_APP_TVOSTests.swift */; };
 		ED4931A3230B1D9A00E63481 /* VIPER_LOL_APP_TVOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4931A2230B1D9A00E63481 /* VIPER_LOL_APP_TVOSUITests.swift */; };
+		ED596A022316D6BB0077DB78 /* ChampionEntityMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED596A012316D6BB0077DB78 /* ChampionEntityMapper.swift */; };
 		ED70B1B623141D0700494623 /* ChampionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED70B1B323141D0700494623 /* ChampionTableViewCell.swift */; };
 		ED70B1B723141D0700494623 /* ChampionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED70B1B423141D0700494623 /* ChampionCollectionViewCell.swift */; };
 		ED70B1B823141D0700494623 /* FirstChampionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED70B1B523141D0700494623 /* FirstChampionTableViewCell.swift */; };
@@ -62,6 +63,7 @@
 		ED49319E230B1D9A00E63481 /* VIPER-LOL-APP-TVOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VIPER-LOL-APP-TVOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED4931A2230B1D9A00E63481 /* VIPER_LOL_APP_TVOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPER_LOL_APP_TVOSUITests.swift; sourceTree = "<group>"; };
 		ED4931A4230B1D9A00E63481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED596A012316D6BB0077DB78 /* ChampionEntityMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionEntityMapper.swift; sourceTree = "<group>"; };
 		ED70B1B323141D0700494623 /* ChampionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChampionTableViewCell.swift; sourceTree = "<group>"; };
 		ED70B1B423141D0700494623 /* ChampionCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChampionCollectionViewCell.swift; sourceTree = "<group>"; };
 		ED70B1B523141D0700494623 /* FirstChampionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstChampionTableViewCell.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 		EDB01A76230B4561006B5925 /* entity */ = {
 			isa = PBXGroup;
 			children = (
+				ED596A012316D6BB0077DB78 /* ChampionEntityMapper.swift */,
 				ED986F76230C5B0F004AE411 /* ChampionEntity.swift */,
 			);
 			path = entity;
@@ -487,6 +490,7 @@
 				ED70B1B823141D0700494623 /* FirstChampionTableViewCell.swift in Sources */,
 				ED70B1B623141D0700494623 /* ChampionTableViewCell.swift in Sources */,
 				ED70B1B723141D0700494623 /* ChampionCollectionViewCell.swift in Sources */,
+				ED596A022316D6BB0077DB78 /* ChampionEntityMapper.swift in Sources */,
 				EDB01A89230C4F11006B5925 /* ChampionRouter.swift in Sources */,
 				ED986F77230C5B10004AE411 /* ChampionEntity.swift in Sources */,
 				ED986F8F230D876B004AE411 /* extensions.swift in Sources */,

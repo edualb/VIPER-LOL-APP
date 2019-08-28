@@ -9,16 +9,16 @@ import UIKit
 import LeagueAPI
 
 protocol ChampionOrchestrationProtocol {
-    static func getChampions(completion: @escaping (ChampionRotations) -> Void)
-    static func getChampion(by id: ChampionId, completion: @escaping (ChampionDetails?, String?) -> Void)
+    func getChampions(completion: @escaping (ChampionRotations) -> Void)
+    func getChampion(by id: ChampionId, completion: @escaping (ChampionEntity?, String?) -> Void)
 }
 
 final class ChampionOrchestration: ChampionOrchestrationProtocol {
     
-    private static let league = LeagueAPI(APIToken: "RGAPI-72904294-92cd-41e5-8c4b-07074ada77b8")
+    private let league = LeagueAPI(APIToken: "RGAPI-6abb553d-25ba-4b97-b488-1008cb2bfb4d")
     
-    static func getChampions(completion: @escaping (ChampionRotations) -> Void) {
-        league.riotAPI.getChampionRotation(on: .BR) { (rotations, errorMsg) in
+    func getChampions(completion: @escaping (ChampionRotations) -> Void) {
+        self.league.riotAPI.getChampionRotation(on: .BR) { (rotations, errorMsg) in
             if let rotations = rotations {
                 completion(rotations)
             } else {
@@ -27,13 +27,24 @@ final class ChampionOrchestration: ChampionOrchestrationProtocol {
         }
     }
     
-    static func getChampion(by id: ChampionId, completion: @escaping (ChampionDetails?, String?) -> Void) {
+    func getChampion(by id: ChampionId, completion: @escaping (ChampionEntity?, String?) -> Void) {
         self.league.getChampionDetails(by: id) { (champion, errorMsg) in
             if let champion = champion {
-                completion(champion, nil)
+                self.getChampionSkinImages(by: champion, completion: { (imgSkins) in
+                    completion(ChampionEntityMapper.make(from: champion, imgSkins: imgSkins), nil)
+                })
+                //completion(champion, nil)
             } else {
                 completion(nil, errorMsg)
             }
         }
+    }
+    
+    private func getChampionSkinImages(by championDetails: ChampionDetails, completion: @escaping ([ImageWithUrl]) -> Void) {
+        var imgSkins: [ImageWithUrl] = []
+        championDetails.skins.forEach({ (skin) in
+            imgSkins.append(skin.skinImages.loading)
+        })
+        completion(imgSkins)
     }
 }
