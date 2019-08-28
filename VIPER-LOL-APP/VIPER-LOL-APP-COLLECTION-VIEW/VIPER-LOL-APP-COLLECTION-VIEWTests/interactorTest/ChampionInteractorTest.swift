@@ -39,24 +39,19 @@ class ChampionMockOrchestration: ChampionOrchestrationProtocol {
 class ChampionInteractorTest: XCTestCase {
     
     var interactor: ChampionWeekInteractorProtocol!
-    var promise: XCTestExpectation?
     var champion: ChampionEntity?
 
     override func setUp() {
-        self.interactor = ChampionInteractor()
+        self.interactor = ChampionInteractor(orchestration: ChampionMockOrchestration())
         self.interactor.setDelegate(delegate: self)
-        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
 
     override func tearDown() {
         self.interactor = nil
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
     func testFetch() {
         self.interactor.fetch()
-        self.promise = expectation(description: "receive champions")
-        wait(for: [self.promise!], timeout: 5)
         XCTAssertNotNil(champion)
     }
 }
@@ -65,7 +60,6 @@ extension ChampionInteractorTest: ChampionWeekInteractorDelegate {
     func fetched(champion: ChampionEntity) {
         if self.champion == nil {
             self.champion = champion
-            self.promise?.fulfill()
         }
     }
     

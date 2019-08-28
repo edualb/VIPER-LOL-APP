@@ -47,33 +47,9 @@ final class ChampionInteractor: ChampionWeekInteractorProtocol {
             self.orchestration?.getChampion(by: championId, completion: { (champion, _) in
                 if let champion = champion {
                     completion(champion)
-//                    self.getChampionSkinImages(by: champion, completion: { (imgSkins) in
-//                        completion(ChampionEntityMapper.make(from: champion, imgSkins: imgSkins))
-//                    })
                 }
             })
         }
     }
     
-//    private func getChampionSkinImages(by championDetails: ChampionDetails, completion: @escaping ([ImageWithUrl]) -> Void) {
-//        var imgSkins: [ImageWithUrl] = []
-//        championDetails.skins.forEach({ (skin) in
-//            imgSkins.append(skin.skinImages.loading)
-//        })
-//        completion(imgSkins)
-//    }
-    
 }
-
-//struct ChampionEntityMapper {
-//    static func make(from championDetails: ChampionDetails, imgSkins: [ImageWithUrl]) -> ChampionEntity {
-//        let champion = ChampionEntity(
-//            name: championDetails.name,
-//            title: championDetails.title,
-//            description: championDetails.presentationText,
-//            img: championDetails.images?.square,
-//            imgLoading: championDetails.images?.loading,
-//            imgSkins: imgSkins)
-//        return champion
-//    }
-//}

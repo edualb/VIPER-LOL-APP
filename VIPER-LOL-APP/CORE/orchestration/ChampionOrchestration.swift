@@ -33,7 +33,6 @@ final class ChampionOrchestration: ChampionOrchestrationProtocol {
                 self.getChampionSkinImages(by: champion, completion: { (imgSkins) in
                     completion(ChampionEntityMapper.make(from: champion, imgSkins: imgSkins), nil)
                 })
-                //completion(champion, nil)
             } else {
                 completion(nil, errorMsg)
             }
