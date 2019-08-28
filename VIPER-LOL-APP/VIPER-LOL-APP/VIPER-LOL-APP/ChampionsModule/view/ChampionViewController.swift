@@ -13,6 +13,8 @@ final class ChampionViewController: UIViewController {
     
     @IBOutlet weak private var tableView: UITableView!
     
+    @IBOutlet weak var msgError: UILabel!
+    
     private var championsRotation: [ChampionModelView]?
     private var presenter: ChampionPresenterProtocol?
     private var activityIndicator = UIActivityIndicatorView()
@@ -69,12 +71,15 @@ extension ChampionViewController: UITableViewDataSource, UITableViewDelegate {
 extension ChampionViewController: ChampionWeekPresenterDelegate {
     func showMsgError(with msg: String) {
         self.tableView.isHidden = true
+        self.msgError.text = msg
+        self.msgError.isHidden = false
         self.view.stopCenterSpinner(activityIndicator: self.activityIndicator)
     }
     
     func showWeekChampions(with champions: [ChampionModelView]) {
         self.championsRotation = champions
         self.tableView.isHidden = false
+        self.msgError.isHidden = true
         self.tableView.reloadData()
         self.view.stopCenterSpinner(activityIndicator: self.activityIndicator)
     }

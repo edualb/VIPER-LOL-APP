@@ -31,6 +31,7 @@
 		ED70B1B123141CF700494623 /* FirstChampionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED70B1AE23141CF700494623 /* FirstChampionTableViewCell.swift */; };
 		ED986F8C230D7EC2004AE411 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED986F8B230D7EC2004AE411 /* extensions.swift */; };
 		EDB01A82230B4583006B5925 /* ChampionOrchestration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB01A80230B4583006B5925 /* ChampionOrchestration.swift */; };
+		EDB28C2F2317011C00ABB3B4 /* ChampionCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB28C2E2317011C00ABB3B4 /* ChampionCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		ED70B1AE23141CF700494623 /* FirstChampionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstChampionTableViewCell.swift; sourceTree = "<group>"; };
 		ED986F8B230D7EC2004AE411 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		EDB01A80230B4583006B5925 /* ChampionOrchestration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChampionOrchestration.swift; sourceTree = "<group>"; };
+		EDB28C2E2317011C00ABB3B4 /* ChampionCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionCollectionViewController.swift; sourceTree = "<group>"; };
 		F49C2638033AF452A9D7CDCD /* libPods-VIPER-LOL-APPTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VIPER-LOL-APPTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -235,6 +237,7 @@
 			children = (
 				ED49315D2301E30B00E63481 /* ChampionViewController.swift */,
 				ED4931692304511F00E63481 /* ChampionModelView.swift */,
+				EDB28C2E2317011C00ABB3B4 /* ChampionCollectionViewController.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -547,6 +550,7 @@
 				ED49316A2304511F00E63481 /* ChampionModelView.swift in Sources */,
 				ED49315E2301E30B00E63481 /* ChampionViewController.swift in Sources */,
 				ED4931642301FA4A00E63481 /* ChampionInteractor.swift in Sources */,
+				EDB28C2F2317011C00ABB3B4 /* ChampionCollectionViewController.swift in Sources */,
 				ED596A002316D6AB0077DB78 /* ChampionEntityMapper.swift in Sources */,
 				ED70B1AF23141CF700494623 /* ChampionTableViewCell.swift in Sources */,
 				ED4931662302F1F500E63481 /* ChampionRouter.swift in Sources */,
