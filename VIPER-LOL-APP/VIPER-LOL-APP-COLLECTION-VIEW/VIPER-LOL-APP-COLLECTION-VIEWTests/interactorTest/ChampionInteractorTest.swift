@@ -11,8 +11,8 @@ import LeagueAPI
 @testable import VIPER_LOL_APP_COLLECTION_VIEW
 
 class ChampionMockOrchestration: ChampionOrchestrationProtocol {
-    func getChampions(completion: @escaping (ChampionRotations) -> Void) {
-        completion(ChampionRotations(rotation: [ChampionId(10)], newPlayerRotation: [ChampionId(18)], maxNewPlayerLevel: 10))
+    func getChampions(completion: @escaping (ChampionRotations?, String?) -> Void) {
+        completion(ChampionRotations(rotation: [ChampionId(10)], newPlayerRotation: [ChampionId(18)], maxNewPlayerLevel: 10), nil)
     }
     
     func getChampion(by id: ChampionId, completion: @escaping (ChampionEntity?, String?) -> Void) {

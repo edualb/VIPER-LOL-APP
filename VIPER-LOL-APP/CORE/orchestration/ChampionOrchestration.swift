@@ -9,7 +9,7 @@ import UIKit
 import LeagueAPI
 
 protocol ChampionOrchestrationProtocol {
-    func getChampions(completion: @escaping (ChampionRotations) -> Void)
+    func getChampions(completion: @escaping (ChampionRotations?, String?) -> Void)
     func getChampion(by id: ChampionId, completion: @escaping (ChampionEntity?, String?) -> Void)
 }
 
@@ -17,11 +17,12 @@ final class ChampionOrchestration: ChampionOrchestrationProtocol {
     
     private let league = LeagueAPI(APIToken: "RGAPI-6abb553d-25ba-4b97-b488-1008cb2bfb4d")
     
-    func getChampions(completion: @escaping (ChampionRotations) -> Void) {
+    func getChampions(completion: @escaping (ChampionRotations?, String?) -> Void) {
         self.league.riotAPI.getChampionRotation(on: .BR) { (rotations, errorMsg) in
             if let rotations = rotations {
-                completion(rotations)
+                completion(rotations, nil)
             } else {
+                completion(nil, errorMsg)
                 print("Request failed cause: \(errorMsg ?? "No error description")")
             }
         }

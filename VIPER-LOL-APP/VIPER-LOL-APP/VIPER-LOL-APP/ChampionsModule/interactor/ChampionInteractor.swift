@@ -31,10 +31,14 @@ final class ChampionInteractor: ChampionWeekInteractorProtocol {
     }
     
     func fetch() {
-        self.orchestration?.getChampions { (rotation) in
-            self.getChampions(by: rotation, completion: { (champion) in
-                self.delegate?.fetched(champion: champion)
-            })
+        self.orchestration?.getChampions { (rotation, errorMsg) in
+            if let rotation = rotation {
+                self.getChampions(by: rotation, completion: { (champion) in
+                    self.delegate?.fetched(champion: champion)
+                })
+            } else {
+                self.delegate?.fetchFailed()
+            }
         }
     }
 
@@ -47,6 +51,8 @@ final class ChampionInteractor: ChampionWeekInteractorProtocol {
             self.orchestration?.getChampion(by: championId, completion: { (champion, _) in
                 if let champion = champion {
                     completion(champion)
+                } else {
+                    self.delegate?.fetchFailed()
                 }
             })
         }
