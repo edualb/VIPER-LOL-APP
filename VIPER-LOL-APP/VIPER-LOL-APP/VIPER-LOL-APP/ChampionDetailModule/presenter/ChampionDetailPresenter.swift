@@ -36,12 +36,12 @@ final class ChampionDetailPresenter: ChampionDetailPresenterProtocol {
 }
 
 extension ChampionDetailPresenter: ChampionWeekInteractorDelegate {
-    func fetched(champion: ChampionEntity) {
+    func fetchFailed(errorMsg: String) {
         
     }
     
-    func fetchFailed() {
-        return
+    func fetched(champion: ChampionEntity) {
+        
     }
     
 }

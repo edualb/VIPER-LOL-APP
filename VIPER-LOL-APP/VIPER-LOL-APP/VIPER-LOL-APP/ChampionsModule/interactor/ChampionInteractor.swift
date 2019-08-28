@@ -18,7 +18,7 @@ protocol ChampionWeekInteractorProtocol {
 //Interactor -> Presenter
 protocol ChampionWeekInteractorDelegate: class {
     func fetched(champion: ChampionEntity)
-    func fetchFailed()
+    func fetchFailed(errorMsg: String)
 }
 
 final class ChampionInteractor: ChampionWeekInteractorProtocol {
@@ -37,7 +37,7 @@ final class ChampionInteractor: ChampionWeekInteractorProtocol {
                     self.delegate?.fetched(champion: champion)
                 })
             } else {
-                self.delegate?.fetchFailed()
+                self.delegate?.fetchFailed(errorMsg: errorMsg!)
             }
         }
     }
@@ -48,11 +48,11 @@ final class ChampionInteractor: ChampionWeekInteractorProtocol {
     
     private func getChampions(by rotations: ChampionRotations, completion: @escaping (ChampionEntity) -> Void) {
         for championId in rotations.rotation {
-            self.orchestration?.getChampion(by: championId, completion: { (champion, _) in
+            self.orchestration?.getChampion(by: championId, completion: { (champion, errorMsg) in
                 if let champion = champion {
                     completion(champion)
                 } else {
-                    self.delegate?.fetchFailed()
+                    self.delegate?.fetchFailed(errorMsg: errorMsg!)
                 }
             })
         }

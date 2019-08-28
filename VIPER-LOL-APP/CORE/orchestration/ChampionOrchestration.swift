@@ -22,8 +22,7 @@ final class ChampionOrchestration: ChampionOrchestrationProtocol {
             if let rotations = rotations {
                 completion(rotations, nil)
             } else {
-                completion(nil, errorMsg)
-                print("Request failed cause: \(errorMsg ?? "No error description")")
+                completion(nil, errorMsg ?? "No error description")
             }
         }
     }
@@ -35,7 +34,7 @@ final class ChampionOrchestration: ChampionOrchestrationProtocol {
                     completion(ChampionEntityMapper.make(from: champion, imgSkins: imgSkins), nil)
                 })
             } else {
-                completion(nil, errorMsg)
+                completion(nil, errorMsg ?? "No error description")
             }
         }
     }

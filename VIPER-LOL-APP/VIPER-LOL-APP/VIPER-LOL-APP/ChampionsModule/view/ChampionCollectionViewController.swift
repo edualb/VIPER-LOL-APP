@@ -12,6 +12,8 @@ class ChampionCollectionViewController: UIViewController {
 
     @IBOutlet weak private var collectionView: UICollectionView!
     
+    @IBOutlet weak var msgError: UILabel!
+    
     private var championsRotation: [ChampionModelView]?
     private var presenter: ChampionPresenterProtocol?
     private var activityIndicator = UIActivityIndicatorView()
@@ -81,8 +83,17 @@ extension ChampionCollectionViewController: UICollectionViewDataSource, UICollec
 }
 
 extension ChampionCollectionViewController: ChampionWeekPresenterDelegate {
+    func showMsgError(with msg: String) {
+        self.collectionView.isHidden = true
+        self.msgError.text = msg
+        self.msgError.isHidden = false
+        self.view.stopCenterSpinner(activityIndicator: self.activityIndicator)
+    }
+    
     func showWeekChampions(with champions: [ChampionModelView]) {
         self.championsRotation = champions
+        self.collectionView.isHidden = false
+        self.msgError.isHidden = true
         self.collectionView.reloadData()
         self.view.stopCenterSpinner(activityIndicator: self.activityIndicator)
     }

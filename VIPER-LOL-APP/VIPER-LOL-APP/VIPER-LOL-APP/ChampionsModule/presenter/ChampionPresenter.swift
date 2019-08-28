@@ -20,6 +20,7 @@ protocol ChampionPresenterProtocol: PresenterProtocol {
 
 protocol ChampionWeekPresenterDelegate: class {
     func showWeekChampions(with champions: [ChampionModelView])
+    func showMsgError(with msg: String)
 }
 
 final class ChampionPresenter: ChampionPresenterProtocol {
@@ -59,23 +60,16 @@ extension ChampionPresenter: ChampionWeekInteractorDelegate {
         }
     }
     
-    func fetchFailed() {
-        return
+    func fetchFailed(errorMsg: String) {
+        DispatchQueue.main.async {
+            self.delegate?.showMsgError(with: errorMsg)
+        }
     }
 
 }
 
 struct ChampionModelViewMapper {
     static func convert(from champion: ChampionEntity) -> ChampionModelView {
-        // var championsModelView: [ChampionModelView] = []
-//        champions.forEach { champion in
-//            championsModelView.append(ChampionModelView(
-//                name: champion.name,
-//                description: champion.description,
-//                img: champion.img,
-//                imgLoading: champion.imgLoading)
-//            )
-//        }
         return ChampionModelView(name: champion.name,
             description: champion.description,
             img: champion.img,

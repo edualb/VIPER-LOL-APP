@@ -155,6 +155,12 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eB6-XE-8j2">
+                                <rect key="frame" x="187.5" y="333.5" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -163,12 +169,15 @@
                             <constraint firstItem="bvE-M6-ZZ4" firstAttribute="centerX" secondItem="hdt-eA-zpa" secondAttribute="centerX" id="WXe-Nq-Cx1"/>
                             <constraint firstItem="bvE-M6-ZZ4" firstAttribute="trailing" secondItem="ZT7-mD-bLr" secondAttribute="trailing" id="cCP-Os-Z5p"/>
                             <constraint firstItem="bvE-M6-ZZ4" firstAttribute="leading" secondItem="ZT7-mD-bLr" secondAttribute="leading" id="crI-5f-OUn"/>
+                            <constraint firstItem="eB6-XE-8j2" firstAttribute="centerX" secondItem="hdt-eA-zpa" secondAttribute="centerX" id="kaf-db-Abp"/>
+                            <constraint firstItem="eB6-XE-8j2" firstAttribute="centerY" secondItem="hdt-eA-zpa" secondAttribute="centerY" id="p5d-i9-i4o"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZT7-mD-bLr"/>
                     </view>
                     <navigationItem key="navigationItem" id="4sz-SS-YkY"/>
                     <connections>
                         <outlet property="collectionView" destination="bvE-M6-ZZ4" id="OOY-gr-Q4R"/>
+                        <outlet property="msgError" destination="eB6-XE-8j2" id="SW0-af-Mat"/>
                         <segue destination="BSI-xV-qb6" kind="show" identifier="segueChampionCollection" id="OoD-cQ-4dK"/>
                     </connections>
                 </viewController>

@@ -67,8 +67,14 @@ extension ChampionViewController: UITableViewDataSource, UITableViewDelegate {
 }
 
 extension ChampionViewController: ChampionWeekPresenterDelegate {
+    func showMsgError(with msg: String) {
+        self.tableView.isHidden = true
+        self.view.stopCenterSpinner(activityIndicator: self.activityIndicator)
+    }
+    
     func showWeekChampions(with champions: [ChampionModelView]) {
         self.championsRotation = champions
+        self.tableView.isHidden = false
         self.tableView.reloadData()
         self.view.stopCenterSpinner(activityIndicator: self.activityIndicator)
     }
