@@ -14,4 +14,5 @@ struct ChampionModelView {
     var description: String
     var img: ImageWithUrl?
     var imgLoading: ImageWithUrl?
+    var imgSkins: [ImageWithUrl]
 }

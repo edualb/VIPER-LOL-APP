@@ -30,7 +30,11 @@ final class ChampionDetailRouter: ChampionsDetailRouterProtocol {
     
     func present(modelView: ChampionModelView, interactor: ChampionWeekInteractorProtocol) {
         let storyboard = self.getMainStoryboard()
-        let detailViewController = storyboard.instantiateViewController(withIdentifier: "ChampionDetailViewController") as! ChampionDetailViewController
+//        iOS
+//        let detailViewController = storyboard.instantiateViewController(withIdentifier: "ChampionDetailViewController") as! ChampionDetailViewController
+        
+//        tvOS
+        let detailViewController = storyboard.instantiateViewController(withIdentifier: "ChampionDetailTvViewController") as! ChampionDetailTvViewController
         let presenter = ChampionDetailPresenter(delegate: detailViewController, router: self, interactor: interactor)
         detailViewController.setPresenter(presenter: presenter)
         detailViewController.setModelView(modelView: modelView)

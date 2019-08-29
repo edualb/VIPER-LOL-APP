@@ -10,7 +10,6 @@ import UIKit
 
 final class ChampionDetailViewController: UIViewController {
 
-    private var championsRotation: [ChampionModelView]?
     private var presenter: ChampionDetailPresenter?
     private var modelView: ChampionModelView?
     

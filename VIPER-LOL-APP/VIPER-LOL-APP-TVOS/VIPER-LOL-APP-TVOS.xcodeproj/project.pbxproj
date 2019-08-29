@@ -30,6 +30,7 @@
 		EDB28C5C2318145500ABB3B4 /* ChampionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB28C5B2318145500ABB3B4 /* ChampionInteractor.swift */; };
 		EDB28C5F2318149F00ABB3B4 /* ChampionModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB28C5E2318149F00ABB3B4 /* ChampionModelView.swift */; };
 		EDB28C61231814D000ABB3B4 /* ChampionTvViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB28C60231814D000ABB3B4 /* ChampionTvViewController.swift */; };
+		EDB28C6323185AEC00ABB3B4 /* ChampionDetailTvViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB28C6223185AEC00ABB3B4 /* ChampionDetailTvViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		EDB28C5B2318145500ABB3B4 /* ChampionInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChampionInteractor.swift; sourceTree = "<group>"; };
 		EDB28C5E2318149F00ABB3B4 /* ChampionModelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChampionModelView.swift; path = "../../../../VIPER-LOL-APP/VIPER-LOL-APP/ChampionsModule/view/ChampionModelView.swift"; sourceTree = "<group>"; };
 		EDB28C60231814D000ABB3B4 /* ChampionTvViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionTvViewController.swift; sourceTree = "<group>"; };
+		EDB28C6223185AEC00ABB3B4 /* ChampionDetailTvViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionDetailTvViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				EDB28C45231811B800ABB3B4 /* ChampionDetailViewController.swift */,
+				EDB28C6223185AEC00ABB3B4 /* ChampionDetailTvViewController.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -543,6 +546,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED493186230B1D9800E63481 /* AppDelegate.swift in Sources */,
+				EDB28C6323185AEC00ABB3B4 /* ChampionDetailTvViewController.swift in Sources */,
 				EDB28C61231814D000ABB3B4 /* ChampionTvViewController.swift in Sources */,
 				EDB01A7B230B4561006B5925 /* ChampionOrchestration.swift in Sources */,
 				ED70B1B823141D0700494623 /* FirstChampionTableViewCell.swift in Sources */,

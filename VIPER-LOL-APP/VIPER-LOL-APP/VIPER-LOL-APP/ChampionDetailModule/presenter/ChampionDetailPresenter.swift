@@ -14,16 +14,31 @@ protocol ChampionDetailPresenterProtocol: PresenterProtocol {
 
 final class ChampionDetailPresenter: ChampionDetailPresenterProtocol {
     
-    private weak var delegate: ChampionDetailViewController?
+//    iOS
+//    private weak var delegate: ChampionDetailViewController?
+    
+//    tvOS
+    private weak var delegate: ChampionDetailTvViewController?
+    
     private var router: ChampionsDetailRouterProtocol?
     private var interactor: ChampionWeekInteractorProtocol
     
-    init(delegate: ChampionDetailViewController, router: ChampionsDetailRouterProtocol, interactor: ChampionWeekInteractorProtocol = ChampionInteractor()) {
+//    iOS
+//    init(delegate: ChampionDetailViewController, router: ChampionsDetailRouterProtocol, interactor: ChampionWeekInteractorProtocol = ChampionInteractor()) {
+//        self.delegate = delegate
+//        self.interactor = interactor
+//        self.router = router
+//        self.interactor.setDelegate(delegate: self)
+//    }
+    
+//    tvOS
+    init(delegate: ChampionDetailTvViewController, router: ChampionsDetailRouterProtocol, interactor: ChampionWeekInteractorProtocol = ChampionInteractor()) {
         self.delegate = delegate
         self.interactor = interactor
         self.router = router
         self.interactor.setDelegate(delegate: self)
     }
+
     
     func viewDidLoad() {
         

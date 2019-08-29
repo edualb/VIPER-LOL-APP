@@ -14,6 +14,7 @@ final class ChampionTvViewController: UIViewController {
     
     private var presenter: ChampionPresenterProtocol?
     private var champions: [ChampionModelView]?
+    private var activityIndicator = UIActivityIndicatorView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,7 @@ final class ChampionTvViewController: UIViewController {
         self.tableView.dataSource = self
         self.tableView.backgroundColor = .black
         self.view.backgroundColor = .black
+        self.view.beginCenterSpinner(activityIndicator: self.activityIndicator)
         presenter?.viewDidLoad()
     }
 
@@ -41,12 +43,17 @@ extension ChampionTvViewController: UITableViewDelegate, UITableViewDataSource {
         return 230
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter?.didSelectRowAt(index: indexPath.row)
+    }
+    
 }
 
 extension ChampionTvViewController: ChampionWeekPresenterDelegate {
     func showWeekChampions(with champions: [ChampionModelView]) {
         self.champions = champions
         self.tableView.reloadData()
+        self.view.stopCenterSpinner(activityIndicator: self.activityIndicator)
     }
     
     func showMsgError(with msg: String) {
