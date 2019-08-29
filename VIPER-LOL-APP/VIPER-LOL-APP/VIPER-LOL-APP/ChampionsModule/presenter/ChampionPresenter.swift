@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import LeagueAPI
 
 protocol PresenterProtocol {
     func viewDidLoad()

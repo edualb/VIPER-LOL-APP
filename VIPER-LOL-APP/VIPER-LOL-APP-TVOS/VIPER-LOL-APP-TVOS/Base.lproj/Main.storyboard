@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Champion View Controller-->
+        <!--Champion Tv View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ChampionViewController" customModule="VIPER_LOL_APP_TVOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChampionTvController" id="BYZ-38-t0r" customClass="ChampionTvViewController" customModule="VIPER_LOL_APP_TVOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>

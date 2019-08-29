@@ -32,8 +32,14 @@ class ChampionRouter: ChampionsWeekRouterProtocol {
     
     func present(at window: UIWindow?) {
         let storyboard = self.getMainStoryboard()
+//        TableView
 //        let viewController = storyboard.instantiateViewController(withIdentifier: "ChampionViewController") as! ChampionViewController
-        let viewController = storyboard.instantiateViewController(withIdentifier: "ChampionCollectionViewController") as! ChampionCollectionViewController
+        
+//        CollectionView
+//        let viewController = storyboard.instantiateViewController(withIdentifier: "ChampionCollectionViewController") as! ChampionCollectionViewController
+        
+//        tvOS
+        let viewController = storyboard.instantiateViewController(withIdentifier: "ChampionTvController") as! ChampionTvViewController
         let presenter = ChampionPresenter(delegate: viewController, router: self)
         viewController.setPresenter(presenter: presenter)
         self.viewController = viewController

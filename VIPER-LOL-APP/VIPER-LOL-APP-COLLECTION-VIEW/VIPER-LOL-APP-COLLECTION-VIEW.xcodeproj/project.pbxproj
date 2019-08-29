@@ -34,6 +34,7 @@
 		ED9C469E230F1A73007B47BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED9C469C230F1A73007B47BD /* LaunchScreen.storyboard */; };
 		ED9C46A9230F1A74007B47BD /* VIPER_LOL_APP_COLLECTION_VIEWTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9C46A8230F1A74007B47BD /* VIPER_LOL_APP_COLLECTION_VIEWTests.swift */; };
 		ED9C46B4230F1A74007B47BD /* VIPER_LOL_APP_COLLECTION_VIEWUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9C46B3230F1A74007B47BD /* VIPER_LOL_APP_COLLECTION_VIEWUITests.swift */; };
+		EDB28C502318123C00ABB3B4 /* ChampionTvViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB28C4F2318123B00ABB3B4 /* ChampionTvViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		ED9C46AF230F1A74007B47BD /* VIPER-LOL-APP-COLLECTION-VIEWUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VIPER-LOL-APP-COLLECTION-VIEWUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED9C46B3230F1A74007B47BD /* VIPER_LOL_APP_COLLECTION_VIEWUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPER_LOL_APP_COLLECTION_VIEWUITests.swift; sourceTree = "<group>"; };
 		ED9C46B5230F1A74007B47BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDB28C4F2318123B00ABB3B4 /* ChampionTvViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionTvViewController.swift; sourceTree = "<group>"; };
 		F6C27156209F6AEA1F16E50A /* Pods-VIPER-LOL-APP-COLLECTION-VIEWUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER-LOL-APP-COLLECTION-VIEWUITests.debug.xcconfig"; path = "Target Support Files/Pods-VIPER-LOL-APP-COLLECTION-VIEWUITests/Pods-VIPER-LOL-APP-COLLECTION-VIEWUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -213,6 +215,7 @@
 		ED56FBCA230F20EC0066FB9C /* view */ = {
 			isa = PBXGroup;
 			children = (
+				EDB28C4F2318123B00ABB3B4 /* ChampionTvViewController.swift */,
 				ED56FBCE230F20EC0066FB9C /* ChampionViewController.swift */,
 				ED56FBCF230F20EC0066FB9C /* ChampionModelView.swift */,
 				ED56FBE5230F23610066FB9C /* ChampionCollectionViewController.swift */,
@@ -562,6 +565,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED9C4696230F1A72007B47BD /* ViewController.swift in Sources */,
+				EDB28C502318123C00ABB3B4 /* ChampionTvViewController.swift in Sources */,
 				ED56FBE3230F20F70066FB9C /* extensions.swift in Sources */,
 				ED70B1A923141CDE00494623 /* ChampionCollectionViewCell.swift in Sources */,
 				ED56FBDA230F20EC0066FB9C /* ChampionRouter.swift in Sources */,
