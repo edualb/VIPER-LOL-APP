@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import LeagueAPI
 
 final class ChampionViewController: UIViewController {
     
