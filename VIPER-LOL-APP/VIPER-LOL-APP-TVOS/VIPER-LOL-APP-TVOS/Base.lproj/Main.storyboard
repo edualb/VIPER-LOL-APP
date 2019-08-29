@@ -27,35 +27,35 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="championsCell" rowHeight="116" id="oAm-oO-lFP" customClass="ChampionTableViewCell" customModule="VIPER_LOL_APP" customModuleProvider="target">
-                                        <rect key="frame" x="90" y="66" width="1740" height="116"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="championsCell" rowHeight="179" id="oAm-oO-lFP" customClass="ChampionTableViewCell" customModule="VIPER_LOL_APP" customModuleProvider="target">
+                                        <rect key="frame" x="90" y="66" width="1740" height="179"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oAm-oO-lFP" id="EOS-Xk-hUo">
-                                            <rect key="frame" x="0.0" y="0.0" width="1740" height="116"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="1740" height="179"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="caD-w8-TAo">
+                                                    <rect key="frame" x="16" y="22" width="135" height="135"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="135" id="hA4-Cd-Ige"/>
+                                                        <constraint firstAttribute="height" constant="135" id="wpU-Vw-4pQ"/>
+                                                    </constraints>
+                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8S-i9-A3v">
-                                                    <rect key="frame" x="114" y="43" width="1610" height="30"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <rect key="frame" x="159" y="60" width="1422" height="60"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="caD-w8-TAo">
-                                                    <rect key="frame" x="16" y="13" width="90" height="90"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="90" id="VNI-H1-tCN"/>
-                                                        <constraint firstAttribute="height" constant="90" id="tNB-L3-apU"/>
-                                                    </constraints>
-                                                </imageView>
                                             </subviews>
                                             <color key="backgroundColor" red="0.011477687590000001" green="0.010556725770000001" blue="0.01202234456" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                                             <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
                                             <constraints>
-                                                <constraint firstItem="E8S-i9-A3v" firstAttribute="leading" secondItem="caD-w8-TAo" secondAttribute="trailing" constant="8" id="JdA-ic-ynH"/>
-                                                <constraint firstItem="caD-w8-TAo" firstAttribute="leading" secondItem="EOS-Xk-hUo" secondAttribute="leading" constant="16" id="Zwv-Vm-aZv"/>
-                                                <constraint firstItem="E8S-i9-A3v" firstAttribute="centerY" secondItem="caD-w8-TAo" secondAttribute="centerY" id="hc8-bW-n6Q"/>
-                                                <constraint firstAttribute="trailing" secondItem="E8S-i9-A3v" secondAttribute="trailing" constant="16" id="sdM-UM-xmy"/>
-                                                <constraint firstItem="caD-w8-TAo" firstAttribute="centerY" secondItem="EOS-Xk-hUo" secondAttribute="centerY" id="zuO-PO-mKk"/>
+                                                <constraint firstItem="E8S-i9-A3v" firstAttribute="leading" secondItem="caD-w8-TAo" secondAttribute="trailing" constant="8" id="Z74-A4-3ZD"/>
+                                                <constraint firstItem="caD-w8-TAo" firstAttribute="leading" secondItem="EOS-Xk-hUo" secondAttribute="leading" constant="16" id="aYG-9u-qzd"/>
+                                                <constraint firstItem="E8S-i9-A3v" firstAttribute="centerY" secondItem="EOS-Xk-hUo" secondAttribute="centerY" id="gPd-wF-kEJ"/>
+                                                <constraint firstItem="E8S-i9-A3v" firstAttribute="centerX" secondItem="EOS-Xk-hUo" secondAttribute="centerX" id="ut9-zU-tXG"/>
+                                                <constraint firstItem="caD-w8-TAo" firstAttribute="centerY" secondItem="EOS-Xk-hUo" secondAttribute="centerY" id="ycl-1E-QOj"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
