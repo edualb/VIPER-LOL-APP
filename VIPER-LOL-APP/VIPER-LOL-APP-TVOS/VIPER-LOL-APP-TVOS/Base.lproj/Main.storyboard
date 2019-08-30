@@ -120,12 +120,18 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextButton:" destination="G7h-ws-a2S" eventType="primaryActionTriggered" id="UAJ-72-fib"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FEI-t6-put">
                                 <rect key="frame" x="110" y="497" width="165" height="86"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backButton:" destination="G7h-ws-a2S" eventType="primaryActionTriggered" id="4i1-HI-g7u"/>
+                                </connections>
                             </button>
                         </subviews>
                         <constraints>
@@ -141,7 +147,9 @@
                         <viewLayoutGuide key="safeArea" id="j54-Kh-GNt"/>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="FEI-t6-put" id="MRO-u4-mgv"/>
                         <outlet property="imageSkin" destination="52Y-qq-4FA" id="kn6-VE-59e"/>
+                        <outlet property="nextButton" destination="u5r-cX-KPd" id="9da-Qq-lBV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QSr-uV-Zf2" userLabel="First Responder" sceneMemberID="firstResponder"/>
