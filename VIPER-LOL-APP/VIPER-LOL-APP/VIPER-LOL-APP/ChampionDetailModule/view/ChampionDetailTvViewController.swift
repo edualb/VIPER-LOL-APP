@@ -19,7 +19,8 @@ class ChampionDetailTvViewController: UIViewController {
     private var presenter: ChampionDetailPresenter?
     private var modelView: ChampionModelView?
     private var indexImage = 0
-    private var focusGuide = UIFocusGuide()
+    private var focusGuide1 = UIFocusGuide()
+    private var focusGuide2 = UIFocusGuide()
     
     override var preferredFocusEnvironments: [UIFocusEnvironment] {
         if self.indexImage == (self.modelView?.imgSkins.count ?? 0) - 1 {
@@ -33,13 +34,10 @@ class ChampionDetailTvViewController: UIViewController {
         self.view.backgroundColor = .black
         self.downloadSkinImage(index: indexImage)
         
-        self.view.addLayoutGuide(self.focusGuide)
-        self.focusGuide.widthAnchor.constraint(equalTo: self.moreInfoButton.widthAnchor).isActive = true
-        self.focusGuide.rightAnchor.constraint(equalTo:  self.moreInfoButton.rightAnchor).isActive = true
-        self.focusGuide.heightAnchor.constraint(equalTo: self.nextButton.heightAnchor).isActive = true
-        self.focusGuide.bottomAnchor.constraint(equalTo: self.nextButton.bottomAnchor).isActive = true
-        
-        self.focusGuide.preferredFocusEnvironments = self.preferredFocusEnvironments
+        self.view.addLayoutGuide(self.focusGuide1)
+        self.view.addLayoutGuide(self.focusGuide2)
+        self.configFocusGuide1()
+        self.configFocusGuide2()
     }
     
     override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
@@ -48,18 +46,20 @@ class ChampionDetailTvViewController: UIViewController {
         
         switch nextFocusedView {
             case self.nextButton:
-                focusGuide.preferredFocusEnvironments = [self.moreInfoButton]
+                focusGuide1.preferredFocusEnvironments = [self.moreInfoButton]
             case self.moreInfoButton:
                 if context.previouslyFocusedView == self.nextButton {
-                    focusGuide.preferredFocusEnvironments = [self.backButton]
+                    focusGuide1.preferredFocusEnvironments = [self.backButton]
                 } else {
-                    focusGuide.preferredFocusEnvironments = [self.nextButton]
+                    focusGuide1.preferredFocusEnvironments = [self.nextButton]
                 }
+                focusGuide2.preferredFocusEnvironments = [self.backButton]
             case self.backButton:
-                focusGuide.preferredFocusEnvironments = [self.moreInfoButton]
+                focusGuide1.preferredFocusEnvironments = [self.moreInfoButton]
+                focusGuide2.preferredFocusEnvironments = [self.moreInfoButton]
             default:
                 self.updateFocus()
-                focusGuide.preferredFocusEnvironments = self.preferredFocusEnvironments
+                focusGuide1.preferredFocusEnvironments = self.preferredFocusEnvironments
         }
     }
     
@@ -105,6 +105,22 @@ extension ChampionDetailTvViewController {
     private func updateFocus() {
         self.setNeedsFocusUpdate()
         self.updateFocusIfNeeded()
+    }
+    
+    private func configFocusGuide1() {
+        self.focusGuide1.widthAnchor.constraint(equalTo: self.moreInfoButton.widthAnchor).isActive = true
+        self.focusGuide1.rightAnchor.constraint(equalTo: self.moreInfoButton.rightAnchor).isActive = true
+        self.focusGuide1.heightAnchor.constraint(equalTo: self.nextButton.heightAnchor).isActive = true
+        self.focusGuide1.bottomAnchor.constraint(equalTo: self.nextButton.bottomAnchor).isActive = true
+        self.focusGuide1.preferredFocusEnvironments = self.preferredFocusEnvironments
+    }
+    
+    private func configFocusGuide2() {
+        self.focusGuide2.heightAnchor.constraint(equalTo: self.moreInfoButton.heightAnchor).isActive = true
+        self.focusGuide2.topAnchor.constraint(equalTo: self.moreInfoButton.topAnchor).isActive = true
+        self.focusGuide2.rightAnchor.constraint(equalTo: self.backButton.rightAnchor).isActive = true
+        self.focusGuide2.widthAnchor.constraint(equalTo: self.backButton.widthAnchor).isActive = true
+        self.focusGuide2.preferredFocusEnvironments = self.preferredFocusEnvironments
     }
     
 }
